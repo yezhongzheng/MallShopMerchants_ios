@@ -16,9 +16,16 @@
 		7803E6E2227EC13F0038C5BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E6E1227EC13F0038C5BB /* main.m */; };
 		7803E6EC227EC13F0038C5BB /* MallShopMerchantsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E6EB227EC13F0038C5BB /* MallShopMerchantsTests.m */; };
 		7803E6F7227EC13F0038C5BB /* MallShopMerchantsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E6F6227EC13F0038C5BB /* MallShopMerchantsUITests.m */; };
-		7803E70A227EC4ED0038C5BB /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E709227EC4ED0038C5BB /* BaseVC.m */; };
+		7803E70A227EC4ED0038C5BB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E709227EC4ED0038C5BB /* BaseViewController.m */; };
 		7803E70D227EC5040038C5BB /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E70C227EC5040038C5BB /* BaseView.m */; };
 		7803E710227EC5140038C5BB /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E70F227EC5140038C5BB /* BaseModel.m */; };
+		7803E714227EC8040038C5BB /* MallShopMerchantsNC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E713227EC8040038C5BB /* MallShopMerchantsNC.m */; };
+		7803E717227EC85B0038C5BB /* MallShopTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E716227EC85B0038C5BB /* MallShopTabBarController.m */; };
+		7803E726227ECB150038C5BB /* HomePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E725227ECB150038C5BB /* HomePageVC.m */; };
+		7803E729227ECB710038C5BB /* MyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E728227ECB710038C5BB /* MyVC.m */; };
+		7803E72C227ECB820038C5BB /* OrderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E72B227ECB820038C5BB /* OrderVC.m */; };
+		7803E733227EDCBE0038C5BB /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E732227EDCBE0038C5BB /* UIColor+HexString.m */; };
+		7803E738227EE24D0038C5BB /* ComponentTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E737227EE24D0038C5BB /* ComponentTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,12 +63,29 @@
 		7803E6F2227EC13F0038C5BB /* MallShopMerchantsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MallShopMerchantsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7803E6F6227EC13F0038C5BB /* MallShopMerchantsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MallShopMerchantsUITests.m; sourceTree = "<group>"; };
 		7803E6F8227EC13F0038C5BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7803E708227EC4ED0038C5BB /* BaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
-		7803E709227EC4ED0038C5BB /* BaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		7803E708227EC4ED0038C5BB /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		7803E709227EC4ED0038C5BB /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		7803E70B227EC5040038C5BB /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		7803E70C227EC5040038C5BB /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		7803E70E227EC5140038C5BB /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		7803E70F227EC5140038C5BB /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		7803E712227EC8040038C5BB /* MallShopMerchantsNC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MallShopMerchantsNC.h; sourceTree = "<group>"; };
+		7803E713227EC8040038C5BB /* MallShopMerchantsNC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MallShopMerchantsNC.m; sourceTree = "<group>"; };
+		7803E715227EC85B0038C5BB /* MallShopTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MallShopTabBarController.h; sourceTree = "<group>"; };
+		7803E716227EC85B0038C5BB /* MallShopTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MallShopTabBarController.m; sourceTree = "<group>"; };
+		7803E724227ECB150038C5BB /* HomePageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageVC.h; sourceTree = "<group>"; };
+		7803E725227ECB150038C5BB /* HomePageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageVC.m; sourceTree = "<group>"; };
+		7803E727227ECB710038C5BB /* MyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyVC.h; sourceTree = "<group>"; };
+		7803E728227ECB710038C5BB /* MyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyVC.m; sourceTree = "<group>"; };
+		7803E72A227ECB820038C5BB /* OrderVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderVC.h; sourceTree = "<group>"; };
+		7803E72B227ECB820038C5BB /* OrderVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderVC.m; sourceTree = "<group>"; };
+		7803E72D227ECE4F0038C5BB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		7803E72E227ECF860038C5BB /* MallShopMerchantsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MallShopMerchantsHeader.h; sourceTree = "<group>"; };
+		7803E731227EDCBE0038C5BB /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
+		7803E732227EDCBE0038C5BB /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
+		7803E734227EDD9A0038C5BB /* MallShopMerchantsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MallShopMerchantsMacro.h; sourceTree = "<group>"; };
+		7803E736227EE24D0038C5BB /* ComponentTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComponentTools.h; sourceTree = "<group>"; };
+		7803E737227EE24D0038C5BB /* ComponentTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComponentTools.m; sourceTree = "<group>"; };
 		D4276A9F9517E17492895CF4 /* Pods-MallShopMerchants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.debug.xcconfig"; path = "Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.debug.xcconfig"; sourceTree = "<group>"; };
 		E99E332267A6EA0B991154EA /* Pods-MallShopMerchants.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.release.xcconfig"; path = "Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +149,11 @@
 		7803E6D1227EC13D0038C5BB /* MallShopMerchants */ = {
 			isa = PBXGroup;
 			children = (
+				7803E735227EE1B90038C5BB /* Tools */,
+				7803E72F227ED5300038C5BB /* ThirdParty */,
+				7803E719227ECA660038C5BB /* HomePageModule */,
+				7803E71A227ECA660038C5BB /* MyModule */,
+				7803E718227ECA660038C5BB /* OrderModule */,
 				7803E704227EC4560038C5BB /* BaseClass */,
 				7803E6D2227EC13D0038C5BB /* AppDelegate.h */,
 				7803E6D3227EC13D0038C5BB /* AppDelegate.m */,
@@ -135,6 +164,9 @@
 				7803E6DD227EC13F0038C5BB /* LaunchScreen.storyboard */,
 				7803E6E0227EC13F0038C5BB /* Info.plist */,
 				7803E6E1227EC13F0038C5BB /* main.m */,
+				7803E72D227ECE4F0038C5BB /* PrefixHeader.pch */,
+				7803E72E227ECF860038C5BB /* MallShopMerchantsHeader.h */,
+				7803E734227EDD9A0038C5BB /* MallShopMerchantsMacro.h */,
 			);
 			path = MallShopMerchants;
 			sourceTree = "<group>";
@@ -179,8 +211,12 @@
 		7803E706227EC4BE0038C5BB /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7803E708227EC4ED0038C5BB /* BaseVC.h */,
-				7803E709227EC4ED0038C5BB /* BaseVC.m */,
+				7803E708227EC4ED0038C5BB /* BaseViewController.h */,
+				7803E709227EC4ED0038C5BB /* BaseViewController.m */,
+				7803E712227EC8040038C5BB /* MallShopMerchantsNC.h */,
+				7803E713227EC8040038C5BB /* MallShopMerchantsNC.m */,
+				7803E715227EC85B0038C5BB /* MallShopTabBarController.h */,
+				7803E716227EC85B0038C5BB /* MallShopTabBarController.m */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";
@@ -192,6 +228,131 @@
 				7803E70C227EC5040038C5BB /* BaseView.m */,
 			);
 			path = BaseView;
+			sourceTree = "<group>";
+		};
+		7803E718227ECA660038C5BB /* OrderModule */ = {
+			isa = PBXGroup;
+			children = (
+				7803E721227ECAC00038C5BB /* Model */,
+				7803E722227ECAC00038C5BB /* View */,
+				7803E723227ECAC00038C5BB /* ViewController */,
+			);
+			path = OrderModule;
+			sourceTree = "<group>";
+		};
+		7803E719227ECA660038C5BB /* HomePageModule */ = {
+			isa = PBXGroup;
+			children = (
+				7803E71C227ECAB00038C5BB /* Model */,
+				7803E71B227ECAB00038C5BB /* View */,
+				7803E71D227ECAB10038C5BB /* ViewController */,
+			);
+			path = HomePageModule;
+			sourceTree = "<group>";
+		};
+		7803E71A227ECA660038C5BB /* MyModule */ = {
+			isa = PBXGroup;
+			children = (
+				7803E71E227ECAB90038C5BB /* Model */,
+				7803E720227ECAB90038C5BB /* View */,
+				7803E71F227ECAB90038C5BB /* ViewController */,
+			);
+			path = MyModule;
+			sourceTree = "<group>";
+		};
+		7803E71B227ECAB00038C5BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7803E71C227ECAB00038C5BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7803E71D227ECAB10038C5BB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7803E724227ECB150038C5BB /* HomePageVC.h */,
+				7803E725227ECB150038C5BB /* HomePageVC.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7803E71E227ECAB90038C5BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7803E71F227ECAB90038C5BB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7803E727227ECB710038C5BB /* MyVC.h */,
+				7803E728227ECB710038C5BB /* MyVC.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7803E720227ECAB90038C5BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7803E721227ECAC00038C5BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7803E722227ECAC00038C5BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7803E723227ECAC00038C5BB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7803E72A227ECB820038C5BB /* OrderVC.h */,
+				7803E72B227ECB820038C5BB /* OrderVC.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7803E72F227ED5300038C5BB /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				7803E730227EDCBE0038C5BB /* UIColor+HexString */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		7803E730227EDCBE0038C5BB /* UIColor+HexString */ = {
+			isa = PBXGroup;
+			children = (
+				7803E731227EDCBE0038C5BB /* UIColor+HexString.h */,
+				7803E732227EDCBE0038C5BB /* UIColor+HexString.m */,
+			);
+			path = "UIColor+HexString";
+			sourceTree = "<group>";
+		};
+		7803E735227EE1B90038C5BB /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				7803E736227EE24D0038C5BB /* ComponentTools.h */,
+				7803E737227EE24D0038C5BB /* ComponentTools.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		EF95F8EA7953584FB4646D5E /* Pods */ = {
@@ -359,12 +520,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7803E729227ECB710038C5BB /* MyVC.m in Sources */,
+				7803E738227EE24D0038C5BB /* ComponentTools.m in Sources */,
+				7803E72C227ECB820038C5BB /* OrderVC.m in Sources */,
 				7803E710227EC5140038C5BB /* BaseModel.m in Sources */,
 				7803E6D7227EC13D0038C5BB /* ViewController.m in Sources */,
 				7803E6E2227EC13F0038C5BB /* main.m in Sources */,
+				7803E714227EC8040038C5BB /* MallShopMerchantsNC.m in Sources */,
+				7803E733227EDCBE0038C5BB /* UIColor+HexString.m in Sources */,
 				7803E70D227EC5040038C5BB /* BaseView.m in Sources */,
+				7803E726227ECB150038C5BB /* HomePageVC.m in Sources */,
+				7803E717227EC85B0038C5BB /* MallShopTabBarController.m in Sources */,
 				7803E6D4227EC13D0038C5BB /* AppDelegate.m in Sources */,
-				7803E70A227EC4ED0038C5BB /* BaseVC.m in Sources */,
+				7803E70A227EC4ED0038C5BB /* BaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +706,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MallShopMerchants/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/UIColor-HexString\"",
+					"\"$(SRCROOT)/MallShopMerchants/MallShopMerchantsHeader.h\"",
+					"\"$(SRCROOT)/MallShopMerchants/MallShopMerchantsMacro.h\"",
+				);
 				INFOPLIST_FILE = MallShopMerchants/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -558,6 +736,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MallShopMerchants/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/UIColor-HexString\"",
+					"\"$(SRCROOT)/MallShopMerchants/MallShopMerchantsHeader.h\"",
+					"\"$(SRCROOT)/MallShopMerchants/MallShopMerchantsMacro.h\"",
+				);
 				INFOPLIST_FILE = MallShopMerchants/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
