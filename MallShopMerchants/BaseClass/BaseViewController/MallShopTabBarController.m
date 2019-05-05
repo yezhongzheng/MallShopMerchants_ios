@@ -24,18 +24,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NSArray *elementArray = @[
-                              @{kTabBarImageName:@"HomePage_NormalImage",
+                              @{kTabBarImageName:@"ico_home_index_g",
                                 kViewControllerClassName: @"HomePageVC",
                                 kTabBarTitleName:@"首页",
-                                kTabBarSelectImageName:@"HomePage_SelectImage"},
-                              @{kTabBarImageName:@"",
+                                kTabBarSelectImageName:@"ico_home_index"},
+                              @{kTabBarImageName:@"ico_home_order_g",
                                 kViewControllerClassName: @"OrderVC",
                                 kTabBarTitleName:@"订单",
-                                kTabBarSelectImageName:@""},
-                              @{kTabBarImageName:@"My_NormalImage",
+                                kTabBarSelectImageName:@"ico_home_order"},
+                              @{kTabBarImageName:@"ico_home_me_g",
                                 kViewControllerClassName: @"MyVC",
                                 kTabBarTitleName:@"我的",
-                                kTabBarSelectImageName:@"My_SelectImage"}
+                                kTabBarSelectImageName:@"ico_home_me"}
                               ];
     NSMutableArray *viewControllers = [NSMutableArray array];
     for (NSDictionary *dict in elementArray) {

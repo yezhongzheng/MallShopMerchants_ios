@@ -52,4 +52,15 @@
     return button;
 }
 
+/**
+ *backgroundColor 背景色
+ *
+ */
++ (UIView *)createViewWithBackgroundColor:(UIColor *)backgroundColor
+{
+    UIView *view = [[UIView alloc] init];
+    view.backgroundColor = backgroundColor;
+    return view;
+}
+
 @end

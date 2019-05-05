@@ -41,6 +41,13 @@ NS_ASSUME_NONNULL_BEGIN
                         buttonType:(UIButtonType)buttonType
                        titleColor:(UIColor *)titleColor
                              title:(NSString *)title;
+
+/**
+ *backgroundColor 背景色
+ *
+ */
++ (UIView *)createViewWithBackgroundColor:(UIColor *)backgroundColor;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -144,5 +144,12 @@
     return _collectionView;
 }
 
+- (UIView *)navigationView
+{
+    if (!_navigationView) {
+        self.navigationView = [ComponentTools createViewWithBackgroundColor:[UIColor colorWithHexString:@"C6A15E"]];
+    }
+    return _navigationView;
+}
 
 @end
