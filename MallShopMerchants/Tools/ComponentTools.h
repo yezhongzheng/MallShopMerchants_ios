@@ -48,6 +48,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (UIView *)createViewWithBackgroundColor:(UIColor *)backgroundColor;
 
+/**
+ *image 图片
+ *
+ */
++ (UIImageView *)createImageViewWithImage:(UIImage *)image;
+
 @end
 
 NS_ASSUME_NONNULL_END

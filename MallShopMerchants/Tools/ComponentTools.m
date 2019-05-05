@@ -63,4 +63,15 @@
     return view;
 }
 
+/**
+ *image 图片
+ *
+ */
++ (UIImageView *)createImageViewWithImage:(UIImage *)image
+{
+    UIImageView *imageView = [[UIImageView alloc] init];
+    [imageView setImage:image];
+    return imageView;
+}
+
 @end
