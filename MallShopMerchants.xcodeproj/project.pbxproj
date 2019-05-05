@@ -16,6 +16,9 @@
 		7803E6E2227EC13F0038C5BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E6E1227EC13F0038C5BB /* main.m */; };
 		7803E6EC227EC13F0038C5BB /* MallShopMerchantsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E6EB227EC13F0038C5BB /* MallShopMerchantsTests.m */; };
 		7803E6F7227EC13F0038C5BB /* MallShopMerchantsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E6F6227EC13F0038C5BB /* MallShopMerchantsUITests.m */; };
+		7803E70A227EC4ED0038C5BB /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E709227EC4ED0038C5BB /* BaseVC.m */; };
+		7803E70D227EC5040038C5BB /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E70C227EC5040038C5BB /* BaseView.m */; };
+		7803E710227EC5140038C5BB /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E70F227EC5140038C5BB /* BaseModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		7803E6F2227EC13F0038C5BB /* MallShopMerchantsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MallShopMerchantsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7803E6F6227EC13F0038C5BB /* MallShopMerchantsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MallShopMerchantsUITests.m; sourceTree = "<group>"; };
 		7803E6F8227EC13F0038C5BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7803E708227EC4ED0038C5BB /* BaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
+		7803E709227EC4ED0038C5BB /* BaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		7803E70B227EC5040038C5BB /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		7803E70C227EC5040038C5BB /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		7803E70E227EC5140038C5BB /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		7803E70F227EC5140038C5BB /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		D4276A9F9517E17492895CF4 /* Pods-MallShopMerchants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.debug.xcconfig"; path = "Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.debug.xcconfig"; sourceTree = "<group>"; };
 		E99E332267A6EA0B991154EA /* Pods-MallShopMerchants.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.release.xcconfig"; path = "Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +125,7 @@
 		7803E6D1227EC13D0038C5BB /* MallShopMerchants */ = {
 			isa = PBXGroup;
 			children = (
+				7803E704227EC4560038C5BB /* BaseClass */,
 				7803E6D2227EC13D0038C5BB /* AppDelegate.h */,
 				7803E6D3227EC13D0038C5BB /* AppDelegate.m */,
 				7803E6D5227EC13D0038C5BB /* ViewController.h */,
@@ -145,6 +155,43 @@
 				7803E6F8227EC13F0038C5BB /* Info.plist */,
 			);
 			path = MallShopMerchantsUITests;
+			sourceTree = "<group>";
+		};
+		7803E704227EC4560038C5BB /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				7803E705227EC4BE0038C5BB /* BaseModel */,
+				7803E707227EC4BE0038C5BB /* BaseView */,
+				7803E706227EC4BE0038C5BB /* BaseViewController */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		7803E705227EC4BE0038C5BB /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				7803E70E227EC5140038C5BB /* BaseModel.h */,
+				7803E70F227EC5140038C5BB /* BaseModel.m */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		7803E706227EC4BE0038C5BB /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7803E708227EC4ED0038C5BB /* BaseVC.h */,
+				7803E709227EC4ED0038C5BB /* BaseVC.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		7803E707227EC4BE0038C5BB /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				7803E70B227EC5040038C5BB /* BaseView.h */,
+				7803E70C227EC5040038C5BB /* BaseView.m */,
+			);
+			path = BaseView;
 			sourceTree = "<group>";
 		};
 		EF95F8EA7953584FB4646D5E /* Pods */ = {
@@ -312,9 +359,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7803E710227EC5140038C5BB /* BaseModel.m in Sources */,
 				7803E6D7227EC13D0038C5BB /* ViewController.m in Sources */,
 				7803E6E2227EC13F0038C5BB /* main.m in Sources */,
+				7803E70D227EC5040038C5BB /* BaseView.m in Sources */,
 				7803E6D4227EC13D0038C5BB /* AppDelegate.m in Sources */,
+				7803E70A227EC4ED0038C5BB /* BaseVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
