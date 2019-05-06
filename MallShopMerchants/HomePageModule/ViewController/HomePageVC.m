@@ -24,6 +24,7 @@
 @property (nonatomic, strong) UIView *diliverView;
 @property (nonatomic, strong) UICollectionViewFlowLayout *layout;
 @property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) UIView *cornerView;
 @property (nonatomic, strong) NSArray *datasource;
 
 @end
@@ -73,6 +74,15 @@
     [self.navigationView addSubview:self.pullIcon];
     [self.navigationView addSubview:self.messageButton];
     [self.navigationView addSubview:self.scannerButton];
+    [self.view addSubview:self.paidKeyAmountLabel];
+    [self.view addSubview:self.paidValueAmountLabel];
+    [self.view addSubview:self.orderKeyCountLabel];
+    [self.view addSubview:self.orderValueCountLabel];
+    [self.view addSubview:self.diliverView];
+    [self.view addSubview:self.paidKeyCountLabel];
+    [self.view addSubview:self.paidValueCountLabel];
+    [self.view addSubview:self.cornerView];
+    [self.cornerView addSubview:self.collectionView];
     __weak typeof(self) weakSelf = self;
     [self.navigationView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.mas_equalTo(weakSelf.view);
@@ -97,6 +107,43 @@
         make.centerY.mas_equalTo(weakSelf.shopNameLabel.mas_centerY);
         make.right.mas_equalTo(weakSelf.navigationView.mas_right).with.mas_offset(kSixScreen(-10));
         make.size.mas_equalTo(CGSizeMake(kSixScreen(19), kSixScreen(19)));
+    }];
+    [self.paidKeyAmountLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.mas_equalTo(weakSelf.view.mas_centerX);
+        make.top.mas_equalTo(weakSelf.navigationView.mas_bottom).with.mas_offset(kSixScreen(20));
+        make.height.mas_equalTo(kSixScreen(20));
+    }];
+    [self.paidValueAmountLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.mas_equalTo(weakSelf.view.mas_centerX);
+        make.top.mas_equalTo(weakSelf.paidKeyAmountLabel.mas_bottom).with.mas_offset(kSixScreen(5));
+        make.height.mas_equalTo(kSixScreen(30));
+    }];
+    [self.orderValueCountLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(weakSelf.view.mas_left);
+        make.right.mas_equalTo(weakSelf.diliverView.mas_left);
+        make.centerY.mas_equalTo(weakSelf.diliverView.mas_centerY);
+    }];
+    [self.orderKeyCountLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(weakSelf.orderValueCountLabel.mas_bottom).with.mas_offset(kSixScreen(5));
+        make.width.mas_equalTo(weakSelf.orderValueCountLabel.mas_width);
+        make.centerX.mas_equalTo(weakSelf.orderKeyCountLabel.mas_centerX);
+    }];
+    [self.diliverView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(weakSelf.paidValueAmountLabel.mas_bottom).with.mas_offset(kSixScreen(20));
+        make.height.mas_equalTo(kSixScreen(13));
+        make.width.mas_equalTo(kSixScreen(1));
+        make.centerX.mas_equalTo(weakSelf.view.mas_centerX);
+    }];
+    [self.paidValueCountLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(weakSelf.diliverView.mas_right);
+        make.right.mas_equalTo(weakSelf.view.mas_right);
+        make.centerY.mas_equalTo(weakSelf.diliverView.mas_centerY);
+    }];
+    [self.paidKeyCountLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.width.mas_equalTo(weakSelf.paidValueCountLabel.mas_width);
+        make.centerX.mas_equalTo(weakSelf.paidValueCountLabel.mas_centerX);
+        make.centerY.mas_equalTo(weakSelf.orderKeyCountLabel.mas_centerY);
     }];
 }
 
@@ -243,20 +290,68 @@
     return _scannerButton;
 }
 
-- (UILabel *)paidKeyCountLabel
+- (UILabel *)paidKeyAmountLabel
 {
-    if (!_paidKeyCountLabel) {
-        self.paidKeyCountLabel = [ComponentTools createLabelWithFont:[UIFont fontWithName:@"PingFangSC-Light" size:kSixScreen(14)] backgroundColor:[UIColor clearColor] textColor:[UIColor colorWithHexString:@"ffffff"] numberOfLines:0 textAlignment:NSTextAlignmentCenter text:@"今日实收金额(元)"];
+    if (!_paidKeyAmountLabel) {
+        self.paidKeyAmountLabel = [ComponentTools createLabelWithFont:[UIFont fontWithName:@"PingFangSC-Light" size:kSixScreen(14)] backgroundColor:[UIColor clearColor] textColor:[UIColor colorWithHexString:@"ffffff"] numberOfLines:0 textAlignment:NSTextAlignmentCenter text:@"今日实收金额(元)"];
     }
-    return _paidKeyCountLabel;
+    return _paidKeyAmountLabel;
+}
+
+- (UILabel *)paidValueAmountLabel
+{
+    if (!_paidValueAmountLabel) {
+        self.paidValueAmountLabel = [ComponentTools createLabelWithFont:[UIFont fontWithName:@"DINAlternate-Bold" size:kSixScreen(30)] backgroundColor:[UIColor clearColor] textColor:[UIColor colorWithHexString:@"ffffff"] numberOfLines:0 textAlignment:NSTextAlignmentCenter text:@"0.00"];
+    }
+    return _paidValueAmountLabel;
+}
+
+- (UILabel *)orderValueCountLabel
+{
+    if (!_orderValueCountLabel) {
+        self.orderValueCountLabel = [ComponentTools createLabelWithFont:[UIFont fontWithName:@"DINAlternate-Bold" size:kSixScreen(22)] backgroundColor:[UIColor clearColor] textColor:[UIColor colorWithHexString:@"ffffff"] numberOfLines:0 textAlignment:NSTextAlignmentCenter text:@"0"];
+    }
+    return _orderValueCountLabel;
+}
+
+- (UILabel *)orderKeyCountLabel
+{
+    if (!_orderKeyCountLabel) {
+        self.orderKeyCountLabel = [ComponentTools createLabelWithFont:[UIFont fontWithName:@"PingFangSC-Light" size:kSixScreen(14)] backgroundColor:[UIColor clearColor] textColor:[UIColor colorWithHexString:@"ffffff"] numberOfLines:0 textAlignment:NSTextAlignmentCenter text:@"订单数(单)"];
+    }
+    return _orderKeyCountLabel;
+}
+
+- (UIView *)diliverView
+{
+    if (!_diliverView) {
+        self.diliverView = [ComponentTools createViewWithBackgroundColor:[UIColor whiteColor]];
+    }
+    return _diliverView;
 }
 
 - (UILabel *)paidValueCountLabel
 {
     if (!_paidValueCountLabel) {
-        self.paidValueCountLabel = [ComponentTools createLabelWithFont:[UIFont fontWithName:@"DINAlternate-Bold" size:kSixScreen(30)] backgroundColor:[UIColor clearColor] textColor:[UIColor colorWithHexString:@"ffffff"] numberOfLines:0 textAlignment:NSTextAlignmentCenter text:@"0.00"];
+        self.paidValueCountLabel = [ComponentTools createLabelWithFont:[UIFont fontWithName:@"DINAlternate-Bold" size:kSixScreen(22)] backgroundColor:[UIColor clearColor] textColor:[UIColor colorWithHexString:@"ffffff"] numberOfLines:0 textAlignment:NSTextAlignmentCenter text:@"0"];
     }
     return _paidValueCountLabel;
+}
+
+- (UILabel *)paidKeyCountLabel
+{
+    if (!_paidKeyCountLabel) {
+        self.paidKeyCountLabel = [ComponentTools createLabelWithFont:[UIFont fontWithName:@"PingFangSC-Light" size:kSixScreen(14)] backgroundColor:[UIColor clearColor] textColor:[UIColor colorWithHexString:@"ffffff"] numberOfLines:0 textAlignment:NSTextAlignmentCenter text:@"付款人数(人)"];
+    }
+    return _paidKeyCountLabel;
+}
+
+- (UIView *)cornerView
+{
+    if (!_cornerView) {
+        self.cornerView = [ComponentTools createViewWithBackgroundColor:[UIColor whiteColor]];
+    }
+    return _cornerView;
 }
 
 @end
