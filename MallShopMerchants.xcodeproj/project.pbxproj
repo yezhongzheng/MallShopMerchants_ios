@@ -26,6 +26,7 @@
 		7803E72C227ECB820038C5BB /* OrderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E72B227ECB820038C5BB /* OrderVC.m */; };
 		7803E733227EDCBE0038C5BB /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E732227EDCBE0038C5BB /* UIColor+HexString.m */; };
 		7803E738227EE24D0038C5BB /* ComponentTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E737227EE24D0038C5BB /* ComponentTools.m */; };
+		7803E73F228029210038C5BB /* HomePageShopManageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E73D228027EE0038C5BB /* HomePageShopManageCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,8 @@
 		7803E734227EDD9A0038C5BB /* MallShopMerchantsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MallShopMerchantsMacro.h; sourceTree = "<group>"; };
 		7803E736227EE24D0038C5BB /* ComponentTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComponentTools.h; sourceTree = "<group>"; };
 		7803E737227EE24D0038C5BB /* ComponentTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComponentTools.m; sourceTree = "<group>"; };
+		7803E73C228027EE0038C5BB /* HomePageShopManageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageShopManageCell.h; sourceTree = "<group>"; };
+		7803E73D228027EE0038C5BB /* HomePageShopManageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageShopManageCell.m; sourceTree = "<group>"; };
 		D4276A9F9517E17492895CF4 /* Pods-MallShopMerchants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.debug.xcconfig"; path = "Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.debug.xcconfig"; sourceTree = "<group>"; };
 		E99E332267A6EA0B991154EA /* Pods-MallShopMerchants.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.release.xcconfig"; path = "Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -263,6 +266,8 @@
 		7803E71B227ECAB00038C5BB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7803E73C228027EE0038C5BB /* HomePageShopManageCell.h */,
+				7803E73D228027EE0038C5BB /* HomePageShopManageCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -520,6 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7803E73F228029210038C5BB /* HomePageShopManageCell.m in Sources */,
 				7803E729227ECB710038C5BB /* MyVC.m in Sources */,
 				7803E738227EE24D0038C5BB /* ComponentTools.m in Sources */,
 				7803E72C227ECB820038C5BB /* OrderVC.m in Sources */,

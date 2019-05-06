@@ -7,6 +7,8 @@
 //
 
 #import "HomePageVC.h"
+#import "HomePageShopManageCell.h"
+
 
 @interface HomePageVC () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
@@ -25,6 +27,7 @@
 @property (nonatomic, strong) UICollectionViewFlowLayout *layout;
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) UIView *cornerView;
+@property (nonatomic, strong) UIImageView *shopManageIcon;
 @property (nonatomic, strong) NSArray *datasource;
 
 @end
@@ -83,6 +86,7 @@
     [self.view addSubview:self.paidValueCountLabel];
     [self.view addSubview:self.cornerView];
     [self.cornerView addSubview:self.collectionView];
+    [self.cornerView addSubview:self.shopManageIcon];
     __weak typeof(self) weakSelf = self;
     [self.navigationView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.mas_equalTo(weakSelf.view);
@@ -145,12 +149,26 @@
         make.centerX.mas_equalTo(weakSelf.paidValueCountLabel.mas_centerX);
         make.centerY.mas_equalTo(weakSelf.orderKeyCountLabel.mas_centerY);
     }];
+    [self.cornerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(weakSelf.view.mas_left).with.mas_offset(kSixScreen(17));
+        make.right.mas_equalTo(weakSelf.view.mas_right).with.mas_offset(kSixScreen(-17));
+        make.top.mas_equalTo(weakSelf.paidKeyCountLabel.mas_bottom).with.mas_offset(kSixScreen(27));
+        make.height.mas_equalTo(kSixScreen(328));
+    }];
+    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(weakSelf.cornerView);
+    }];
+    [self.shopManageIcon mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(kSixScreen(149), kSixScreen(38)));
+        make.top.mas_equalTo(weakSelf.cornerView.mas_top).with.mas_offset(kSixScreen(-7));
+        make.centerX.mas_equalTo(weakSelf.cornerView.mas_centerX);
+    }];
 }
 
 #pragma mark - UICollectionViewDelegateFlowLayout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeZero;
+    return CGSizeMake((collectionView.bounds.size.width - kSixScreen(1)) / 2.0f, (collectionView.bounds.size.height - kSixScreen(1) * 2) / 3.0f);
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
@@ -160,12 +178,12 @@
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
 {
-    return 0;
+    return kSixScreen(1);
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
-    return 0;
+    return kSixScreen(1);
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
@@ -193,7 +211,9 @@
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return nil;
+    HomePageShopManageCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:IDHomePageShopManageCell forIndexPath:indexPath];
+    [cell setShopManageCellWithImageName:self.datasource[indexPath.item] labelName:self.datasource[indexPath.item]];
+    return cell;
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
@@ -204,10 +224,10 @@
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
     if (kind == UICollectionElementKindSectionHeader) {
-        
-        return nil;
+        UICollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"IDHeaderView" forIndexPath:indexPath];
+        return headerView;
     } else {
-        UICollectionReusableView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"IDMediatorToWithdrawFooter" forIndexPath:indexPath];
+        UICollectionReusableView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"IDFooterView" forIndexPath:indexPath];
         return footerView;
     }
 }
@@ -236,12 +256,14 @@
 {
     if (!_collectionView) {
         self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.layout];
-        self.collectionView.backgroundColor = [UIColor colorWithHexString:@"ffffff"];
+        self.collectionView.backgroundColor = [UIColor clearColor];
         self.collectionView.delegate = self;
         self.collectionView.dataSource = self;
         self.collectionView.showsVerticalScrollIndicator = NO;
         self.collectionView.showsHorizontalScrollIndicator = NO;
-        [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView"];
+        [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"IDHeaderView"];
+        [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"IDFooterView"];
+        [self.collectionView registerClass:[HomePageShopManageCell class] forCellWithReuseIdentifier:IDHomePageShopManageCell];
     }
     return _collectionView;
 }
@@ -349,9 +371,32 @@
 - (UIView *)cornerView
 {
     if (!_cornerView) {
-        self.cornerView = [ComponentTools createViewWithBackgroundColor:[UIColor whiteColor]];
+        self.cornerView = [ComponentTools createViewWithBackgroundColor:[UIColor colorWithHexString:@"F6F6F6"]];
+//        self.cornerView.layer.masksToBounds = YES;
+        self.cornerView.layer.cornerRadius = kSixScreen(10);
+        self.cornerView.layer.shadowOffset = CGSizeMake(0, kSixScreen(2));
+        self.cornerView.layer.shadowColor = [UIColor colorWithHexString:@"5E7360"].CGColor;
+        self.cornerView.layer.shadowOpacity = kSixScreen(1);
+        self.cornerView.layer.shadowRadius = kSixScreen(2);
     }
     return _cornerView;
+}
+
+- (NSArray *)datasource
+{
+    if (!_datasource) {
+        self.datasource = @[@"经营报表", @"到账记录", @"商品管理", @"分类管理", @"收款码", @"我的钱包"];
+    }
+    return _datasource;
+}
+
+- (UIImageView *)shopManageIcon
+{
+    if (!_shopManageIcon) {
+        self.shopManageIcon = [ComponentTools createImageViewWithImage:[UIImage imageNamed:@"店铺管理"]];
+        [self.shopManageIcon setContentMode:UIViewContentModeScaleAspectFit];
+    }
+    return _shopManageIcon;
 }
 
 @end
