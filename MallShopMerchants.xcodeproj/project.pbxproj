@@ -35,6 +35,8 @@
 		7803E751228138430038C5BB /* OrderOptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E750228138430038C5BB /* OrderOptionView.m */; };
 		7803E7542281613E0038C5BB /* OrderStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E7532281613E0038C5BB /* OrderStatusCell.m */; };
 		7803E75722816F010038C5BB /* OrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E75622816F010038C5BB /* OrderModel.m */; };
+		7803E75A22817AC70038C5BB /* MyItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E75922817AC70038C5BB /* MyItemCell.m */; };
+		7803E75D22817D570038C5BB /* MyItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E75C22817D570038C5BB /* MyItemModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +115,10 @@
 		7803E7532281613E0038C5BB /* OrderStatusCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderStatusCell.m; sourceTree = "<group>"; };
 		7803E75522816F010038C5BB /* OrderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderModel.h; sourceTree = "<group>"; };
 		7803E75622816F010038C5BB /* OrderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderModel.m; sourceTree = "<group>"; };
+		7803E75822817AC70038C5BB /* MyItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyItemCell.h; sourceTree = "<group>"; };
+		7803E75922817AC70038C5BB /* MyItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyItemCell.m; sourceTree = "<group>"; };
+		7803E75B22817D570038C5BB /* MyItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyItemModel.h; sourceTree = "<group>"; };
+		7803E75C22817D570038C5BB /* MyItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyItemModel.m; sourceTree = "<group>"; };
 		D4276A9F9517E17492895CF4 /* Pods-MallShopMerchants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.debug.xcconfig"; path = "Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.debug.xcconfig"; sourceTree = "<group>"; };
 		E99E332267A6EA0B991154EA /* Pods-MallShopMerchants.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.release.xcconfig"; path = "Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -315,6 +321,8 @@
 		7803E71E227ECAB90038C5BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7803E75B22817D570038C5BB /* MyItemModel.h */,
+				7803E75C22817D570038C5BB /* MyItemModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -331,6 +339,8 @@
 		7803E720227ECAB90038C5BB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7803E75822817AC70038C5BB /* MyItemCell.h */,
+				7803E75922817AC70038C5BB /* MyItemCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -586,6 +596,8 @@
 				7803E6D4227EC13D0038C5BB /* AppDelegate.m in Sources */,
 				7803E74B228136A80038C5BB /* HadFinishVC.m in Sources */,
 				7803E742228056490038C5BB /* SearchVC.m in Sources */,
+				7803E75A22817AC70038C5BB /* MyItemCell.m in Sources */,
+				7803E75D22817D570038C5BB /* MyItemModel.m in Sources */,
 				7803E70A227EC4ED0038C5BB /* BaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
