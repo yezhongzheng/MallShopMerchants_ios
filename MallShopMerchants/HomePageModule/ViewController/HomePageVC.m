@@ -71,8 +71,8 @@
     gradientLayer.frame = self.view.bounds;
     gradientLayer.startPoint = CGPointMake(0, 0);
     gradientLayer.endPoint = CGPointMake(0, 1);
-    gradientLayer.locations = @[@(0.3), @(0.5), @(1)];
-    gradientLayer.colors = @[(__bridge id)[UIColor colorWithHexString:@"#C6A15E"].CGColor, (__bridge id)[UIColor colorWithHexString:@"#D9C39D"].CGColor];
+    gradientLayer.locations = @[@(0.3), @(0.9)];
+    gradientLayer.colors = @[(__bridge id)[UIColor colorWithHexString:@"#C6A15E"].CGColor, (__bridge id)[[UIColor colorWithHexString:@"#D9C39D"] colorWithAlphaComponent:0.1].CGColor];
     [self.view.layer insertSublayer:gradientLayer atIndex:0];
     [self.view addSubview:self.navigationView];
     [self.navigationView addSubview:self.shopNameLabel];
@@ -177,6 +177,7 @@
 #pragma mark - UICollectionViewDelegateFlowLayout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"----%f", (collectionView.bounds.size.width - kSixScreen(1)) / 2.0f);
     return CGSizeMake((collectionView.bounds.size.width - kSixScreen(1)) / 2.0f, (collectionView.bounds.size.height - kSixScreen(1) * 2) / 3.0f);
 }
 
@@ -192,7 +193,7 @@
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
-    return kSixScreen(1);
+    return 0;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
