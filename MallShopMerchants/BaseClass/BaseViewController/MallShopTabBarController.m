@@ -55,7 +55,7 @@
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"999999"],NSFontAttributeName:[UIFont systemFontOfSize:10]} forState:UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"00C869"],NSFontAttributeName:[UIFont systemFontOfSize:10]} forState:UIControlStateSelected];
     self.viewControllers = viewControllers;
-    self.selectedIndex = 0;
+    self.selectedIndex = 1;
 }
 
 /*

@@ -21,7 +21,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor clearColor];
+        self.backgroundColor = [UIColor whiteColor];
         [self.contentView addSubview:self.managerIcon];
         [self.contentView addSubview:self.managerLabel];
     }

@@ -27,6 +27,14 @@
 		7803E733227EDCBE0038C5BB /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E732227EDCBE0038C5BB /* UIColor+HexString.m */; };
 		7803E738227EE24D0038C5BB /* ComponentTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E737227EE24D0038C5BB /* ComponentTools.m */; };
 		7803E73F228029210038C5BB /* HomePageShopManageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E73D228027EE0038C5BB /* HomePageShopManageCell.m */; };
+		7803E742228056490038C5BB /* SearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E741228056490038C5BB /* SearchVC.m */; };
+		7803E745228136100038C5BB /* PaymentHasBeenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E744228136100038C5BB /* PaymentHasBeenVC.m */; };
+		7803E7482281363F0038C5BB /* ProcessingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E7472281363F0038C5BB /* ProcessingVC.m */; };
+		7803E74B228136A80038C5BB /* HadFinishVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E74A228136A80038C5BB /* HadFinishVC.m */; };
+		7803E74E228136D50038C5BB /* InvalidOrderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E74D228136D50038C5BB /* InvalidOrderVC.m */; };
+		7803E751228138430038C5BB /* OrderOptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E750228138430038C5BB /* OrderOptionView.m */; };
+		7803E7542281613E0038C5BB /* OrderStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E7532281613E0038C5BB /* OrderStatusCell.m */; };
+		7803E75722816F010038C5BB /* OrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E75622816F010038C5BB /* OrderModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +97,22 @@
 		7803E737227EE24D0038C5BB /* ComponentTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComponentTools.m; sourceTree = "<group>"; };
 		7803E73C228027EE0038C5BB /* HomePageShopManageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageShopManageCell.h; sourceTree = "<group>"; };
 		7803E73D228027EE0038C5BB /* HomePageShopManageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageShopManageCell.m; sourceTree = "<group>"; };
+		7803E740228056490038C5BB /* SearchVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchVC.h; sourceTree = "<group>"; };
+		7803E741228056490038C5BB /* SearchVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchVC.m; sourceTree = "<group>"; };
+		7803E743228136100038C5BB /* PaymentHasBeenVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentHasBeenVC.h; sourceTree = "<group>"; };
+		7803E744228136100038C5BB /* PaymentHasBeenVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentHasBeenVC.m; sourceTree = "<group>"; };
+		7803E7462281363F0038C5BB /* ProcessingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProcessingVC.h; sourceTree = "<group>"; };
+		7803E7472281363F0038C5BB /* ProcessingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProcessingVC.m; sourceTree = "<group>"; };
+		7803E749228136A80038C5BB /* HadFinishVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HadFinishVC.h; sourceTree = "<group>"; };
+		7803E74A228136A80038C5BB /* HadFinishVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HadFinishVC.m; sourceTree = "<group>"; };
+		7803E74C228136D50038C5BB /* InvalidOrderVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvalidOrderVC.h; sourceTree = "<group>"; };
+		7803E74D228136D50038C5BB /* InvalidOrderVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvalidOrderVC.m; sourceTree = "<group>"; };
+		7803E74F228138430038C5BB /* OrderOptionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderOptionView.h; sourceTree = "<group>"; };
+		7803E750228138430038C5BB /* OrderOptionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderOptionView.m; sourceTree = "<group>"; };
+		7803E7522281613E0038C5BB /* OrderStatusCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderStatusCell.h; sourceTree = "<group>"; };
+		7803E7532281613E0038C5BB /* OrderStatusCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderStatusCell.m; sourceTree = "<group>"; };
+		7803E75522816F010038C5BB /* OrderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderModel.h; sourceTree = "<group>"; };
+		7803E75622816F010038C5BB /* OrderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderModel.m; sourceTree = "<group>"; };
 		D4276A9F9517E17492895CF4 /* Pods-MallShopMerchants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.debug.xcconfig"; path = "Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.debug.xcconfig"; sourceTree = "<group>"; };
 		E99E332267A6EA0B991154EA /* Pods-MallShopMerchants.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.release.xcconfig"; path = "Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -314,6 +338,8 @@
 		7803E721227ECAC00038C5BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7803E75522816F010038C5BB /* OrderModel.h */,
+				7803E75622816F010038C5BB /* OrderModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -321,6 +347,10 @@
 		7803E722227ECAC00038C5BB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7803E74F228138430038C5BB /* OrderOptionView.h */,
+				7803E750228138430038C5BB /* OrderOptionView.m */,
+				7803E7522281613E0038C5BB /* OrderStatusCell.h */,
+				7803E7532281613E0038C5BB /* OrderStatusCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -330,6 +360,16 @@
 			children = (
 				7803E72A227ECB820038C5BB /* OrderVC.h */,
 				7803E72B227ECB820038C5BB /* OrderVC.m */,
+				7803E740228056490038C5BB /* SearchVC.h */,
+				7803E741228056490038C5BB /* SearchVC.m */,
+				7803E743228136100038C5BB /* PaymentHasBeenVC.h */,
+				7803E744228136100038C5BB /* PaymentHasBeenVC.m */,
+				7803E7462281363F0038C5BB /* ProcessingVC.h */,
+				7803E7472281363F0038C5BB /* ProcessingVC.m */,
+				7803E749228136A80038C5BB /* HadFinishVC.h */,
+				7803E74A228136A80038C5BB /* HadFinishVC.m */,
+				7803E74C228136D50038C5BB /* InvalidOrderVC.h */,
+				7803E74D228136D50038C5BB /* InvalidOrderVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -527,17 +567,25 @@
 			files = (
 				7803E73F228029210038C5BB /* HomePageShopManageCell.m in Sources */,
 				7803E729227ECB710038C5BB /* MyVC.m in Sources */,
+				7803E7482281363F0038C5BB /* ProcessingVC.m in Sources */,
 				7803E738227EE24D0038C5BB /* ComponentTools.m in Sources */,
+				7803E75722816F010038C5BB /* OrderModel.m in Sources */,
 				7803E72C227ECB820038C5BB /* OrderVC.m in Sources */,
 				7803E710227EC5140038C5BB /* BaseModel.m in Sources */,
 				7803E6D7227EC13D0038C5BB /* ViewController.m in Sources */,
 				7803E6E2227EC13F0038C5BB /* main.m in Sources */,
+				7803E751228138430038C5BB /* OrderOptionView.m in Sources */,
 				7803E714227EC8040038C5BB /* MallShopMerchantsNC.m in Sources */,
 				7803E733227EDCBE0038C5BB /* UIColor+HexString.m in Sources */,
+				7803E74E228136D50038C5BB /* InvalidOrderVC.m in Sources */,
 				7803E70D227EC5040038C5BB /* BaseView.m in Sources */,
+				7803E745228136100038C5BB /* PaymentHasBeenVC.m in Sources */,
 				7803E726227ECB150038C5BB /* HomePageVC.m in Sources */,
+				7803E7542281613E0038C5BB /* OrderStatusCell.m in Sources */,
 				7803E717227EC85B0038C5BB /* MallShopTabBarController.m in Sources */,
 				7803E6D4227EC13D0038C5BB /* AppDelegate.m in Sources */,
+				7803E74B228136A80038C5BB /* HadFinishVC.m in Sources */,
+				7803E742228056490038C5BB /* SearchVC.m in Sources */,
 				7803E70A227EC4ED0038C5BB /* BaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

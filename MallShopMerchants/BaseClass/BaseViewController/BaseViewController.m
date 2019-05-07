@@ -48,7 +48,7 @@
 - (void)addBackButton
 {
     __weak typeof(self)weakSelf = self;
-    [self addLeftButtonWithImage:[UIImage imageNamed:@""] actionBlock:^{
+    [self addLeftButtonWithImage:[UIImage imageNamed:@"ico_all_back_black"] actionBlock:^{
         __strong typeof(weakSelf) strongSelf = weakSelf;
         [strongSelf.navigationController popViewControllerAnimated:YES];
     }];

@@ -26,6 +26,7 @@
 @property (nonatomic, strong) UIView *diliverView;
 @property (nonatomic, strong) UICollectionViewFlowLayout *layout;
 @property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) UIView *layoutView;
 @property (nonatomic, strong) UIView *cornerView;
 @property (nonatomic, strong) UIImageView *shopManageIcon;
 @property (nonatomic, strong) NSArray *datasource;
@@ -84,9 +85,10 @@
     [self.view addSubview:self.diliverView];
     [self.view addSubview:self.paidKeyCountLabel];
     [self.view addSubview:self.paidValueCountLabel];
-    [self.view addSubview:self.cornerView];
+    [self.view addSubview:self.layoutView];
+    [self.layoutView addSubview:self.cornerView];
     [self.cornerView addSubview:self.collectionView];
-    [self.cornerView addSubview:self.shopManageIcon];
+    [self.layoutView addSubview:self.shopManageIcon];
     __weak typeof(self) weakSelf = self;
     [self.navigationView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.mas_equalTo(weakSelf.view);
@@ -149,19 +151,25 @@
         make.centerX.mas_equalTo(weakSelf.paidValueCountLabel.mas_centerX);
         make.centerY.mas_equalTo(weakSelf.orderKeyCountLabel.mas_centerY);
     }];
-    [self.cornerView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.layoutView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(weakSelf.view.mas_left).with.mas_offset(kSixScreen(17));
         make.right.mas_equalTo(weakSelf.view.mas_right).with.mas_offset(kSixScreen(-17));
         make.top.mas_equalTo(weakSelf.paidKeyCountLabel.mas_bottom).with.mas_offset(kSixScreen(27));
-        make.height.mas_equalTo(kSixScreen(328));
+        make.height.mas_equalTo(kSixScreen(335));
+    }];
+    [self.cornerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(weakSelf.layoutView.mas_left);
+        make.right.mas_equalTo(weakSelf.layoutView.mas_right);
+        make.top.mas_equalTo(weakSelf.layoutView.mas_top).with.mas_offset(kSixScreen(7));
+        make.bottom.mas_equalTo(weakSelf.layoutView.mas_bottom);
     }];
     [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(weakSelf.cornerView);
     }];
     [self.shopManageIcon mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(kSixScreen(149), kSixScreen(38)));
-        make.top.mas_equalTo(weakSelf.cornerView.mas_top).with.mas_offset(kSixScreen(-7));
-        make.centerX.mas_equalTo(weakSelf.cornerView.mas_centerX);
+        make.top.mas_equalTo(weakSelf.layoutView.mas_top);
+        make.centerX.mas_equalTo(weakSelf.layoutView.mas_centerX);
     }];
 }
 
@@ -296,7 +304,7 @@
 {
     if (!_messageButton) {
         self.messageButton = [ComponentTools createButtonWithFont:[UIFont systemFontOfSize:0] buttonType:UIButtonTypeCustom titleColor:[UIColor clearColor] title:@""];
-        [self.messageButton setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+        [self.messageButton setImage:[UIImage imageNamed:@"ico_news_no"] forState:UIControlStateNormal];
         [self.messageButton addTarget:self action:@selector(messageButtonDidClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _messageButton;
@@ -306,7 +314,7 @@
 {
     if (!_scannerButton) {
         self.scannerButton = [ComponentTools createButtonWithFont:[UIFont systemFontOfSize:0] buttonType:UIButtonTypeCustom titleColor:[UIColor clearColor] title:@""];
-        [self.scannerButton setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+        [self.scannerButton setImage:[UIImage imageNamed:@"ico_index_sweep"] forState:UIControlStateNormal];
         [self.scannerButton addTarget:self action:@selector(scannerButtonDidClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _scannerButton;
@@ -368,11 +376,19 @@
     return _paidKeyCountLabel;
 }
 
+- (UIView *)layoutView
+{
+    if (!_layoutView) {
+        self.layoutView = [ComponentTools createViewWithBackgroundColor:[UIColor clearColor]];
+    }
+    return _layoutView;
+}
+
 - (UIView *)cornerView
 {
     if (!_cornerView) {
         self.cornerView = [ComponentTools createViewWithBackgroundColor:[UIColor colorWithHexString:@"F6F6F6"]];
-//        self.cornerView.layer.masksToBounds = YES;
+        self.cornerView.layer.masksToBounds = YES;
         self.cornerView.layer.cornerRadius = kSixScreen(10);
         self.cornerView.layer.shadowOffset = CGSizeMake(0, kSixScreen(2));
         self.cornerView.layer.shadowColor = [UIColor colorWithHexString:@"5E7360"].CGColor;
