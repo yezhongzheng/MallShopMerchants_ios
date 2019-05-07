@@ -13,5 +13,10 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #import "MallShopMerchantsHeader.h"
 #import "MallShopMerchantsMacro.h"
+#import "NSDictionary+JKSafeAccess.h"
+#import "NSArray+JKSafeAccess.h"
+#import "NSString+VericationTool.h"
+#import "NetworkingManager.h"
+#import "LCAccount.h"
 
 #endif /* PrefixHeader_pch */

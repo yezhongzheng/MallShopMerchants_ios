@@ -15,5 +15,25 @@
 #define kStatusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
 #define kBottomSafeHeight (CGFloat)(kStatusBarHeight > 20 ? (34.0):(0))
 
+#define WEAKSELF typeof(self) __weak weakSelf = self;
+
+#define DECLARE_SINGLETON(cls_name, method_name)\
++ (cls_name*)method_name;
+
+#define IMPLEMENT_SINGLETON(cls_name, method_name)\
++ (cls_name *)method_name {\
+static cls_name *method_name;\
+static dispatch_once_t onceToken;\
+dispatch_once(&onceToken, ^{\
+method_name = [[cls_name alloc] init];\
+});\
+return method_name;\
+}
+
+#define REALM_NAME_URL [[[NSUserDefaults standardUserDefaults] objectForKey:@"SYBaseUrlDictKey"] jk_stringForKey:@"SYBaseUrlRealmNameKey"]
+#define BASE_URL [[[NSUserDefaults standardUserDefaults] objectForKey:@"SYBaseUrlDictKey"] jk_stringForKey:@"SYBaseUrlKey"]
+#define BASE_MALL_URL [[[NSUserDefaults standardUserDefaults] objectForKey:@"SYBaseUrlDictKey"] jk_stringForKey:@"SYBaseUrlMallKey"]
+#define BASE_ALI_URL [[[NSUserDefaults standardUserDefaults] objectForKey:@"SYBaseUrlDictKey"] jk_stringForKey:@"SYBaseUrlAliKey"]
+#define CORRECT_CODE  200
 
 #endif /* MallShopMerchantsMacro_h */

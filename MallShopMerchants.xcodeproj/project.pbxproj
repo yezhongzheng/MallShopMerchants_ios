@@ -39,6 +39,17 @@
 		7803E75D22817D570038C5BB /* MyItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E75C22817D570038C5BB /* MyItemModel.m */; };
 		A6BF83B42281CE0200A66858 /* LoginTexView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83B22281CE0200A66858 /* LoginTexView.m */; };
 		A6BF83B52281CE0200A66858 /* LoginIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83B32281CE0200A66858 /* LoginIconView.m */; };
+		A6BF83D72281D5D900A66858 /* LCCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83C02281D5D800A66858 /* LCCache.m */; };
+		A6BF83D82281D5D900A66858 /* NSString+VericationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83C52281D5D800A66858 /* NSString+VericationTool.m */; };
+		A6BF83D92281D5D900A66858 /* NetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83C72281D5D800A66858 /* NetworkingManager.m */; };
+		A6BF83DA2281D5D900A66858 /* NSObject+JSONTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83CA2281D5D800A66858 /* NSObject+JSONTool.m */; };
+		A6BF83DB2281D5D900A66858 /* TimeClock.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83CD2281D5D800A66858 /* TimeClock.m */; };
+		A6BF83DC2281D5D900A66858 /* LCAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83D02281D5D800A66858 /* LCAccount.m */; };
+		A6BF83DD2281D5D900A66858 /* ServiceBaseUrlTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83D22281D5D800A66858 /* ServiceBaseUrlTool.m */; };
+		A6BF83DE2281D5D900A66858 /* ProcessingHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83D32281D5D800A66858 /* ProcessingHandler.m */; };
+		A6BF83EA2281D8FE00A66858 /* NSArray+JKSafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83E62281D8FE00A66858 /* NSArray+JKSafeAccess.m */; };
+		A6BF83EB2281D8FE00A66858 /* NSDictionary+JKSafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83E72281D8FE00A66858 /* NSDictionary+JKSafeAccess.m */; };
+		A6BF83EF2281D95E00A66858 /* NSString+VericationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83EE2281D95D00A66858 /* NSString+VericationTool.m */; };
 		B55323B822819E1600293052 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B55323B722819E1600293052 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +72,7 @@
 
 /* Begin PBXFileReference section */
 		19E4E9C8EF38D8F602252899 /* libPods-MallShopMerchants.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MallShopMerchants.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A536CA15DB61F8755C075D5 /* Pods-MallShopMerchants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.debug.xcconfig"; sourceTree = "<group>"; };
 		7803E6CF227EC13D0038C5BB /* MallShopMerchants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MallShopMerchants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7803E6D2227EC13D0038C5BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7803E6D3227EC13D0038C5BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -122,10 +134,35 @@
 		7803E75922817AC70038C5BB /* MyItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyItemCell.m; sourceTree = "<group>"; };
 		7803E75B22817D570038C5BB /* MyItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyItemModel.h; sourceTree = "<group>"; };
 		7803E75C22817D570038C5BB /* MyItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyItemModel.m; sourceTree = "<group>"; };
+		A089EA6250334994F39488BC /* Pods-MallShopMerchants.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.release.xcconfig"; path = "Pods/Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.release.xcconfig"; sourceTree = "<group>"; };
 		A6BF83B02281CE0200A66858 /* LoginTexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTexView.h; sourceTree = "<group>"; };
 		A6BF83B12281CE0200A66858 /* LoginIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginIconView.h; sourceTree = "<group>"; };
 		A6BF83B22281CE0200A66858 /* LoginTexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTexView.m; sourceTree = "<group>"; };
 		A6BF83B32281CE0200A66858 /* LoginIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginIconView.m; sourceTree = "<group>"; };
+		A6BF83BE2281D5D800A66858 /* NetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingManager.h; sourceTree = "<group>"; };
+		A6BF83C02281D5D800A66858 /* LCCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCache.m; sourceTree = "<group>"; };
+		A6BF83C12281D5D800A66858 /* LCCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCache.h; sourceTree = "<group>"; };
+		A6BF83C22281D5D800A66858 /* ProcessingHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessingHandler.h; sourceTree = "<group>"; };
+		A6BF83C42281D5D800A66858 /* NSString+VericationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VericationTool.h"; sourceTree = "<group>"; };
+		A6BF83C52281D5D800A66858 /* NSString+VericationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VericationTool.m"; sourceTree = "<group>"; };
+		A6BF83C62281D5D800A66858 /* ServiceBaseUrlTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceBaseUrlTool.h; sourceTree = "<group>"; };
+		A6BF83C72281D5D800A66858 /* NetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkingManager.m; sourceTree = "<group>"; };
+		A6BF83C92281D5D800A66858 /* NSObject+JSONTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSONTool.h"; sourceTree = "<group>"; };
+		A6BF83CA2281D5D800A66858 /* NSObject+JSONTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSONTool.m"; sourceTree = "<group>"; };
+		A6BF83CD2281D5D800A66858 /* TimeClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeClock.m; sourceTree = "<group>"; };
+		A6BF83CE2281D5D800A66858 /* TimeClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeClock.h; sourceTree = "<group>"; };
+		A6BF83D02281D5D800A66858 /* LCAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAccount.m; sourceTree = "<group>"; };
+		A6BF83D12281D5D800A66858 /* LCAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAccount.h; sourceTree = "<group>"; };
+		A6BF83D22281D5D800A66858 /* ServiceBaseUrlTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceBaseUrlTool.m; sourceTree = "<group>"; };
+		A6BF83D32281D5D800A66858 /* ProcessingHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessingHandler.m; sourceTree = "<group>"; };
+		A6BF83E32281D82500A66858 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		A6BF83E42281D82500A66858 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		A6BF83E62281D8FE00A66858 /* NSArray+JKSafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JKSafeAccess.m"; sourceTree = "<group>"; };
+		A6BF83E72281D8FE00A66858 /* NSDictionary+JKSafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JKSafeAccess.m"; sourceTree = "<group>"; };
+		A6BF83E82281D8FE00A66858 /* NSArray+JKSafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JKSafeAccess.h"; sourceTree = "<group>"; };
+		A6BF83E92281D8FE00A66858 /* NSDictionary+JKSafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JKSafeAccess.h"; sourceTree = "<group>"; };
+		A6BF83ED2281D95D00A66858 /* NSString+VericationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VericationTool.h"; sourceTree = "<group>"; };
+		A6BF83EE2281D95D00A66858 /* NSString+VericationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VericationTool.m"; sourceTree = "<group>"; };
 		B55323B622819E1600293052 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		B55323B722819E1600293052 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		D4276A9F9517E17492895CF4 /* Pods-MallShopMerchants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.debug.xcconfig"; path = "Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.debug.xcconfig"; sourceTree = "<group>"; };
@@ -191,6 +228,7 @@
 		7803E6D1227EC13D0038C5BB /* MallShopMerchants */ = {
 			isa = PBXGroup;
 			children = (
+				A6BF83B62281D5D800A66858 /* Http */,
 				B55323B522819DF900293052 /* Login */,
 				7803E735227EE1B90038C5BB /* Tools */,
 				7803E72F227ED5300038C5BB /* ThirdParty */,
@@ -397,6 +435,8 @@
 		7803E72F227ED5300038C5BB /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				A6BF83EC2281D95D00A66858 /* LCVerificationTool */,
+				A6BF83E52281D8FE00A66858 /* JKSafeAccess */,
 				7803E730227EDCBE0038C5BB /* UIColor+HexString */,
 			);
 			path = ThirdParty;
@@ -431,6 +471,97 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A6BF83B62281D5D800A66858 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				A6BF83CF2281D5D800A66858 /* Account */,
+				A6BF83CB2281D5D800A66858 /* Api */,
+				A6BF83BF2281D5D800A66858 /* Cache */,
+				A6BF83C82281D5D800A66858 /* JSONTool */,
+				A6BF83C32281D5D800A66858 /* LCVerificationTool */,
+				A6BF83BE2281D5D800A66858 /* NetworkingManager.h */,
+				A6BF83C72281D5D800A66858 /* NetworkingManager.m */,
+				A6BF83C22281D5D800A66858 /* ProcessingHandler.h */,
+				A6BF83D32281D5D800A66858 /* ProcessingHandler.m */,
+				A6BF83C62281D5D800A66858 /* ServiceBaseUrlTool.h */,
+				A6BF83D22281D5D800A66858 /* ServiceBaseUrlTool.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		A6BF83BF2281D5D800A66858 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				A6BF83C12281D5D800A66858 /* LCCache.h */,
+				A6BF83C02281D5D800A66858 /* LCCache.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		A6BF83C32281D5D800A66858 /* LCVerificationTool */ = {
+			isa = PBXGroup;
+			children = (
+				A6BF83C42281D5D800A66858 /* NSString+VericationTool.h */,
+				A6BF83C52281D5D800A66858 /* NSString+VericationTool.m */,
+			);
+			path = LCVerificationTool;
+			sourceTree = "<group>";
+		};
+		A6BF83C82281D5D800A66858 /* JSONTool */ = {
+			isa = PBXGroup;
+			children = (
+				A6BF83C92281D5D800A66858 /* NSObject+JSONTool.h */,
+				A6BF83CA2281D5D800A66858 /* NSObject+JSONTool.m */,
+			);
+			path = JSONTool;
+			sourceTree = "<group>";
+		};
+		A6BF83CB2281D5D800A66858 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				A6BF83CC2281D5D800A66858 /* common */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		A6BF83CC2281D5D800A66858 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				A6BF83CD2281D5D800A66858 /* TimeClock.m */,
+				A6BF83CE2281D5D800A66858 /* TimeClock.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		A6BF83CF2281D5D800A66858 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				A6BF83D02281D5D800A66858 /* LCAccount.m */,
+				A6BF83D12281D5D800A66858 /* LCAccount.h */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		A6BF83E52281D8FE00A66858 /* JKSafeAccess */ = {
+			isa = PBXGroup;
+			children = (
+				A6BF83E82281D8FE00A66858 /* NSArray+JKSafeAccess.h */,
+				A6BF83E62281D8FE00A66858 /* NSArray+JKSafeAccess.m */,
+				A6BF83E92281D8FE00A66858 /* NSDictionary+JKSafeAccess.h */,
+				A6BF83E72281D8FE00A66858 /* NSDictionary+JKSafeAccess.m */,
+			);
+			path = JKSafeAccess;
+			sourceTree = "<group>";
+		};
+		A6BF83EC2281D95D00A66858 /* LCVerificationTool */ = {
+			isa = PBXGroup;
+			children = (
+				A6BF83ED2281D95D00A66858 /* NSString+VericationTool.h */,
+				A6BF83EE2281D95D00A66858 /* NSString+VericationTool.m */,
+			);
+			path = LCVerificationTool;
+			sourceTree = "<group>";
+		};
 		B55323B522819DF900293052 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -446,6 +577,8 @@
 			children = (
 				D4276A9F9517E17492895CF4 /* Pods-MallShopMerchants.debug.xcconfig */,
 				E99E332267A6EA0B991154EA /* Pods-MallShopMerchants.release.xcconfig */,
+				2A536CA15DB61F8755C075D5 /* Pods-MallShopMerchants.debug.xcconfig */,
+				A089EA6250334994F39488BC /* Pods-MallShopMerchants.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -461,6 +594,7 @@
 				7803E6CB227EC13D0038C5BB /* Sources */,
 				7803E6CC227EC13D0038C5BB /* Frameworks */,
 				7803E6CD227EC13D0038C5BB /* Resources */,
+				262B2AE62509DAAF9F6B67FD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -536,6 +670,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 7803E6C6227EC13D0038C5BB;
 			productRefGroup = 7803E6D0227EC13D0038C5BB /* Products */;
@@ -577,6 +712,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		262B2AE62509DAAF9F6B67FD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6CDFE1A078615C2CECA2C73D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -604,12 +757,18 @@
 			files = (
 				7803E73F228029210038C5BB /* HomePageShopManageCell.m in Sources */,
 				A6BF83B52281CE0200A66858 /* LoginIconView.m in Sources */,
+				A6BF83D92281D5D900A66858 /* NetworkingManager.m in Sources */,
+				A6BF83DA2281D5D900A66858 /* NSObject+JSONTool.m in Sources */,
 				B55323B822819E1600293052 /* LoginViewController.m in Sources */,
 				7803E729227ECB710038C5BB /* MyVC.m in Sources */,
+				A6BF83DD2281D5D900A66858 /* ServiceBaseUrlTool.m in Sources */,
+				A6BF83DC2281D5D900A66858 /* LCAccount.m in Sources */,
 				7803E7482281363F0038C5BB /* ProcessingVC.m in Sources */,
 				7803E738227EE24D0038C5BB /* ComponentTools.m in Sources */,
+				A6BF83DB2281D5D900A66858 /* TimeClock.m in Sources */,
 				7803E75722816F010038C5BB /* OrderModel.m in Sources */,
 				7803E72C227ECB820038C5BB /* OrderVC.m in Sources */,
+				A6BF83D82281D5D900A66858 /* NSString+VericationTool.m in Sources */,
 				7803E710227EC5140038C5BB /* BaseModel.m in Sources */,
 				7803E6D7227EC13D0038C5BB /* ViewController.m in Sources */,
 				7803E6E2227EC13F0038C5BB /* main.m in Sources */,
@@ -617,17 +776,22 @@
 				7803E751228138430038C5BB /* OrderOptionView.m in Sources */,
 				7803E714227EC8040038C5BB /* MallShopMerchantsNC.m in Sources */,
 				7803E733227EDCBE0038C5BB /* UIColor+HexString.m in Sources */,
+				A6BF83EF2281D95E00A66858 /* NSString+VericationTool.m in Sources */,
 				7803E74E228136D50038C5BB /* InvalidOrderVC.m in Sources */,
 				7803E70D227EC5040038C5BB /* BaseView.m in Sources */,
 				7803E745228136100038C5BB /* PaymentHasBeenVC.m in Sources */,
+				A6BF83D72281D5D900A66858 /* LCCache.m in Sources */,
 				7803E726227ECB150038C5BB /* HomePageVC.m in Sources */,
+				A6BF83DE2281D5D900A66858 /* ProcessingHandler.m in Sources */,
 				7803E7542281613E0038C5BB /* OrderStatusCell.m in Sources */,
 				7803E717227EC85B0038C5BB /* MallShopTabBarController.m in Sources */,
 				7803E6D4227EC13D0038C5BB /* AppDelegate.m in Sources */,
 				7803E74B228136A80038C5BB /* HadFinishVC.m in Sources */,
 				7803E742228056490038C5BB /* SearchVC.m in Sources */,
 				7803E75A22817AC70038C5BB /* MyItemCell.m in Sources */,
+				A6BF83EB2281D8FE00A66858 /* NSDictionary+JKSafeAccess.m in Sources */,
 				7803E75D22817D570038C5BB /* MyItemModel.m in Sources */,
+				A6BF83EA2281D8FE00A66858 /* NSArray+JKSafeAccess.m in Sources */,
 				7803E70A227EC4ED0038C5BB /* BaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -668,6 +832,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				7803E6D9227EC13D0038C5BB /* Base */,
+				A6BF83E32281D82500A66858 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -676,6 +841,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				7803E6DE227EC13F0038C5BB /* Base */,
+				A6BF83E42281D82500A66858 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -687,6 +853,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -746,6 +913,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
