@@ -8,6 +8,7 @@
 
 #import "HomePageVC.h"
 #import "HomePageShopManageCell.h"
+#import "LoginViewController.h"
 
 
 @interface HomePageVC () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
@@ -208,6 +209,9 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
+    
+    LoginViewController *vc = [[LoginViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
     
 }
 

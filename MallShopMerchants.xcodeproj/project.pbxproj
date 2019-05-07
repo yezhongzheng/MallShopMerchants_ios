@@ -35,6 +35,9 @@
 		7803E751228138430038C5BB /* OrderOptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E750228138430038C5BB /* OrderOptionView.m */; };
 		7803E7542281613E0038C5BB /* OrderStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E7532281613E0038C5BB /* OrderStatusCell.m */; };
 		7803E75722816F010038C5BB /* OrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E75622816F010038C5BB /* OrderModel.m */; };
+		B55323B822819E1600293052 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B55323B722819E1600293052 /* LoginViewController.m */; };
+		B55323BC22819F5900293052 /* LoginIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = B55323BB22819F5900293052 /* LoginIconView.m */; };
+		B55323BF2281A7DD00293052 /* LoginTexView.m in Sources */ = {isa = PBXBuildFile; fileRef = B55323BE2281A7DD00293052 /* LoginTexView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +116,12 @@
 		7803E7532281613E0038C5BB /* OrderStatusCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderStatusCell.m; sourceTree = "<group>"; };
 		7803E75522816F010038C5BB /* OrderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderModel.h; sourceTree = "<group>"; };
 		7803E75622816F010038C5BB /* OrderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderModel.m; sourceTree = "<group>"; };
+		B55323B622819E1600293052 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B55323B722819E1600293052 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B55323BA22819F5900293052 /* LoginIconView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginIconView.h; sourceTree = "<group>"; };
+		B55323BB22819F5900293052 /* LoginIconView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginIconView.m; sourceTree = "<group>"; };
+		B55323BD2281A7DD00293052 /* LoginTexView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginTexView.h; sourceTree = "<group>"; };
+		B55323BE2281A7DD00293052 /* LoginTexView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginTexView.m; sourceTree = "<group>"; };
 		D4276A9F9517E17492895CF4 /* Pods-MallShopMerchants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.debug.xcconfig"; path = "Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.debug.xcconfig"; sourceTree = "<group>"; };
 		E99E332267A6EA0B991154EA /* Pods-MallShopMerchants.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.release.xcconfig"; path = "Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,6 +185,7 @@
 		7803E6D1227EC13D0038C5BB /* MallShopMerchants */ = {
 			isa = PBXGroup;
 			children = (
+				B55323B522819DF900293052 /* Login */,
 				7803E735227EE1B90038C5BB /* Tools */,
 				7803E72F227ED5300038C5BB /* ThirdParty */,
 				7803E719227ECA660038C5BB /* HomePageModule */,
@@ -400,6 +410,27 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		B55323B522819DF900293052 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B55323B922819F0E00293052 /* View */,
+				B55323B622819E1600293052 /* LoginViewController.h */,
+				B55323B722819E1600293052 /* LoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B55323B922819F0E00293052 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B55323BA22819F5900293052 /* LoginIconView.h */,
+				B55323BB22819F5900293052 /* LoginIconView.m */,
+				B55323BD2281A7DD00293052 /* LoginTexView.h */,
+				B55323BE2281A7DD00293052 /* LoginTexView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EF95F8EA7953584FB4646D5E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -541,15 +572,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-MallShopMerchants-checkManifestLockResult.txt",
 			);
@@ -566,11 +593,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7803E73F228029210038C5BB /* HomePageShopManageCell.m in Sources */,
+				B55323B822819E1600293052 /* LoginViewController.m in Sources */,
 				7803E729227ECB710038C5BB /* MyVC.m in Sources */,
 				7803E7482281363F0038C5BB /* ProcessingVC.m in Sources */,
 				7803E738227EE24D0038C5BB /* ComponentTools.m in Sources */,
 				7803E75722816F010038C5BB /* OrderModel.m in Sources */,
 				7803E72C227ECB820038C5BB /* OrderVC.m in Sources */,
+				B55323BC22819F5900293052 /* LoginIconView.m in Sources */,
 				7803E710227EC5140038C5BB /* BaseModel.m in Sources */,
 				7803E6D7227EC13D0038C5BB /* ViewController.m in Sources */,
 				7803E6E2227EC13F0038C5BB /* main.m in Sources */,
@@ -579,6 +608,7 @@
 				7803E733227EDCBE0038C5BB /* UIColor+HexString.m in Sources */,
 				7803E74E228136D50038C5BB /* InvalidOrderVC.m in Sources */,
 				7803E70D227EC5040038C5BB /* BaseView.m in Sources */,
+				B55323BF2281A7DD00293052 /* LoginTexView.m in Sources */,
 				7803E745228136100038C5BB /* PaymentHasBeenVC.m in Sources */,
 				7803E726227ECB150038C5BB /* HomePageVC.m in Sources */,
 				7803E7542281613E0038C5BB /* OrderStatusCell.m in Sources */,
