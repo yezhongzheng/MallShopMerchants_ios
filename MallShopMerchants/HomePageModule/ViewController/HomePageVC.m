@@ -11,6 +11,7 @@
 #import "LoginViewController.h"
 #import "HomePageSerivce.h"
 #import "UserInfoItems.h"
+#import "MyWalletVC.h"
 
 @interface HomePageVC () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
@@ -58,6 +59,8 @@
         [self presentViewController:nav animated:NO completion:^{
             
         }];
+    }else{
+        [self getSuppeilerInfoData];
     }
 }
 
@@ -66,13 +69,19 @@
         UserInfoItems *items = responseObject.firstObject;
         if(items.ret_code.integerValue){
             UserInfoItem *item = items.data;
-            StatusInfoItem *info = item.stats;
+            [self SetDataViewModel:item];
         }
     } failedBlock:^(NSString * _Nonnull errDescription, NSInteger errCode) {
         
     }];
 }
 
+-(void)SetDataViewModel:(UserInfoItem *)model{
+    self.paidValueAmountLabel.text = model.stats.order_amount;
+    self.orderValueCountLabel.text = model.stats.order_count;
+    self.paidValueCountLabel.text = model.stats.member_count;
+    self.shopNameLabel.text = model.supplier_name;
+}
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -232,6 +241,10 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
+    if(indexPath.row == 5){
+        MyWalletVC *vc = [[MyWalletVC alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -310,7 +323,7 @@
 - (UILabel *)shopNameLabel
 {
     if (!_shopNameLabel) {
-        self.shopNameLabel = [ComponentTools createLabelWithFont:[UIFont fontWithName:@"PingFangSC-Medium" size:kSixScreen(17)] backgroundColor:[UIColor clearColor] textColor:[UIColor colorWithHexString:@"ffffff"] numberOfLines:0 textAlignment:NSTextAlignmentLeft text:@"EVISU潮牌店(东信大道店)"];
+        self.shopNameLabel = [ComponentTools createLabelWithFont:[UIFont fontWithName:@"PingFangSC-Medium" size:kSixScreen(17)] backgroundColor:[UIColor clearColor] textColor:[UIColor colorWithHexString:@"ffffff"] numberOfLines:0 textAlignment:NSTextAlignmentLeft text:@""];
     }
     return _shopNameLabel;
 }

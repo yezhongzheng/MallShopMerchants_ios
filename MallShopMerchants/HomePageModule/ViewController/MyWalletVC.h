@@ -1,19 +1,17 @@
 //
-//  ProcessingVC.h
+//  MyWalletVC.h
 //  MallShopMerchants
 //
-//  Created by zl on 2019/5/7.
+//  Created by 黄伟业 on 2019/5/8.
 //  Copyright © 2019 yezhongzheng. All rights reserved.
 //
 
 #import "BaseViewController.h"
 
-/**
- *处理中
- */
+
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ProcessingVC : BaseViewController
+@interface MyWalletVC : BaseViewController
 
 @end
 

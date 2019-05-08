@@ -32,6 +32,11 @@ method_name = [[cls_name alloc] init];\
 return method_name;\
 }
 
+//主要颜色
+#define kWhiteColor [UIColor whiteColor]
+#define MainTextGrayColor [UIColor colorWithHex:0x666666]        // 主要的字体颜色
+
+
 #define REALM_NAME_URL [[[NSUserDefaults standardUserDefaults] objectForKey:@"SYBaseUrlDictKey"] jk_stringForKey:@"SYBaseUrlRealmNameKey"]
 #define BASE_URL [[[NSUserDefaults standardUserDefaults] objectForKey:@"SYBaseUrlDictKey"] jk_stringForKey:@"SYBaseUrlKey"]
 #define BASE_MALL_URL [[[NSUserDefaults standardUserDefaults] objectForKey:@"SYBaseUrlDictKey"] jk_stringForKey:@"SYBaseUrlMallKey"]

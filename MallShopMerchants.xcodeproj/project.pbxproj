@@ -29,12 +29,8 @@
 		7803E73F228029210038C5BB /* HomePageShopManageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E73D228027EE0038C5BB /* HomePageShopManageCell.m */; };
 		7803E742228056490038C5BB /* SearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E741228056490038C5BB /* SearchVC.m */; };
 		7803E745228136100038C5BB /* PaymentHasBeenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E744228136100038C5BB /* PaymentHasBeenVC.m */; };
-		7803E7482281363F0038C5BB /* ProcessingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E7472281363F0038C5BB /* ProcessingVC.m */; };
-		7803E74B228136A80038C5BB /* HadFinishVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E74A228136A80038C5BB /* HadFinishVC.m */; };
-		7803E74E228136D50038C5BB /* InvalidOrderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E74D228136D50038C5BB /* InvalidOrderVC.m */; };
 		7803E751228138430038C5BB /* OrderOptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E750228138430038C5BB /* OrderOptionView.m */; };
 		7803E7542281613E0038C5BB /* OrderStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E7532281613E0038C5BB /* OrderStatusCell.m */; };
-		7803E75722816F010038C5BB /* OrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E75622816F010038C5BB /* OrderModel.m */; };
 		7803E75A22817AC70038C5BB /* MyItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E75922817AC70038C5BB /* MyItemCell.m */; };
 		7803E75D22817D570038C5BB /* MyItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E75C22817D570038C5BB /* MyItemModel.m */; };
 		A6BF83B42281CE0200A66858 /* LoginTexView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83B22281CE0200A66858 /* LoginTexView.m */; };
@@ -56,8 +52,16 @@
 		A6BF841D2282637900A66858 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF84182282637900A66858 /* MBProgressHUD+Add.m */; };
 		A6BF841E2282637900A66858 /* 37x-Checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6BF84192282637900A66858 /* 37x-Checkmark@2x.png */; };
 		A6BF841F2282637900A66858 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A6BF841B2282637900A66858 /* MBProgressHUD.bundle */; };
-		A6BF84222282737500A66858 /* HomePageSerivce.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF84212282737500A66858 /* HomePageSerivce.m */; };
-		A6BF842522827E1300A66858 /* UserInfoItems.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF842422827E1200A66858 /* UserInfoItems.m */; };
+		A6BF84282282F4C100A66858 /* OrderModelItems.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF84272282F4C100A66858 /* OrderModelItems.m */; };
+		A6BF842B2282F4E400A66858 /* OrederSerivce.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF842A2282F4E400A66858 /* OrederSerivce.m */; };
+		A6BF842E2282FE5E00A66858 /* MyWalletVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF842D2282FE5E00A66858 /* MyWalletVC.m */; };
+		A6BF84312282FEAA00A66858 /* WalletHeardView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF84302282FEAA00A66858 /* WalletHeardView.m */; };
+		A6BF843422830DB200A66858 /* BankCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF843322830DB200A66858 /* BankCardCell.m */; };
+		A6BF84372283103700A66858 /* WalletFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF84362283103700A66858 /* WalletFooterView.m */; };
+		A6BF84472283235000A66858 /* UserInfoItems.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF84402283235000A66858 /* UserInfoItems.m */; };
+		A6BF84482283235000A66858 /* WalletItems.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF84412283235000A66858 /* WalletItems.m */; };
+		A6BF84492283235000A66858 /* BankCartItems.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF84422283235000A66858 /* BankCartItems.m */; };
+		A6BF844A2283235000A66858 /* HomePageSerivce.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF84432283235000A66858 /* HomePageSerivce.m */; };
 		B55323B822819E1600293052 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B55323B722819E1600293052 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -126,18 +130,10 @@
 		7803E741228056490038C5BB /* SearchVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchVC.m; sourceTree = "<group>"; };
 		7803E743228136100038C5BB /* PaymentHasBeenVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentHasBeenVC.h; sourceTree = "<group>"; };
 		7803E744228136100038C5BB /* PaymentHasBeenVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentHasBeenVC.m; sourceTree = "<group>"; };
-		7803E7462281363F0038C5BB /* ProcessingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProcessingVC.h; sourceTree = "<group>"; };
-		7803E7472281363F0038C5BB /* ProcessingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProcessingVC.m; sourceTree = "<group>"; };
-		7803E749228136A80038C5BB /* HadFinishVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HadFinishVC.h; sourceTree = "<group>"; };
-		7803E74A228136A80038C5BB /* HadFinishVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HadFinishVC.m; sourceTree = "<group>"; };
-		7803E74C228136D50038C5BB /* InvalidOrderVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvalidOrderVC.h; sourceTree = "<group>"; };
-		7803E74D228136D50038C5BB /* InvalidOrderVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvalidOrderVC.m; sourceTree = "<group>"; };
 		7803E74F228138430038C5BB /* OrderOptionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderOptionView.h; sourceTree = "<group>"; };
 		7803E750228138430038C5BB /* OrderOptionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderOptionView.m; sourceTree = "<group>"; };
 		7803E7522281613E0038C5BB /* OrderStatusCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderStatusCell.h; sourceTree = "<group>"; };
 		7803E7532281613E0038C5BB /* OrderStatusCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderStatusCell.m; sourceTree = "<group>"; };
-		7803E75522816F010038C5BB /* OrderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderModel.h; sourceTree = "<group>"; };
-		7803E75622816F010038C5BB /* OrderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderModel.m; sourceTree = "<group>"; };
 		7803E75822817AC70038C5BB /* MyItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyItemCell.h; sourceTree = "<group>"; };
 		7803E75922817AC70038C5BB /* MyItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyItemCell.m; sourceTree = "<group>"; };
 		7803E75B22817D570038C5BB /* MyItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyItemModel.h; sourceTree = "<group>"; };
@@ -180,10 +176,26 @@
 		A6BF84192282637900A66858 /* 37x-Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark@2x.png"; sourceTree = "<group>"; };
 		A6BF841A2282637900A66858 /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
 		A6BF841B2282637900A66858 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
-		A6BF84202282737500A66858 /* HomePageSerivce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HomePageSerivce.h; path = MallShopMerchants/Login/Model/HomePageSerivce.h; sourceTree = SOURCE_ROOT; };
-		A6BF84212282737500A66858 /* HomePageSerivce.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HomePageSerivce.m; path = MallShopMerchants/Login/Model/HomePageSerivce.m; sourceTree = SOURCE_ROOT; };
-		A6BF842322827E1200A66858 /* UserInfoItems.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UserInfoItems.h; path = MallShopMerchants/Login/Model/UserInfoItems.h; sourceTree = SOURCE_ROOT; };
-		A6BF842422827E1200A66858 /* UserInfoItems.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UserInfoItems.m; path = MallShopMerchants/Login/Model/UserInfoItems.m; sourceTree = SOURCE_ROOT; };
+		A6BF84262282F4C100A66858 /* OrderModelItems.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderModelItems.h; sourceTree = "<group>"; };
+		A6BF84272282F4C100A66858 /* OrderModelItems.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderModelItems.m; sourceTree = "<group>"; };
+		A6BF84292282F4E400A66858 /* OrederSerivce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrederSerivce.h; sourceTree = "<group>"; };
+		A6BF842A2282F4E400A66858 /* OrederSerivce.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrederSerivce.m; sourceTree = "<group>"; };
+		A6BF842C2282FE5E00A66858 /* MyWalletVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWalletVC.h; sourceTree = "<group>"; };
+		A6BF842D2282FE5E00A66858 /* MyWalletVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWalletVC.m; sourceTree = "<group>"; };
+		A6BF842F2282FEAA00A66858 /* WalletHeardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletHeardView.h; sourceTree = "<group>"; };
+		A6BF84302282FEAA00A66858 /* WalletHeardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletHeardView.m; sourceTree = "<group>"; };
+		A6BF843222830DB200A66858 /* BankCardCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankCardCell.h; sourceTree = "<group>"; };
+		A6BF843322830DB200A66858 /* BankCardCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankCardCell.m; sourceTree = "<group>"; };
+		A6BF84352283103700A66858 /* WalletFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletFooterView.h; sourceTree = "<group>"; };
+		A6BF84362283103700A66858 /* WalletFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletFooterView.m; sourceTree = "<group>"; };
+		A6BF843F2283235000A66858 /* HomePageSerivce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageSerivce.h; sourceTree = "<group>"; };
+		A6BF84402283235000A66858 /* UserInfoItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoItems.m; sourceTree = "<group>"; };
+		A6BF84412283235000A66858 /* WalletItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletItems.m; sourceTree = "<group>"; };
+		A6BF84422283235000A66858 /* BankCartItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCartItems.m; sourceTree = "<group>"; };
+		A6BF84432283235000A66858 /* HomePageSerivce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageSerivce.m; sourceTree = "<group>"; };
+		A6BF84442283235000A66858 /* UserInfoItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoItems.h; sourceTree = "<group>"; };
+		A6BF84452283235000A66858 /* BankCartItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCartItems.h; sourceTree = "<group>"; };
+		A6BF84462283235000A66858 /* WalletItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletItems.h; sourceTree = "<group>"; };
 		B55323B622819E1600293052 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		B55323B722819E1600293052 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		D4276A9F9517E17492895CF4 /* Pods-MallShopMerchants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.debug.xcconfig"; path = "Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.debug.xcconfig"; sourceTree = "<group>"; };
@@ -344,7 +356,7 @@
 		7803E719227ECA660038C5BB /* HomePageModule */ = {
 			isa = PBXGroup;
 			children = (
-				7803E71C227ECAB00038C5BB /* Model */,
+				A6BF843E2283235000A66858 /* Model */,
 				7803E71B227ECAB00038C5BB /* View */,
 				7803E71D227ECAB10038C5BB /* ViewController */,
 			);
@@ -366,19 +378,14 @@
 			children = (
 				7803E73C228027EE0038C5BB /* HomePageShopManageCell.h */,
 				7803E73D228027EE0038C5BB /* HomePageShopManageCell.m */,
+				A6BF842F2282FEAA00A66858 /* WalletHeardView.h */,
+				A6BF84302282FEAA00A66858 /* WalletHeardView.m */,
+				A6BF843222830DB200A66858 /* BankCardCell.h */,
+				A6BF843322830DB200A66858 /* BankCardCell.m */,
+				A6BF84352283103700A66858 /* WalletFooterView.h */,
+				A6BF84362283103700A66858 /* WalletFooterView.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		7803E71C227ECAB00038C5BB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A6BF84202282737500A66858 /* HomePageSerivce.h */,
-				A6BF84212282737500A66858 /* HomePageSerivce.m */,
-				A6BF842322827E1200A66858 /* UserInfoItems.h */,
-				A6BF842422827E1200A66858 /* UserInfoItems.m */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		7803E71D227ECAB10038C5BB /* ViewController */ = {
@@ -386,6 +393,8 @@
 			children = (
 				7803E724227ECB150038C5BB /* HomePageVC.h */,
 				7803E725227ECB150038C5BB /* HomePageVC.m */,
+				A6BF842C2282FE5E00A66858 /* MyWalletVC.h */,
+				A6BF842D2282FE5E00A66858 /* MyWalletVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -420,8 +429,10 @@
 		7803E721227ECAC00038C5BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7803E75522816F010038C5BB /* OrderModel.h */,
-				7803E75622816F010038C5BB /* OrderModel.m */,
+				A6BF84262282F4C100A66858 /* OrderModelItems.h */,
+				A6BF84272282F4C100A66858 /* OrderModelItems.m */,
+				A6BF84292282F4E400A66858 /* OrederSerivce.h */,
+				A6BF842A2282F4E400A66858 /* OrederSerivce.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -446,12 +457,6 @@
 				7803E741228056490038C5BB /* SearchVC.m */,
 				7803E743228136100038C5BB /* PaymentHasBeenVC.h */,
 				7803E744228136100038C5BB /* PaymentHasBeenVC.m */,
-				7803E7462281363F0038C5BB /* ProcessingVC.h */,
-				7803E7472281363F0038C5BB /* ProcessingVC.m */,
-				7803E749228136A80038C5BB /* HadFinishVC.h */,
-				7803E74A228136A80038C5BB /* HadFinishVC.m */,
-				7803E74C228136D50038C5BB /* InvalidOrderVC.h */,
-				7803E74D228136D50038C5BB /* InvalidOrderVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -609,6 +614,21 @@
 				A6BF84182282637900A66858 /* MBProgressHUD+Add.m */,
 			);
 			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		A6BF843E2283235000A66858 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6BF84452283235000A66858 /* BankCartItems.h */,
+				A6BF84422283235000A66858 /* BankCartItems.m */,
+				A6BF843F2283235000A66858 /* HomePageSerivce.h */,
+				A6BF84432283235000A66858 /* HomePageSerivce.m */,
+				A6BF84442283235000A66858 /* UserInfoItems.h */,
+				A6BF84402283235000A66858 /* UserInfoItems.m */,
+				A6BF84462283235000A66858 /* WalletItems.h */,
+				A6BF84412283235000A66858 /* WalletItems.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B55323B522819DF900293052 /* Login */ = {
@@ -818,41 +838,45 @@
 				7803E729227ECB710038C5BB /* MyVC.m in Sources */,
 				A6BF840D2281DAC800A66858 /* ServiceBaseUrlTool.m in Sources */,
 				A6BF840C2281DAC800A66858 /* LCAccount.m in Sources */,
-				7803E7482281363F0038C5BB /* ProcessingVC.m in Sources */,
 				7803E738227EE24D0038C5BB /* ComponentTools.m in Sources */,
 				A6BF840B2281DAC800A66858 /* TimeClock.m in Sources */,
-				7803E75722816F010038C5BB /* OrderModel.m in Sources */,
 				7803E72C227ECB820038C5BB /* OrderVC.m in Sources */,
 				7803E710227EC5140038C5BB /* BaseModel.m in Sources */,
 				A6BF84082281DAC800A66858 /* NSString+VericationTool.m in Sources */,
 				7803E6D7227EC13D0038C5BB /* ViewController.m in Sources */,
+				A6BF842B2282F4E400A66858 /* OrederSerivce.m in Sources */,
 				A6BF841222825EB500A66858 /* LoginService.m in Sources */,
 				7803E6E2227EC13F0038C5BB /* main.m in Sources */,
+				A6BF842E2282FE5E00A66858 /* MyWalletVC.m in Sources */,
 				A6BF83B42281CE0200A66858 /* LoginTexView.m in Sources */,
 				7803E751228138430038C5BB /* OrderOptionView.m in Sources */,
 				7803E714227EC8040038C5BB /* MallShopMerchantsNC.m in Sources */,
 				7803E733227EDCBE0038C5BB /* UIColor+HexString.m in Sources */,
+				A6BF84372283103700A66858 /* WalletFooterView.m in Sources */,
 				A6BF83EF2281D95E00A66858 /* NSString+VericationTool.m in Sources */,
+				A6BF84492283235000A66858 /* BankCartItems.m in Sources */,
 				A6BF841D2282637900A66858 /* MBProgressHUD+Add.m in Sources */,
-				7803E74E228136D50038C5BB /* InvalidOrderVC.m in Sources */,
-				A6BF842522827E1300A66858 /* UserInfoItems.m in Sources */,
 				A6BF8415228260C400A66858 /* LoginModelItems.m in Sources */,
 				7803E70D227EC5040038C5BB /* BaseView.m in Sources */,
+				A6BF84472283235000A66858 /* UserInfoItems.m in Sources */,
 				7803E745228136100038C5BB /* PaymentHasBeenVC.m in Sources */,
 				7803E726227ECB150038C5BB /* HomePageVC.m in Sources */,
 				7803E7542281613E0038C5BB /* OrderStatusCell.m in Sources */,
 				A6BF84072281DAC800A66858 /* LCCache.m in Sources */,
 				7803E717227EC85B0038C5BB /* MallShopTabBarController.m in Sources */,
 				A6BF840E2281DAC800A66858 /* ProcessingHandler.m in Sources */,
-				A6BF84222282737500A66858 /* HomePageSerivce.m in Sources */,
 				7803E6D4227EC13D0038C5BB /* AppDelegate.m in Sources */,
-				7803E74B228136A80038C5BB /* HadFinishVC.m in Sources */,
 				7803E742228056490038C5BB /* SearchVC.m in Sources */,
 				7803E75A22817AC70038C5BB /* MyItemCell.m in Sources */,
+				A6BF84312282FEAA00A66858 /* WalletHeardView.m in Sources */,
 				A6BF83EB2281D8FE00A66858 /* NSDictionary+JKSafeAccess.m in Sources */,
 				7803E75D22817D570038C5BB /* MyItemModel.m in Sources */,
 				A6BF83EA2281D8FE00A66858 /* NSArray+JKSafeAccess.m in Sources */,
 				7803E70A227EC4ED0038C5BB /* BaseViewController.m in Sources */,
+				A6BF84282282F4C100A66858 /* OrderModelItems.m in Sources */,
+				A6BF843422830DB200A66858 /* BankCardCell.m in Sources */,
+				A6BF84482283235000A66858 /* WalletItems.m in Sources */,
+				A6BF844A2283235000A66858 /* HomePageSerivce.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

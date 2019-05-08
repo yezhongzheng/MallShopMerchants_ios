@@ -6,63 +6,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MallShopMerchants/HomePageModule/ViewController/HomePageVC.m"
-            timestampString = "578973456.393567"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "219"
-            endingLineNumber = "219"
-            landmarkName = "-collectionView:layout:referenceSizeForFooterInSection:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MallShopMerchants/Login/LoginViewController.m"
-            timestampString = "578974396.5951231"
+            filePath = "MallShopMerchants/ThirdParty/Http/NetworkingManager.m"
+            timestampString = "579022079.19683"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "-loginButtonClicked"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "-requestDataThroughThePOSTMethodWithUrl:params:success:failure:"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__41-[LoginViewController loginButtonClicked]_block_invoke"
+                  symbolName = "-[NetworkingManager requestDataThroughThePOSTMethodWithUrl:params:success:failure:]"
                   moduleName = "MallShopMerchants"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kiifuotto/Desktop/MallShopMerchants_ios/MallShopMerchants/Login/LoginViewController.m"
-                  timestampString = "578973890.786797"
+                  urlString = "file:///Users/kiifuotto/Desktop/MallShopMerchants_ios/MallShopMerchants/ThirdParty/Http/NetworkingManager.m"
+                  timestampString = "579011065.689155"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "720">
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "756">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__41-[LoginViewController loginButtonClicked]_block_invoke_2"
+                  symbolName = "__83-[NetworkingManager requestDataThroughThePOSTMethodWithUrl:params:success:failure:]_block_invoke"
                   moduleName = "MallShopMerchants"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kiifuotto/Desktop/MallShopMerchants_ios/MallShopMerchants/Login/LoginViewController.m"
-                  timestampString = "578973890.789078"
+                  urlString = "file:///Users/kiifuotto/Desktop/MallShopMerchants_ios/MallShopMerchants/ThirdParty/Http/NetworkingManager.m"
+                  timestampString = "579011065.691427"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "61"
-                  endingLineNumber = "61"
-                  offsetFromSymbolStart = "12">
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "48">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -73,46 +57,110 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MallShopMerchants/Login/LoginViewController.m"
-            timestampString = "578974396.595567"
+            filePath = "MallShopMerchants/OrderModule/ViewController/PaymentHasBeenVC.m"
+            timestampString = "579022079.196895"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "-loginButtonClicked"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MallShopMerchants/HomePageModule/ViewController/MyWalletVC.m"
+            timestampString = "579022079.197219"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "-setUI"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[LoginViewController loginButtonClicked]"
+                  symbolName = "-[MyWalletVC setUI]"
                   moduleName = "MallShopMerchants"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kiifuotto/Desktop/MallShopMerchants_ios/MallShopMerchants/Login/LoginViewController.m"
-                  timestampString = "578973890.794361"
+                  urlString = "file:///Users/kiifuotto/Desktop/MallShopMerchants_ios/MallShopMerchants/HomePageModule/ViewController/MyWalletVC.m"
+                  timestampString = "579021943.251635"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "49"
-                  endingLineNumber = "49"
-                  offsetFromSymbolStart = "452">
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "152">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__41-[LoginViewController loginButtonClicked]_block_invoke"
+                  symbolName = "__19-[MyWalletVC setUI]_block_invoke"
                   moduleName = "MallShopMerchants"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kiifuotto/Desktop/MallShopMerchants_ios/MallShopMerchants/Login/LoginViewController.m"
-                  timestampString = "578973890.796784"
+                  urlString = "file:///Users/kiifuotto/Desktop/MallShopMerchants_ios/MallShopMerchants/HomePageModule/ViewController/MyWalletVC.m"
+                  timestampString = "579021943.253808"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "68">
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "64">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MallShopMerchants/HomePageModule/ViewController/MyWalletVC.m"
+            timestampString = "579022079.197263"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MallShopMerchants/HomePageModule/View/BankCardCell.m"
+            timestampString = "579022079.197305"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "-setDataModel:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MallShopMerchants/HomePageModule/View/BankCardCell.m"
+            timestampString = "579022079.197559"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "-setDataModel:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

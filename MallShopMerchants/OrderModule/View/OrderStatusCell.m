@@ -7,7 +7,6 @@
 //
 
 #import "OrderStatusCell.h"
-#import "OrderModel.h"
 
 @interface OrderStatusCell ()
 
@@ -100,11 +99,28 @@
     }];
 }
 
-- (CGFloat)calculateOrderCellHeightWithOrderModel:(OrderModel *)orderModel
+-(void)setDataModel:(OrderModelItem *)Model{
+    NSString *content = [NSString stringWithFormat:@"电话: %@\n地址: %@\n商品: %@", Model.consignee.phone, Model.consignee.address_all, Model.goods_name];
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:content];
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    //行间距
+    [paragraphStyle setLineSpacing:kSixScreen(10)];
+    [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [content length])];
+    self.orderInfoLabel.attributedText = attributedString;
+    self.amountLabel.text =[NSString stringWithFormat:@"金额%@元",Model.cur_amount];
+    self.orderTimeLabel.text = Model.createtime;
+    self.orderNameLabel.text = Model.consignee.name;
+}
+
+- (CGFloat)calculateOrderCellHeightWithOrderModel:(OrderModelItem *)orderModel
 {
-    NSString *content = [NSString stringWithFormat:@"电话: %@\n地址: %@\n商品: %@", @"", @"", @""];
-    self.orderInfoLabel.text = content;
-    [self.orderInfoLabel layoutIfNeeded];
+    NSString *content = [NSString stringWithFormat:@"电话: %@\n地址: %@\n商品: %@", orderModel.consignee.phone, orderModel.consignee.address_all, orderModel.goods_name];
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:content];
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    //行间距
+    [paragraphStyle setLineSpacing:kSixScreen(10)];
+    [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [content length])];
+    self.orderInfoLabel.attributedText = attributedString;    [self.orderInfoLabel layoutIfNeeded];
     [self.orderInfoLabel sizeToFit];
     return kSixScreen(15) + kSixScreen(16) + kSixScreen(13) + CGRectGetHeight(self.orderInfoLabel.frame) + kSixScreen(10) + kSixScreen(1) + kSixScreen(10) + kSixScreen(25) + kSixScreen(10);
 }
@@ -135,7 +151,7 @@
 - (UILabel *)orderNameLabel
 {
     if (!_orderNameLabel) {
-        self.orderNameLabel = [ComponentTools createLabelWithFont:[UIFont fontWithName:@"PingFangSC-Medium" size:kSixScreen(16)] backgroundColor:[UIColor clearColor] textColor:[UIColor colorWithHexString:@"333333"] numberOfLines:0 textAlignment:NSTextAlignmentLeft text:@"--"];
+        self.orderNameLabel = [ComponentTools createLabelWithFont:[UIFont fontWithName:@"PingFangSC-Medium" size:kSixScreen(16)] backgroundColor:[UIColor clearColor] textColor:[UIColor colorWithHexString:@"333333"] numberOfLines:0 textAlignment:NSTextAlignmentLeft text:@""];
     }
     return _orderNameLabel;
 }
@@ -143,7 +159,7 @@
 - (UILabel *)orderTimeLabel
 {
     if (!_orderTimeLabel) {
-        self.orderTimeLabel = [ComponentTools createLabelWithFont:[UIFont fontWithName:@"PingFangSC-Regular" size:kSixScreen(15)] backgroundColor:[UIColor clearColor] textColor:[UIColor colorWithHexString:@"999999"] numberOfLines:0 textAlignment:NSTextAlignmentRight text:@"--"];
+        self.orderTimeLabel = [ComponentTools createLabelWithFont:[UIFont fontWithName:@"PingFangSC-Regular" size:kSixScreen(15)] backgroundColor:[UIColor clearColor] textColor:[UIColor colorWithHexString:@"999999"] numberOfLines:0 textAlignment:NSTextAlignmentRight text:@""];
     }
     return _orderTimeLabel;
 }
@@ -151,7 +167,8 @@
 - (UILabel *)orderInfoLabel
 {
     if (!_orderInfoLabel) {
-        self.orderInfoLabel = [ComponentTools createLabelWithFont:[UIFont fontWithName:@"PingFangSC-Regular" size:kSixScreen(14)] backgroundColor:[UIColor clearColor] textColor:[UIColor colorWithHexString:@"666666"] numberOfLines:0 textAlignment:NSTextAlignmentRight text:@"--"];
+        self.orderInfoLabel = [ComponentTools createLabelWithFont:[UIFont fontWithName:@"PingFangSC-Regular" size:kSixScreen(14)] backgroundColor:[UIColor clearColor] textColor:[UIColor colorWithHexString:@"666666"] numberOfLines:0 textAlignment:NSTextAlignmentLeft text:@""];
+        
     }
     return _orderInfoLabel;
 }
@@ -167,7 +184,7 @@
 - (UILabel *)amountLabel
 {
     if (!_amountLabel) {
-        self.amountLabel = [ComponentTools createLabelWithFont:[UIFont fontWithName:@"PingFangSC-Medium" size:kSixScreen(14)] backgroundColor:[UIColor clearColor] textColor:[UIColor colorWithHexString:@"FF4C32"] numberOfLines:0 textAlignment:NSTextAlignmentRight text:@"0.00"];
+        self.amountLabel = [ComponentTools createLabelWithFont:[UIFont fontWithName:@"PingFangSC-Medium" size:kSixScreen(14)] backgroundColor:[UIColor clearColor] textColor:[UIColor colorWithHexString:@"FF4C32"] numberOfLines:0 textAlignment:NSTextAlignmentRight text:@""];
     }
     return _amountLabel;
 }
