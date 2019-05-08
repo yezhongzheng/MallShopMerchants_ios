@@ -1,30 +1,29 @@
 //
-//  StoreInfomationViewController.m
+//  StoreNoticeViewController.m
 //  MallShopMerchants
 //
 //  Created by benzhang on 2019/5/8.
 //  Copyright © 2019 yezhongzheng. All rights reserved.
 //
 
-#define kCellHeight 44.0f
+#import "StoreNoticeViewController.h"
+#import "StoreNoticeTableViewCell.h"
+#import "NoticeSectionHeadView.h"
 
-#import "StoreInfomationViewController.h"
-#import "StoreInfoTableViewCell.h"
-
-@interface StoreInfomationViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface StoreNoticeViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) NSArray *dataArr;
 
 @end
 
-@implementation StoreInfomationViewController
+@implementation StoreNoticeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self setMainNavigationController];
     [self addBackButton];
-    self.title = @"商户资料";
+    self.title = @"商户公告";
     
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -33,42 +32,49 @@
         make.bottom.equalTo(self.view.mas_bottom);
         make.right.equalTo(self.view.mas_right);
     }];
+   
 }
-
 
 #pragma tableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return self.dataArr.count;
+    return 1;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 2;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 40.f;
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    
+    NoticeSectionHeadView *secHeadView = [[NoticeSectionHeadView alloc] initWithTimeString:@"2018年12月24日 上午09:37"];
+    return secHeadView;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    StoreInfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"infoCell"];
+    StoreNoticeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"noticeCell"];
     if (!cell) {
-        cell = [[StoreInfoTableViewCell alloc] initWithReuseIdentifier:@"infoCell"];
+        cell = [[StoreNoticeTableViewCell alloc] initWithReuseIdentifier:@"noticeCell"];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        [cell setTxtString:self.dataArr[indexPath.row]] ;
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        [cell setNoticeWithString:@"商家短APP将在今日凌晨0:00到06:00e更新，将出现登录不上的问题，j敬请谅解"];
     }
-    
+
     return cell;
 }
 
 #pragma tableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return kCellHeight;
+    return 70;
 }
 
 
-#pragma
-- (UITableView *)tableView
-{
+- (UITableView *)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc] init];
         _tableView.delegate = self;
@@ -77,13 +83,6 @@
         _tableView.backgroundColor = [UIColor colorWithHexString:@"f6f6f6"];
     }
     return _tableView;
-}
-
-- (NSArray *)dataArr {
-    if (!_dataArr) {
-        _dataArr = @[@"商户名称",@"行业类别",@"负责任手机",@"商品头图",@"商家logo"];
-    }
-    return _dataArr;
 }
 
 

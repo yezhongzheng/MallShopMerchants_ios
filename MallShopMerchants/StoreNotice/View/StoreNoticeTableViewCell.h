@@ -1,5 +1,5 @@
 //
-//  StoreInfoTableViewCell.h
+//  StoreNoticeTableViewCell.h
 //  MallShopMerchants
 //
 //  Created by benzhang on 2019/5/8.
@@ -10,11 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface StoreInfoTableViewCell : UITableViewCell
+@interface StoreNoticeTableViewCell : UITableViewCell
 
 - (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier;
 
-- (void)setTxtString:(NSString *)string;
+- (void)setNoticeWithString:(NSString *)string;
 
 @end
 

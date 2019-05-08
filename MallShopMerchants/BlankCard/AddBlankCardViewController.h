@@ -1,5 +1,5 @@
 //
-//  StoreInfoTableViewCell.h
+//  AddBlankCardViewController.h
 //  MallShopMerchants
 //
 //  Created by benzhang on 2019/5/8.
@@ -7,14 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface StoreInfoTableViewCell : UITableViewCell
-
-- (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier;
-
-- (void)setTxtString:(NSString *)string;
+@interface AddBlankCardViewController : BaseViewController
 
 @end
 

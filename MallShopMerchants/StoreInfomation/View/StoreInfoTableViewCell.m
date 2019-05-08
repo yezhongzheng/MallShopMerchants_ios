@@ -45,6 +45,10 @@
 
 }
 
+- (void)setTxtString:(NSString *)string {
+    self.txtLabel.text = string;
+}
+
 #pragma mark--
 - (UILabel *)txtLabel {
     if (!_txtLabel) {
