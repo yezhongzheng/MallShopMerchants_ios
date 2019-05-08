@@ -1,30 +1,33 @@
 //
-//  StoreInfomationViewController.m
+//  SettingViewController.m
 //  MallShopMerchants
 //
 //  Created by benzhang on 2019/5/8.
 //  Copyright © 2019 yezhongzheng. All rights reserved.
 //
 
-#define kCellHeight 44.0f
-
-#import "StoreInfomationViewController.h"
+#import "SettingViewController.h"
 #import "StoreInfoTableViewCell.h"
 
-@interface StoreInfomationViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface SettingViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) NSArray *dataArr;
+@property (nonatomic, strong) UIButton *button;
 
 @end
 
-@implementation StoreInfomationViewController
+@implementation SettingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setMainNavigationController];
     [self addBackButton];
-    self.title = @"商户资料";
+    self.title = @"设置";
+    
+    [self setupUI];
+}
+
+- (void)setupUI {
     
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -33,13 +36,24 @@
         make.bottom.equalTo(self.view.mas_bottom);
         make.right.equalTo(self.view.mas_right);
     }];
+    
+    [self.view addSubview:self.button];
+    [self.button mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.view).offset(kSixScreen(20.f));
+        make.right.equalTo(self.view).offset(kSixScreen(-20.f));
+        make.height.mas_equalTo(45.f);
+        make.bottom.equalTo(self.view).offset(kSixScreen(-30.f));
+    }];
 }
 
+- (void)buttonClicked {
+    
+}
 
 #pragma tableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return self.dataArr.count;
+    return 1;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -48,11 +62,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    StoreInfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"infoCell"];
+    StoreInfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ssettingCell"];
     if (!cell) {
-        cell = [[StoreInfoTableViewCell alloc] initWithReuseIdentifier:@"infoCell"];
+        cell = [[StoreInfoTableViewCell alloc] initWithReuseIdentifier:@"ssettingCell"];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        [cell setTxtString:self.dataArr[indexPath.row]] ;
+        [cell setTxtString:@"修改密码"] ;
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     
@@ -62,13 +76,11 @@
 #pragma tableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return kCellHeight;
+    return 44.f;
 }
 
 
-#pragma
-- (UITableView *)tableView
-{
+- (UITableView *)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc] init];
         _tableView.delegate = self;
@@ -79,11 +91,17 @@
     return _tableView;
 }
 
-- (NSArray *)dataArr {
-    if (!_dataArr) {
-        _dataArr = @[@"商户名称",@"行业类别",@"负责任手机",@"商品头图",@"商家logo"];
+- (UIButton *)button {
+    if (!_button) {
+        _button = [UIButton buttonWithType:UIButtonTypeCustom];
+        _button.backgroundColor = [UIColor colorWithHexString:@"D02911"];
+        [_button setTitle:@"退出登录" forState:UIControlStateNormal];
+        _button.titleLabel.font = [UIFont systemFontOfSize:15.0];
+        [_button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _button.layer.cornerRadius = 23.f;
+        [_button addTarget:self action:@selector(buttonClicked) forControlEvents:UIControlEventTouchUpInside];
     }
-    return _dataArr;
+    return _button;
 }
 
 
