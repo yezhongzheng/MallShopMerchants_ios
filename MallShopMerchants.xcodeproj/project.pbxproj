@@ -59,6 +59,8 @@
 		A6BF84222282737500A66858 /* HomePageSerivce.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF84212282737500A66858 /* HomePageSerivce.m */; };
 		A6BF842522827E1300A66858 /* UserInfoItems.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF842422827E1200A66858 /* UserInfoItems.m */; };
 		B55323B822819E1600293052 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B55323B722819E1600293052 /* LoginViewController.m */; };
+		B5D924A922829F5300A88BC5 /* StoreInfomationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D924A822829F5300A88BC5 /* StoreInfomationViewController.m */; };
+		B5D924AD2282ACBC00A88BC5 /* StoreInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D924AC2282ACBC00A88BC5 /* StoreInfoTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -186,6 +188,10 @@
 		A6BF842422827E1200A66858 /* UserInfoItems.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UserInfoItems.m; path = MallShopMerchants/Login/Model/UserInfoItems.m; sourceTree = SOURCE_ROOT; };
 		B55323B622819E1600293052 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		B55323B722819E1600293052 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B5D924A722829F5300A88BC5 /* StoreInfomationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreInfomationViewController.h; sourceTree = "<group>"; };
+		B5D924A822829F5300A88BC5 /* StoreInfomationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreInfomationViewController.m; sourceTree = "<group>"; };
+		B5D924AB2282ACBC00A88BC5 /* StoreInfoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreInfoTableViewCell.h; sourceTree = "<group>"; };
+		B5D924AC2282ACBC00A88BC5 /* StoreInfoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreInfoTableViewCell.m; sourceTree = "<group>"; };
 		D4276A9F9517E17492895CF4 /* Pods-MallShopMerchants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.debug.xcconfig"; path = "Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.debug.xcconfig"; sourceTree = "<group>"; };
 		E99E332267A6EA0B991154EA /* Pods-MallShopMerchants.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.release.xcconfig"; path = "Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -249,6 +255,7 @@
 		7803E6D1227EC13D0038C5BB /* MallShopMerchants */ = {
 			isa = PBXGroup;
 			children = (
+				B5D924A622829F1A00A88BC5 /* StoreInfomation */,
 				B55323B522819DF900293052 /* Login */,
 				7803E735227EE1B90038C5BB /* Tools */,
 				7803E72F227ED5300038C5BB /* ThirdParty */,
@@ -622,6 +629,25 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		B5D924A622829F1A00A88BC5 /* StoreInfomation */ = {
+			isa = PBXGroup;
+			children = (
+				B5D924AA2282AC9000A88BC5 /* View */,
+				B5D924A722829F5300A88BC5 /* StoreInfomationViewController.h */,
+				B5D924A822829F5300A88BC5 /* StoreInfomationViewController.m */,
+			);
+			path = StoreInfomation;
+			sourceTree = "<group>";
+		};
+		B5D924AA2282AC9000A88BC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5D924AB2282ACBC00A88BC5 /* StoreInfoTableViewCell.h */,
+				B5D924AC2282ACBC00A88BC5 /* StoreInfoTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EF95F8EA7953584FB4646D5E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -829,6 +855,7 @@
 				A6BF841222825EB500A66858 /* LoginService.m in Sources */,
 				7803E6E2227EC13F0038C5BB /* main.m in Sources */,
 				A6BF83B42281CE0200A66858 /* LoginTexView.m in Sources */,
+				B5D924AD2282ACBC00A88BC5 /* StoreInfoTableViewCell.m in Sources */,
 				7803E751228138430038C5BB /* OrderOptionView.m in Sources */,
 				7803E714227EC8040038C5BB /* MallShopMerchantsNC.m in Sources */,
 				7803E733227EDCBE0038C5BB /* UIColor+HexString.m in Sources */,
@@ -852,6 +879,7 @@
 				A6BF83EB2281D8FE00A66858 /* NSDictionary+JKSafeAccess.m in Sources */,
 				7803E75D22817D570038C5BB /* MyItemModel.m in Sources */,
 				A6BF83EA2281D8FE00A66858 /* NSArray+JKSafeAccess.m in Sources */,
+				B5D924A922829F5300A88BC5 /* StoreInfomationViewController.m in Sources */,
 				7803E70A227EC4ED0038C5BB /* BaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
