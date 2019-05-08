@@ -9,6 +9,7 @@
 #import "MyVC.h"
 #import "MyItemCell.h"
 #import "MyItemModel.h"
+#import "StoreInfomationViewController.h"
 
 @interface MyVC () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
@@ -93,7 +94,8 @@
 {
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     if (indexPath.section == 0) {
-        
+        StoreInfomationViewController *storeInfoVC = [[StoreInfomationViewController alloc] init];
+        [self.navigationController pushViewController:storeInfoVC animated:YES];
     } else {
         NSArray *temArr = self.datasource[indexPath.section];
         MyItemModel *voiceModel = temArr[indexPath.item];
