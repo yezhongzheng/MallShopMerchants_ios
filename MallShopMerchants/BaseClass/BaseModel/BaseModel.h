@@ -7,10 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ProcessingHandler.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseModel : NSObject
+
+@property (nonatomic, copy) NSString *ret_code;
+@property (nonatomic, copy) NSString *err;
+@property (nonatomic, copy) NSDictionary *data;
 
 @end
 

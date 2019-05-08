@@ -10,4 +10,7 @@
 
 @interface LoginTexView : UIView
 
+@property (nonatomic, strong) UITextField *phoneTextField;
+@property (nonatomic, strong) UITextField *passwordTextField;
+
 @end

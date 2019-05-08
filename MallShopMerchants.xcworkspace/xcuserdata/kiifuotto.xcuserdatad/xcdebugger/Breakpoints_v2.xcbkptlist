@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MallShopMerchants/HomePageModule/ViewController/HomePageVC.m"
+            timestampString = "578973456.393567"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "219"
+            endingLineNumber = "219"
+            landmarkName = "-collectionView:layout:referenceSizeForFooterInSection:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MallShopMerchants/Login/LoginViewController.m"
+            timestampString = "578974396.5951231"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "-loginButtonClicked"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__41-[LoginViewController loginButtonClicked]_block_invoke"
+                  moduleName = "MallShopMerchants"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiifuotto/Desktop/MallShopMerchants_ios/MallShopMerchants/Login/LoginViewController.m"
+                  timestampString = "578973890.786797"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "720">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__41-[LoginViewController loginButtonClicked]_block_invoke_2"
+                  moduleName = "MallShopMerchants"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiifuotto/Desktop/MallShopMerchants_ios/MallShopMerchants/Login/LoginViewController.m"
+                  timestampString = "578973890.789078"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MallShopMerchants/Login/LoginViewController.m"
+            timestampString = "578974396.595567"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "-loginButtonClicked"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LoginViewController loginButtonClicked]"
+                  moduleName = "MallShopMerchants"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiifuotto/Desktop/MallShopMerchants_ios/MallShopMerchants/Login/LoginViewController.m"
+                  timestampString = "578973890.794361"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "452">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__41-[LoginViewController loginButtonClicked]_block_invoke"
+                  moduleName = "MallShopMerchants"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kiifuotto/Desktop/MallShopMerchants_ios/MallShopMerchants/Login/LoginViewController.m"
+                  timestampString = "578973890.796784"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

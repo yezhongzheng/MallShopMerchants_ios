@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MallShopTabBarController.h"
+#import "ServiceBaseUrlTool.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [ServiceBaseUrlTool setTestDefaultBaseUrl];
     self.window.rootViewController = [[MallShopTabBarController alloc] init];
     return YES;
 }

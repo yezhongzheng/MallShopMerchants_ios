@@ -14,6 +14,8 @@
 #define kSixScreen(width_param) (width_param * ([UIScreen mainScreen].bounds.size.width / 375))
 #define kStatusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
 #define kBottomSafeHeight (CGFloat)(kStatusBarHeight > 20 ? (34.0):(0))
+#define KNavigationBarHeight self.navigationController.navigationBar.frame.size.height
+#define KMainBarHeight (kStatusBarHeight + KNavigationBarHeight)
 
 #define WEAKSELF typeof(self) __weak weakSelf = self;
 

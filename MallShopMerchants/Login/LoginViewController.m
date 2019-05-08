@@ -9,6 +9,8 @@
 #import "LoginViewController.h"
 #import "LoginIconView.h"
 #import "LoginTexView.h"
+#import "LoginModelItems.h"
+#import "LoginService.h"
 
 @interface LoginViewController ()
 
@@ -22,11 +24,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:self.iconView];
-    
     [self.view addSubview:self.textView];
 //    [self.textView mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.left.equalTo(self.view);
@@ -35,16 +36,34 @@
     
     [self.view addSubview:self.loginBtn];
     [self.loginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.view).offset(20);
-        make.right.equalTo(self.view).offset(-20);
-        make.height.mas_equalTo(45);
-        make.top.equalTo(self.textView.mas_bottom).offset(50);
+        make.left.equalTo(self.view).offset(kSixScreen(20));
+        make.right.equalTo(self.view).offset(kSixScreen(-20));
+        make.height.mas_equalTo(kSixScreen(45));
+        make.top.equalTo(self.textView.mas_bottom).offset(kSixScreen(50));
     }];
     
 }
 
 - (void)loginButtonClicked {
-    
+    NSDictionary *dict = @{@"uname":self.textView.phoneTextField.text,@"password":self.textView.passwordTextField.text};
+    [LoginService loginPassportWithParam:dict successfulBlock:^(NSArray * _Nonnull responseObject, double timeStamp) {
+        LoginModelItems *items = responseObject.firstObject;
+        if(items.ret_code.integerValue == 200){
+            LoginModelItem *item = items.data;
+            [MBProgressHUD showMessag:item.message toView:self.view];
+            if(item.status.integerValue){
+                LCAccount *account = [LCAccount sharedInstance];
+                account.memberId = item.supplier_id.integerValue;
+                account.accesstoken = item.accesstoken;
+                account.logined = YES;
+                [self dismissViewControllerAnimated:YES completion:^{
+                    
+                }];
+            }
+        }
+    } failedBlock:^(NSString * _Nonnull errDescription, NSInteger errCode) {
+        
+    }];
 }
 
 - (UIButton *) loginBtn {
@@ -64,7 +83,7 @@
 - (LoginIconView *) iconView {
     
     if (!_iconView) {
-        _iconView = [[LoginIconView alloc] initWithFrame:CGRectMake(0, 75, kScreenWidth, 238)];
+        _iconView = [[LoginIconView alloc] initWithFrame:CGRectMake(0, kSixScreen(75), kScreenWidth, kSixScreen(238))];
     }
     return _iconView;
 }
@@ -72,7 +91,7 @@
 - (LoginTexView *) textView {
     
     if (!_textView) {
-        _textView = [[LoginTexView alloc] initWithFrame:CGRectMake(0, 320, kScreenWidth, 90)];
+        _textView = [[LoginTexView alloc] initWithFrame:CGRectMake(0, kSixScreen(320), kScreenWidth, kSixScreen(90))];
     }
     return _textView;
 }

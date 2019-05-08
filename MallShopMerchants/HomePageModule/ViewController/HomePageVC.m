@@ -9,7 +9,8 @@
 #import "HomePageVC.h"
 #import "HomePageShopManageCell.h"
 #import "LoginViewController.h"
-
+#import "HomePageSerivce.h"
+#import "UserInfoItems.h"
 
 @interface HomePageVC () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
@@ -50,7 +51,28 @@
 {
     [super viewDidLoad];
     [self setUI];
+    LCAccount *account = [LCAccount sharedInstance];
+    if([NSString isEmptyString:account.accesstoken]){
+        LoginViewController *login = [[LoginViewController alloc]init];
+        MallShopMerchantsNC *nav = [[MallShopMerchantsNC alloc]initWithRootViewController:login];
+        [self presentViewController:nav animated:NO completion:^{
+            
+        }];
+    }
 }
+
+-(void)getSuppeilerInfoData{
+    [HomePageSerivce getSupplierInfoWithParam:@{} successfulBlock:^(NSArray * _Nonnull responseObject, double timeStamp) {
+        UserInfoItems *items = responseObject.firstObject;
+        if(items.ret_code.integerValue){
+            UserInfoItem *item = items.data;
+        
+        }
+    } failedBlock:^(NSString * _Nonnull errDescription, NSInteger errCode) {
+        
+    }];
+}
+
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -210,10 +232,6 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
-    
-    LoginViewController *vc = [[LoginViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-    
 }
 
 #pragma mark - UICollectionViewDataSource

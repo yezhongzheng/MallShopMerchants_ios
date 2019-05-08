@@ -39,17 +39,25 @@
 		7803E75D22817D570038C5BB /* MyItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7803E75C22817D570038C5BB /* MyItemModel.m */; };
 		A6BF83B42281CE0200A66858 /* LoginTexView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83B22281CE0200A66858 /* LoginTexView.m */; };
 		A6BF83B52281CE0200A66858 /* LoginIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83B32281CE0200A66858 /* LoginIconView.m */; };
-		A6BF83D72281D5D900A66858 /* LCCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83C02281D5D800A66858 /* LCCache.m */; };
-		A6BF83D82281D5D900A66858 /* NSString+VericationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83C52281D5D800A66858 /* NSString+VericationTool.m */; };
-		A6BF83D92281D5D900A66858 /* NetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83C72281D5D800A66858 /* NetworkingManager.m */; };
-		A6BF83DA2281D5D900A66858 /* NSObject+JSONTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83CA2281D5D800A66858 /* NSObject+JSONTool.m */; };
-		A6BF83DB2281D5D900A66858 /* TimeClock.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83CD2281D5D800A66858 /* TimeClock.m */; };
-		A6BF83DC2281D5D900A66858 /* LCAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83D02281D5D800A66858 /* LCAccount.m */; };
-		A6BF83DD2281D5D900A66858 /* ServiceBaseUrlTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83D22281D5D800A66858 /* ServiceBaseUrlTool.m */; };
-		A6BF83DE2281D5D900A66858 /* ProcessingHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83D32281D5D800A66858 /* ProcessingHandler.m */; };
 		A6BF83EA2281D8FE00A66858 /* NSArray+JKSafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83E62281D8FE00A66858 /* NSArray+JKSafeAccess.m */; };
 		A6BF83EB2281D8FE00A66858 /* NSDictionary+JKSafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83E72281D8FE00A66858 /* NSDictionary+JKSafeAccess.m */; };
 		A6BF83EF2281D95E00A66858 /* NSString+VericationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83EE2281D95D00A66858 /* NSString+VericationTool.m */; };
+		A6BF84072281DAC800A66858 /* LCCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83F32281DAC800A66858 /* LCCache.m */; };
+		A6BF84082281DAC800A66858 /* NSString+VericationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83F82281DAC800A66858 /* NSString+VericationTool.m */; };
+		A6BF84092281DAC800A66858 /* NetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83FA2281DAC800A66858 /* NetworkingManager.m */; };
+		A6BF840A2281DAC800A66858 /* NSObject+JSONTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF83FD2281DAC800A66858 /* NSObject+JSONTool.m */; };
+		A6BF840B2281DAC800A66858 /* TimeClock.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF84002281DAC800A66858 /* TimeClock.m */; };
+		A6BF840C2281DAC800A66858 /* LCAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF84032281DAC800A66858 /* LCAccount.m */; };
+		A6BF840D2281DAC800A66858 /* ServiceBaseUrlTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF84052281DAC800A66858 /* ServiceBaseUrlTool.m */; };
+		A6BF840E2281DAC800A66858 /* ProcessingHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF84062281DAC800A66858 /* ProcessingHandler.m */; };
+		A6BF841222825EB500A66858 /* LoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF841122825EB500A66858 /* LoginService.m */; };
+		A6BF8415228260C400A66858 /* LoginModelItems.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF8414228260C400A66858 /* LoginModelItems.m */; };
+		A6BF841C2282637900A66858 /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = A6BF84172282637900A66858 /* 37x-Checkmark.png */; };
+		A6BF841D2282637900A66858 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF84182282637900A66858 /* MBProgressHUD+Add.m */; };
+		A6BF841E2282637900A66858 /* 37x-Checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6BF84192282637900A66858 /* 37x-Checkmark@2x.png */; };
+		A6BF841F2282637900A66858 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A6BF841B2282637900A66858 /* MBProgressHUD.bundle */; };
+		A6BF84222282737500A66858 /* HomePageSerivce.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF84212282737500A66858 /* HomePageSerivce.m */; };
+		A6BF842522827E1300A66858 /* UserInfoItems.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF842422827E1200A66858 /* UserInfoItems.m */; };
 		B55323B822819E1600293052 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B55323B722819E1600293052 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -139,22 +147,6 @@
 		A6BF83B12281CE0200A66858 /* LoginIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginIconView.h; sourceTree = "<group>"; };
 		A6BF83B22281CE0200A66858 /* LoginTexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTexView.m; sourceTree = "<group>"; };
 		A6BF83B32281CE0200A66858 /* LoginIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginIconView.m; sourceTree = "<group>"; };
-		A6BF83BE2281D5D800A66858 /* NetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingManager.h; sourceTree = "<group>"; };
-		A6BF83C02281D5D800A66858 /* LCCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCache.m; sourceTree = "<group>"; };
-		A6BF83C12281D5D800A66858 /* LCCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCache.h; sourceTree = "<group>"; };
-		A6BF83C22281D5D800A66858 /* ProcessingHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessingHandler.h; sourceTree = "<group>"; };
-		A6BF83C42281D5D800A66858 /* NSString+VericationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VericationTool.h"; sourceTree = "<group>"; };
-		A6BF83C52281D5D800A66858 /* NSString+VericationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VericationTool.m"; sourceTree = "<group>"; };
-		A6BF83C62281D5D800A66858 /* ServiceBaseUrlTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceBaseUrlTool.h; sourceTree = "<group>"; };
-		A6BF83C72281D5D800A66858 /* NetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkingManager.m; sourceTree = "<group>"; };
-		A6BF83C92281D5D800A66858 /* NSObject+JSONTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSONTool.h"; sourceTree = "<group>"; };
-		A6BF83CA2281D5D800A66858 /* NSObject+JSONTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSONTool.m"; sourceTree = "<group>"; };
-		A6BF83CD2281D5D800A66858 /* TimeClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeClock.m; sourceTree = "<group>"; };
-		A6BF83CE2281D5D800A66858 /* TimeClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeClock.h; sourceTree = "<group>"; };
-		A6BF83D02281D5D800A66858 /* LCAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAccount.m; sourceTree = "<group>"; };
-		A6BF83D12281D5D800A66858 /* LCAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAccount.h; sourceTree = "<group>"; };
-		A6BF83D22281D5D800A66858 /* ServiceBaseUrlTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceBaseUrlTool.m; sourceTree = "<group>"; };
-		A6BF83D32281D5D800A66858 /* ProcessingHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessingHandler.m; sourceTree = "<group>"; };
 		A6BF83E32281D82500A66858 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		A6BF83E42281D82500A66858 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		A6BF83E62281D8FE00A66858 /* NSArray+JKSafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JKSafeAccess.m"; sourceTree = "<group>"; };
@@ -163,6 +155,35 @@
 		A6BF83E92281D8FE00A66858 /* NSDictionary+JKSafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JKSafeAccess.h"; sourceTree = "<group>"; };
 		A6BF83ED2281D95D00A66858 /* NSString+VericationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VericationTool.h"; sourceTree = "<group>"; };
 		A6BF83EE2281D95D00A66858 /* NSString+VericationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VericationTool.m"; sourceTree = "<group>"; };
+		A6BF83F12281DAC800A66858 /* NetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingManager.h; sourceTree = "<group>"; };
+		A6BF83F32281DAC800A66858 /* LCCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCache.m; sourceTree = "<group>"; };
+		A6BF83F42281DAC800A66858 /* LCCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCache.h; sourceTree = "<group>"; };
+		A6BF83F52281DAC800A66858 /* ProcessingHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessingHandler.h; sourceTree = "<group>"; };
+		A6BF83F72281DAC800A66858 /* NSString+VericationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VericationTool.h"; sourceTree = "<group>"; };
+		A6BF83F82281DAC800A66858 /* NSString+VericationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VericationTool.m"; sourceTree = "<group>"; };
+		A6BF83F92281DAC800A66858 /* ServiceBaseUrlTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceBaseUrlTool.h; sourceTree = "<group>"; };
+		A6BF83FA2281DAC800A66858 /* NetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkingManager.m; sourceTree = "<group>"; };
+		A6BF83FC2281DAC800A66858 /* NSObject+JSONTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSONTool.h"; sourceTree = "<group>"; };
+		A6BF83FD2281DAC800A66858 /* NSObject+JSONTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSONTool.m"; sourceTree = "<group>"; };
+		A6BF84002281DAC800A66858 /* TimeClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeClock.m; sourceTree = "<group>"; };
+		A6BF84012281DAC800A66858 /* TimeClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeClock.h; sourceTree = "<group>"; };
+		A6BF84032281DAC800A66858 /* LCAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAccount.m; sourceTree = "<group>"; };
+		A6BF84042281DAC800A66858 /* LCAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAccount.h; sourceTree = "<group>"; };
+		A6BF84052281DAC800A66858 /* ServiceBaseUrlTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceBaseUrlTool.m; sourceTree = "<group>"; };
+		A6BF84062281DAC800A66858 /* ProcessingHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessingHandler.m; sourceTree = "<group>"; };
+		A6BF841022825EB500A66858 /* LoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginService.h; sourceTree = "<group>"; };
+		A6BF841122825EB500A66858 /* LoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginService.m; sourceTree = "<group>"; };
+		A6BF8413228260C400A66858 /* LoginModelItems.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginModelItems.h; sourceTree = "<group>"; };
+		A6BF8414228260C400A66858 /* LoginModelItems.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginModelItems.m; sourceTree = "<group>"; };
+		A6BF84172282637900A66858 /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
+		A6BF84182282637900A66858 /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		A6BF84192282637900A66858 /* 37x-Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark@2x.png"; sourceTree = "<group>"; };
+		A6BF841A2282637900A66858 /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		A6BF841B2282637900A66858 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		A6BF84202282737500A66858 /* HomePageSerivce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HomePageSerivce.h; path = MallShopMerchants/Login/Model/HomePageSerivce.h; sourceTree = SOURCE_ROOT; };
+		A6BF84212282737500A66858 /* HomePageSerivce.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HomePageSerivce.m; path = MallShopMerchants/Login/Model/HomePageSerivce.m; sourceTree = SOURCE_ROOT; };
+		A6BF842322827E1200A66858 /* UserInfoItems.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UserInfoItems.h; path = MallShopMerchants/Login/Model/UserInfoItems.h; sourceTree = SOURCE_ROOT; };
+		A6BF842422827E1200A66858 /* UserInfoItems.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UserInfoItems.m; path = MallShopMerchants/Login/Model/UserInfoItems.m; sourceTree = SOURCE_ROOT; };
 		B55323B622819E1600293052 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		B55323B722819E1600293052 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		D4276A9F9517E17492895CF4 /* Pods-MallShopMerchants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.debug.xcconfig"; path = "Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.debug.xcconfig"; sourceTree = "<group>"; };
@@ -228,7 +249,6 @@
 		7803E6D1227EC13D0038C5BB /* MallShopMerchants */ = {
 			isa = PBXGroup;
 			children = (
-				A6BF83B62281D5D800A66858 /* Http */,
 				B55323B522819DF900293052 /* Login */,
 				7803E735227EE1B90038C5BB /* Tools */,
 				7803E72F227ED5300038C5BB /* ThirdParty */,
@@ -353,6 +373,10 @@
 		7803E71C227ECAB00038C5BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A6BF84202282737500A66858 /* HomePageSerivce.h */,
+				A6BF84212282737500A66858 /* HomePageSerivce.m */,
+				A6BF842322827E1200A66858 /* UserInfoItems.h */,
+				A6BF842422827E1200A66858 /* UserInfoItems.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -435,6 +459,8 @@
 		7803E72F227ED5300038C5BB /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				A6BF84162282637900A66858 /* MBProgressHUD */,
+				A6BF83F02281DAC800A66858 /* Http */,
 				A6BF83EC2281D95D00A66858 /* LCVerificationTool */,
 				A6BF83E52281D8FE00A66858 /* JKSafeAccess */,
 				7803E730227EDCBE0038C5BB /* UIColor+HexString */,
@@ -463,83 +489,12 @@
 		A6BF83AF2281CE0200A66858 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A6BF83B02281CE0200A66858 /* LoginTexView.h */,
 				A6BF83B12281CE0200A66858 /* LoginIconView.h */,
-				A6BF83B22281CE0200A66858 /* LoginTexView.m */,
 				A6BF83B32281CE0200A66858 /* LoginIconView.m */,
+				A6BF83B02281CE0200A66858 /* LoginTexView.h */,
+				A6BF83B22281CE0200A66858 /* LoginTexView.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		A6BF83B62281D5D800A66858 /* Http */ = {
-			isa = PBXGroup;
-			children = (
-				A6BF83CF2281D5D800A66858 /* Account */,
-				A6BF83CB2281D5D800A66858 /* Api */,
-				A6BF83BF2281D5D800A66858 /* Cache */,
-				A6BF83C82281D5D800A66858 /* JSONTool */,
-				A6BF83C32281D5D800A66858 /* LCVerificationTool */,
-				A6BF83BE2281D5D800A66858 /* NetworkingManager.h */,
-				A6BF83C72281D5D800A66858 /* NetworkingManager.m */,
-				A6BF83C22281D5D800A66858 /* ProcessingHandler.h */,
-				A6BF83D32281D5D800A66858 /* ProcessingHandler.m */,
-				A6BF83C62281D5D800A66858 /* ServiceBaseUrlTool.h */,
-				A6BF83D22281D5D800A66858 /* ServiceBaseUrlTool.m */,
-			);
-			path = Http;
-			sourceTree = "<group>";
-		};
-		A6BF83BF2281D5D800A66858 /* Cache */ = {
-			isa = PBXGroup;
-			children = (
-				A6BF83C12281D5D800A66858 /* LCCache.h */,
-				A6BF83C02281D5D800A66858 /* LCCache.m */,
-			);
-			path = Cache;
-			sourceTree = "<group>";
-		};
-		A6BF83C32281D5D800A66858 /* LCVerificationTool */ = {
-			isa = PBXGroup;
-			children = (
-				A6BF83C42281D5D800A66858 /* NSString+VericationTool.h */,
-				A6BF83C52281D5D800A66858 /* NSString+VericationTool.m */,
-			);
-			path = LCVerificationTool;
-			sourceTree = "<group>";
-		};
-		A6BF83C82281D5D800A66858 /* JSONTool */ = {
-			isa = PBXGroup;
-			children = (
-				A6BF83C92281D5D800A66858 /* NSObject+JSONTool.h */,
-				A6BF83CA2281D5D800A66858 /* NSObject+JSONTool.m */,
-			);
-			path = JSONTool;
-			sourceTree = "<group>";
-		};
-		A6BF83CB2281D5D800A66858 /* Api */ = {
-			isa = PBXGroup;
-			children = (
-				A6BF83CC2281D5D800A66858 /* common */,
-			);
-			path = Api;
-			sourceTree = "<group>";
-		};
-		A6BF83CC2281D5D800A66858 /* common */ = {
-			isa = PBXGroup;
-			children = (
-				A6BF83CD2281D5D800A66858 /* TimeClock.m */,
-				A6BF83CE2281D5D800A66858 /* TimeClock.h */,
-			);
-			path = common;
-			sourceTree = "<group>";
-		};
-		A6BF83CF2281D5D800A66858 /* Account */ = {
-			isa = PBXGroup;
-			children = (
-				A6BF83D02281D5D800A66858 /* LCAccount.m */,
-				A6BF83D12281D5D800A66858 /* LCAccount.h */,
-			);
-			path = Account;
 			sourceTree = "<group>";
 		};
 		A6BF83E52281D8FE00A66858 /* JKSafeAccess */ = {
@@ -562,9 +517,104 @@
 			path = LCVerificationTool;
 			sourceTree = "<group>";
 		};
+		A6BF83F02281DAC800A66858 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				A6BF84022281DAC800A66858 /* Account */,
+				A6BF83FE2281DAC800A66858 /* Api */,
+				A6BF83F22281DAC800A66858 /* Cache */,
+				A6BF83FB2281DAC800A66858 /* JSONTool */,
+				A6BF83F62281DAC800A66858 /* LCVerificationTool */,
+				A6BF83F12281DAC800A66858 /* NetworkingManager.h */,
+				A6BF83FA2281DAC800A66858 /* NetworkingManager.m */,
+				A6BF83F52281DAC800A66858 /* ProcessingHandler.h */,
+				A6BF84062281DAC800A66858 /* ProcessingHandler.m */,
+				A6BF83F92281DAC800A66858 /* ServiceBaseUrlTool.h */,
+				A6BF84052281DAC800A66858 /* ServiceBaseUrlTool.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		A6BF83F22281DAC800A66858 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				A6BF83F42281DAC800A66858 /* LCCache.h */,
+				A6BF83F32281DAC800A66858 /* LCCache.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		A6BF83F62281DAC800A66858 /* LCVerificationTool */ = {
+			isa = PBXGroup;
+			children = (
+				A6BF83F72281DAC800A66858 /* NSString+VericationTool.h */,
+				A6BF83F82281DAC800A66858 /* NSString+VericationTool.m */,
+			);
+			path = LCVerificationTool;
+			sourceTree = "<group>";
+		};
+		A6BF83FB2281DAC800A66858 /* JSONTool */ = {
+			isa = PBXGroup;
+			children = (
+				A6BF83FC2281DAC800A66858 /* NSObject+JSONTool.h */,
+				A6BF83FD2281DAC800A66858 /* NSObject+JSONTool.m */,
+			);
+			path = JSONTool;
+			sourceTree = "<group>";
+		};
+		A6BF83FE2281DAC800A66858 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				A6BF83FF2281DAC800A66858 /* common */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		A6BF83FF2281DAC800A66858 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				A6BF84012281DAC800A66858 /* TimeClock.h */,
+				A6BF84002281DAC800A66858 /* TimeClock.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		A6BF84022281DAC800A66858 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				A6BF84042281DAC800A66858 /* LCAccount.h */,
+				A6BF84032281DAC800A66858 /* LCAccount.m */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		A6BF840F22825E0500A66858 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6BF841022825EB500A66858 /* LoginService.h */,
+				A6BF841122825EB500A66858 /* LoginService.m */,
+				A6BF8413228260C400A66858 /* LoginModelItems.h */,
+				A6BF8414228260C400A66858 /* LoginModelItems.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6BF84162282637900A66858 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A6BF84172282637900A66858 /* 37x-Checkmark.png */,
+				A6BF84192282637900A66858 /* 37x-Checkmark@2x.png */,
+				A6BF841B2282637900A66858 /* MBProgressHUD.bundle */,
+				A6BF841A2282637900A66858 /* MBProgressHUD+Add.h */,
+				A6BF84182282637900A66858 /* MBProgressHUD+Add.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		B55323B522819DF900293052 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				A6BF840F22825E0500A66858 /* Model */,
 				A6BF83AF2281CE0200A66858 /* View */,
 				B55323B622819E1600293052 /* LoginViewController.h */,
 				B55323B722819E1600293052 /* LoginViewController.m */,
@@ -689,9 +739,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6BF841C2282637900A66858 /* 37x-Checkmark.png in Resources */,
 				7803E6DF227EC13F0038C5BB /* LaunchScreen.storyboard in Resources */,
 				7803E6DC227EC13F0038C5BB /* Assets.xcassets in Resources */,
+				A6BF841E2282637900A66858 /* 37x-Checkmark@2x.png in Resources */,
 				7803E6DA227EC13D0038C5BB /* Main.storyboard in Resources */,
+				A6BF841F2282637900A66858 /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -719,10 +772,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -757,34 +812,39 @@
 			files = (
 				7803E73F228029210038C5BB /* HomePageShopManageCell.m in Sources */,
 				A6BF83B52281CE0200A66858 /* LoginIconView.m in Sources */,
-				A6BF83D92281D5D900A66858 /* NetworkingManager.m in Sources */,
-				A6BF83DA2281D5D900A66858 /* NSObject+JSONTool.m in Sources */,
+				A6BF84092281DAC800A66858 /* NetworkingManager.m in Sources */,
+				A6BF840A2281DAC800A66858 /* NSObject+JSONTool.m in Sources */,
 				B55323B822819E1600293052 /* LoginViewController.m in Sources */,
 				7803E729227ECB710038C5BB /* MyVC.m in Sources */,
-				A6BF83DD2281D5D900A66858 /* ServiceBaseUrlTool.m in Sources */,
-				A6BF83DC2281D5D900A66858 /* LCAccount.m in Sources */,
+				A6BF840D2281DAC800A66858 /* ServiceBaseUrlTool.m in Sources */,
+				A6BF840C2281DAC800A66858 /* LCAccount.m in Sources */,
 				7803E7482281363F0038C5BB /* ProcessingVC.m in Sources */,
 				7803E738227EE24D0038C5BB /* ComponentTools.m in Sources */,
-				A6BF83DB2281D5D900A66858 /* TimeClock.m in Sources */,
+				A6BF840B2281DAC800A66858 /* TimeClock.m in Sources */,
 				7803E75722816F010038C5BB /* OrderModel.m in Sources */,
 				7803E72C227ECB820038C5BB /* OrderVC.m in Sources */,
-				A6BF83D82281D5D900A66858 /* NSString+VericationTool.m in Sources */,
 				7803E710227EC5140038C5BB /* BaseModel.m in Sources */,
+				A6BF84082281DAC800A66858 /* NSString+VericationTool.m in Sources */,
 				7803E6D7227EC13D0038C5BB /* ViewController.m in Sources */,
+				A6BF841222825EB500A66858 /* LoginService.m in Sources */,
 				7803E6E2227EC13F0038C5BB /* main.m in Sources */,
 				A6BF83B42281CE0200A66858 /* LoginTexView.m in Sources */,
 				7803E751228138430038C5BB /* OrderOptionView.m in Sources */,
 				7803E714227EC8040038C5BB /* MallShopMerchantsNC.m in Sources */,
 				7803E733227EDCBE0038C5BB /* UIColor+HexString.m in Sources */,
 				A6BF83EF2281D95E00A66858 /* NSString+VericationTool.m in Sources */,
+				A6BF841D2282637900A66858 /* MBProgressHUD+Add.m in Sources */,
 				7803E74E228136D50038C5BB /* InvalidOrderVC.m in Sources */,
+				A6BF842522827E1300A66858 /* UserInfoItems.m in Sources */,
+				A6BF8415228260C400A66858 /* LoginModelItems.m in Sources */,
 				7803E70D227EC5040038C5BB /* BaseView.m in Sources */,
 				7803E745228136100038C5BB /* PaymentHasBeenVC.m in Sources */,
-				A6BF83D72281D5D900A66858 /* LCCache.m in Sources */,
 				7803E726227ECB150038C5BB /* HomePageVC.m in Sources */,
-				A6BF83DE2281D5D900A66858 /* ProcessingHandler.m in Sources */,
 				7803E7542281613E0038C5BB /* OrderStatusCell.m in Sources */,
+				A6BF84072281DAC800A66858 /* LCCache.m in Sources */,
 				7803E717227EC85B0038C5BB /* MallShopTabBarController.m in Sources */,
+				A6BF840E2281DAC800A66858 /* ProcessingHandler.m in Sources */,
+				A6BF84222282737500A66858 /* HomePageSerivce.m in Sources */,
 				7803E6D4227EC13D0038C5BB /* AppDelegate.m in Sources */,
 				7803E74B228136A80038C5BB /* HadFinishVC.m in Sources */,
 				7803E742228056490038C5BB /* SearchVC.m in Sources */,

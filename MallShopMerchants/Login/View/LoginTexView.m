@@ -12,8 +12,6 @@
 
 @property (nonatomic, strong) UIImageView *phoneImgView;
 @property (nonatomic, strong) UIImageView *passwordImgView;
-@property (nonatomic, strong) UITextField *phoneTextField;
-@property (nonatomic, strong) UITextField *passwordTextField;
 @property (nonatomic, strong) UIView *line1;
 @property (nonatomic, strong) UIView *line2;
 
@@ -38,8 +36,8 @@
         [self.phoneTextField mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self).offset(kSixScreen(54));
             make.right.equalTo(self).offset(kSixScreen(-40));
-            make.top.equalTo(self).offset(10);
-            make.height.mas_equalTo(30);
+            make.top.equalTo(self).offset(kSixScreen(10));
+            make.height.mas_equalTo(kSixScreen(30));
         }];
         
         [self addSubview:self.line1];
@@ -52,7 +50,7 @@
         [self addSubview:self.passwordImgView];
         [self.passwordImgView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self).offset(kSixScreen(28));
-            make.bottom.equalTo(self).offset(-10);
+            make.bottom.equalTo(self).offset(kSixScreen(-10));
             make.size.mas_equalTo(CGSizeMake(kSixScreen(12), kSixScreen(18)));
         }];
         
@@ -60,8 +58,8 @@
         [self.passwordTextField mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self).offset(kSixScreen(54));
             make.right.equalTo(self).offset(kSixScreen(-40));
-            make.bottom.equalTo(self).offset(-5);
-            make.height.mas_equalTo(30);
+            make.bottom.equalTo(self).offset(kSixScreen(-5));
+            make.height.mas_equalTo(kSixScreen(30));
         }];
         
         [self addSubview:self.line2];
@@ -124,11 +122,6 @@
     }
     return _line2;
 }
-
-
-
-
-
 
 
 @end

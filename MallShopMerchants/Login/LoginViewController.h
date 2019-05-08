@@ -6,8 +6,8 @@
 //  Copyright © 2019年 yezhongzheng. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : BaseViewController
 
 @end
