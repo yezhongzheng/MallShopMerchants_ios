@@ -66,7 +66,7 @@
         UserInfoItems *items = responseObject.firstObject;
         if(items.ret_code.integerValue){
             UserInfoItem *item = items.data;
-        
+            StatusInfoItem *info = item.stats;
         }
     } failedBlock:^(NSString * _Nonnull errDescription, NSInteger errCode) {
         
