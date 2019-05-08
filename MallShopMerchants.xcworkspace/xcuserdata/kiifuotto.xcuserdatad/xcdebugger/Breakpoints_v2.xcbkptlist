@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "219"
             endingLineNumber = "219"
-            landmarkName = "-collectionView:layout:referenceSizeForFooterInSection:"
+            landmarkName = "-collectionView:layout:minimumInteritemSpacingForSectionAtIndex:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
