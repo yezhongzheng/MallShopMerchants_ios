@@ -67,6 +67,8 @@
 		B5D924BC2283039600A88BC5 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D924BB2283039600A88BC5 /* SettingViewController.m */; };
 		B5D924C022830D6F00A88BC5 /* AddBlankCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D924BF22830D6F00A88BC5 /* AddBlankCardViewController.m */; };
 		B5D924C72283228700A88BC5 /* VerificationCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D924C62283228700A88BC5 /* VerificationCodeViewController.m */; };
+		B5D924CB22844B3E00A88BC5 /* CashOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D924CA22844B3E00A88BC5 /* CashOutViewController.m */; };
+		B5D924CF2284507100A88BC5 /* CashOutView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D924CE2284507100A88BC5 /* CashOutView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -210,6 +212,10 @@
 		B5D924BF22830D6F00A88BC5 /* AddBlankCardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddBlankCardViewController.m; sourceTree = "<group>"; };
 		B5D924C52283228700A88BC5 /* VerificationCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerificationCodeViewController.h; sourceTree = "<group>"; };
 		B5D924C62283228700A88BC5 /* VerificationCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerificationCodeViewController.m; sourceTree = "<group>"; };
+		B5D924C922844B3E00A88BC5 /* CashOutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashOutViewController.h; sourceTree = "<group>"; };
+		B5D924CA22844B3E00A88BC5 /* CashOutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashOutViewController.m; sourceTree = "<group>"; };
+		B5D924CD2284507100A88BC5 /* CashOutView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashOutView.h; sourceTree = "<group>"; };
+		B5D924CE2284507100A88BC5 /* CashOutView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashOutView.m; sourceTree = "<group>"; };
 		D4276A9F9517E17492895CF4 /* Pods-MallShopMerchants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.debug.xcconfig"; path = "Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.debug.xcconfig"; sourceTree = "<group>"; };
 		E99E332267A6EA0B991154EA /* Pods-MallShopMerchants.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.release.xcconfig"; path = "Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -273,6 +279,7 @@
 		7803E6D1227EC13D0038C5BB /* MallShopMerchants */ = {
 			isa = PBXGroup;
 			children = (
+				B5D924C822844A9100A88BC5 /* CashOutViewController */,
 				B5D924BD22830D4800A88BC5 /* BlankCard */,
 				B5D924B92283037300A88BC5 /* SettingViewController */,
 				B5D924AE2282BAFC00A88BC5 /* StoreNotice */,
@@ -710,6 +717,25 @@
 			path = BlankCard;
 			sourceTree = "<group>";
 		};
+		B5D924C822844A9100A88BC5 /* CashOutViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B5D924CC2284502D00A88BC5 /* View */,
+				B5D924C922844B3E00A88BC5 /* CashOutViewController.h */,
+				B5D924CA22844B3E00A88BC5 /* CashOutViewController.m */,
+			);
+			path = CashOutViewController;
+			sourceTree = "<group>";
+		};
+		B5D924CC2284502D00A88BC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5D924CD2284507100A88BC5 /* CashOutView.h */,
+				B5D924CE2284507100A88BC5 /* CashOutView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EF95F8EA7953584FB4646D5E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -919,6 +945,7 @@
 				7803E6E2227EC13F0038C5BB /* main.m in Sources */,
 				A6BF83B42281CE0200A66858 /* LoginTexView.m in Sources */,
 				B5D924AD2282ACBC00A88BC5 /* StoreInfoTableViewCell.m in Sources */,
+				B5D924CF2284507100A88BC5 /* CashOutView.m in Sources */,
 				B5D924B12282BB4800A88BC5 /* StoreNoticeViewController.m in Sources */,
 				7803E751228138430038C5BB /* OrderOptionView.m in Sources */,
 				B5D924B82282C84000A88BC5 /* NoticeSectionHeadView.m in Sources */,
@@ -930,6 +957,7 @@
 				A6BF842522827E1300A66858 /* UserInfoItems.m in Sources */,
 				A6BF8415228260C400A66858 /* LoginModelItems.m in Sources */,
 				7803E70D227EC5040038C5BB /* BaseView.m in Sources */,
+				B5D924CB22844B3E00A88BC5 /* CashOutViewController.m in Sources */,
 				7803E745228136100038C5BB /* PaymentHasBeenVC.m in Sources */,
 				B5D924C022830D6F00A88BC5 /* AddBlankCardViewController.m in Sources */,
 				7803E726227ECB150038C5BB /* HomePageVC.m in Sources */,
