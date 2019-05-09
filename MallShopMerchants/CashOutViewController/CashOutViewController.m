@@ -47,7 +47,7 @@
 
 - (CashOutView *)cashOutView {
     if (!_cashOutView) {
-        _cashOutView = [[CashOutView alloc] initWithFrame:CGRectMake(kSixScreen(10.f), kSixScreen(14.f), kScreenWidth - 2*kSixScreen(10.f), kSixScreen(200.f)];
+        _cashOutView = [[CashOutView alloc] initWithFrame:CGRectMake(kSixScreen(10.f), kSixScreen(14.f), kScreenWidth - 2*kSixScreen(10.f), kSixScreen(200.f))];
         _cashOutView.delegate = self;
     }
     return _cashOutView;
