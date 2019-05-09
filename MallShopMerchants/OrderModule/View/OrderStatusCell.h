@@ -11,10 +11,10 @@
 /**
  *订单已付款，处理中，已完成，无效订单Cell
  */
+#import "OrderModelItems.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class OrderModel;
 
 static NSString *const IDOrderStatusCell = @"IDOrderStatusCell";
 
@@ -23,7 +23,8 @@ static NSString *const IDOrderStatusCell = @"IDOrderStatusCell";
 /**
  *根据model计算Cell的高
  */
-- (CGFloat)calculateOrderCellHeightWithOrderModel:(OrderModel *)orderModel;
+- (CGFloat)calculateOrderCellHeightWithOrderModel:(OrderModelItem *)orderModel;
+-(void)setDataModel:(OrderModelItem *)Model;
 
 @end
 

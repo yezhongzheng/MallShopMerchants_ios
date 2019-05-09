@@ -42,7 +42,7 @@ IMPLEMENT_SINGLETON(NetworkingManager, shareNetworkingManager);
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"application/json", @"text/json",@"text/plain",nil];
     [manager.requestSerializer setValue:account.accesstoken forHTTPHeaderField:@"accesstoken"];
-    [manager.requestSerializer setValue:userID forHTTPHeaderField:@"memberid"];
+    [manager.requestSerializer setValue:userID forHTTPHeaderField:@"supplierid"];
     [manager POST:url parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -65,7 +65,7 @@ IMPLEMENT_SINGLETON(NetworkingManager, shareNetworkingManager);
     manager.requestSerializer.timeoutInterval = 60;
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain", @"multipart/form-data", @"application/json", @"text/html", @"image/jpeg", @"image/png", @"application/octet-stream", @"text/json", nil];
     [manager.requestSerializer setValue:account.accesstoken forHTTPHeaderField:@"accesstoken"];
-    [manager.requestSerializer setValue:userID forHTTPHeaderField:@"memberid"];
+    [manager.requestSerializer setValue:userID forHTTPHeaderField:@"supplier_id"];
     NSString *url  = [BASE_URL stringByAppendingString:urlstr];
     // 在parameters里存放照片以外的对象
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0); //创建信号量

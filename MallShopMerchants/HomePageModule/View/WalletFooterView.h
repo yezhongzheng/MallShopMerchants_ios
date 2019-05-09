@@ -1,16 +1,16 @@
 //
-//  OrderModel.h
+//  WalletFooterView.h
 //  MallShopMerchants
 //
-//  Created by zl on 2019/5/7.
+//  Created by 黄伟业 on 2019/5/8.
 //  Copyright © 2019 yezhongzheng. All rights reserved.
 //
 
-#import "BaseModel.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface OrderModel : BaseModel
+@interface WalletFooterView : UIView
 
 @end
 

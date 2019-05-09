@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseViewController : UIViewController
 
+@property(nonatomic,strong)NSMutableArray *dataArray;
+
 - (void)addBackButton;
 
 - (void)addLeftButtonWithTitle:(NSString *)title actionBlock:(void(^)(void))block;

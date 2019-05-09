@@ -19,14 +19,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
 }
 
 - (void)setMainNavigationController
@@ -117,6 +115,13 @@
     if (self.rightBarActionBlock) {
         self.rightBarActionBlock();
     }
+}
+
+-(NSMutableArray *)dataArray{
+    if(!_dataArray){
+        self.dataArray = [NSMutableArray arrayWithCapacity:0];
+    }
+    return _dataArray;
 }
 
 @end

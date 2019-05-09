@@ -8,6 +8,8 @@
 
 #import "PaymentHasBeenVC.h"
 #import "OrderStatusCell.h"
+#import "OrderModelItems.h"
+#import "OrederSerivce.h"
 
 @interface PaymentHasBeenVC () <UITableViewDelegate, UITableViewDataSource>
 
@@ -19,8 +21,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     [self setUI];
+    [self GetListData];
+}
+
+-(void)GetListData{
+    NSDictionary *dict = @{@"page_num":@"1",@"page_size":@"10",@"type":@(self.payId)};
+    [OrederSerivce getOrderlistWithParam:dict successfulBlock:^(NSArray * _Nonnull responseObject, double timeStamp) {
+        OrderModelItems *items = responseObject.firstObject;
+        if(items.ret_code.integerValue == 200){
+            [self.dataArray addObjectsFromArray:items.data.order];
+            [self.tableView reloadData];
+        }
+    } failedBlock:^(NSString * _Nonnull errDescription, NSInteger errCode) {
+        
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -40,10 +55,10 @@
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 211;
+    OrderModelItem *model = self.dataArray[indexPath.section];
     OrderStatusCell *cell = [[OrderStatusCell alloc] init];
     //给一个模型，自动计算高度
-    return [cell calculateOrderCellHeightWithOrderModel:nil];
+    return [cell calculateOrderCellHeightWithOrderModel:model];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
@@ -84,12 +99,14 @@
         cell = [[OrderStatusCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:IDOrderStatusCell];
         cell.selectionStyle = UITableViewCellSelectionStyleDefault;
     }
+    OrderModelItem *model = self.dataArray[indexPath.section];
+    [cell setDataModel:model];
     return cell;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 3;
+    return self.dataArray.count;
 }
 
 #pragma mark - Lazy

@@ -9,9 +9,6 @@
 #import "OrderVC.h"
 #import "SearchVC.h"
 #import "PaymentHasBeenVC.h"
-#import "ProcessingVC.h"
-#import "HadFinishVC.h"
-#import "InvalidOrderVC.h"
 #import "OrderOptionView.h"
 
 @interface OrderVC () <UIPageViewControllerDataSource, UIPageViewControllerDelegate, UISearchControllerDelegate, UISearchBarDelegate>
@@ -22,7 +19,7 @@
 @property (nonatomic, strong) UILabel *searchTipLabel;
 @property (nonatomic, strong) UIButton *searchButton;
 @property (nonatomic, strong) UIPageViewController *pageVC;
-@property (nonatomic, strong) NSArray <BaseViewController *>*datasource;
+@property (nonatomic, strong) NSMutableArray <BaseViewController *>*datasource;
 @property (nonatomic, strong) UIViewController *pendVC;
 @property (nonatomic, assign) NSInteger currentIndex;
 
@@ -34,7 +31,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self setUI];
- 
     [self addChildViewController:self.pageVC];
     [self.view addSubview:self.pageVC.view];
     [self.pageVC.view setFrame:CGRectMake(0, kSixScreen(38), kScreenWidth, self.view.bounds.size.height - kSixScreen(38))];
@@ -79,6 +75,7 @@
 }
 
 #pragma mark - UIPageViewControllerDataSource
+//前滚
 - (nullable UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
     NSInteger before = self.currentIndex - 1;
@@ -87,7 +84,7 @@
     }
     return self.datasource[before];
 }
-
+//后滚
 - (nullable UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
     NSInteger after = self.currentIndex + 1;
@@ -98,11 +95,13 @@
 }
 
 #pragma mark - UIPageViewControllerDelegate
+//开始滚动
 - (void)pageViewController:(UIPageViewController *)pageViewController willTransitionToViewControllers:(NSArray<UIViewController *> *)pendingViewControllers
 {
     self.pendVC = pendingViewControllers.firstObject;
 }
 
+//结束滚动
 - (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray<UIViewController *> *)previousViewControllers transitionCompleted:(BOOL)completed
 {
     [self.datasource enumerateObjectsUsingBlock:^(BaseViewController * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -172,14 +171,15 @@
     return _searchButton;
 }
 
-- (NSArray<BaseViewController *> *)datasource
+- (NSMutableArray<BaseViewController *> *)datasource
 {
     if (!_datasource) {
-        PaymentHasBeenVC *paymentVC = [[PaymentHasBeenVC alloc] init];
-        ProcessingVC *processVC = [[ProcessingVC alloc] init];
-        HadFinishVC *finishVC = [[HadFinishVC alloc] init];
-        InvalidOrderVC *invalidOrderVC = [[InvalidOrderVC alloc] init];
-        self.datasource = @[paymentVC, processVC, finishVC, invalidOrderVC];
+        self.datasource = [[NSMutableArray alloc]init];
+        for (int i=0; i<4; i++) {
+            PaymentHasBeenVC *paymentVC = [[PaymentHasBeenVC alloc] init];
+            paymentVC.payId = i;
+            [self.datasource addObject:paymentVC];
+        }
     }
     return _datasource;
 }
