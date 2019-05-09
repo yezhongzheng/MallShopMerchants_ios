@@ -45,7 +45,7 @@
 }
 
 -(void)Withdrawal_Action:(UIButton *)sender{
-    
+    self.PushCashOutVC();
 }
 
 -(UIButton *)addBankBtn{

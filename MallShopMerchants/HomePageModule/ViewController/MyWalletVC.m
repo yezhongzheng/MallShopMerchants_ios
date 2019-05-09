@@ -12,6 +12,7 @@
 #import "WalletFooterView.h"
 #import "HomePageSerivce.h"
 #import "WalletItems.h"
+#import "CashOutViewController.h"
 
 @interface MyWalletVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -32,6 +33,12 @@
     [self setMainNavigationController];
     self.title = @"我的钱包";
     [self getMyWalletData];
+    
+    __block typeof(self) weakSelf = self;
+    [[self footView] setPushCashOutVC:^{
+        CashOutViewController *vc = [[CashOutViewController alloc] init];
+        [weakSelf.navigationController pushViewController:vc animated:YES];
+    }];
 }
 
 -(void)setUI
@@ -58,6 +65,7 @@
         
     }];
 }
+
 
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -144,7 +152,7 @@
 
 -(WalletFooterView *)footView{
     if(!_footView){
-        self.footView = [[WalletFooterView alloc]initWithFrame:CGRectMake(0, 0, kSixScreen(105), kSixScreen(165))];
+        _footView = [[WalletFooterView alloc]initWithFrame:CGRectMake(0, 0, kSixScreen(105), kSixScreen(165))];
     }
     return _footView;
 }
