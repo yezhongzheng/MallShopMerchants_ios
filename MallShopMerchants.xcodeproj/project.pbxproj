@@ -959,11 +959,8 @@
 				7803E717227EC85B0038C5BB /* MallShopTabBarController.m in Sources */,
 				A6BF840E2281DAC800A66858 /* ProcessingHandler.m in Sources */,
 				7803E6D4227EC13D0038C5BB /* AppDelegate.m in Sources */,
-<<<<<<< HEAD
-=======
 				7803E74B228136A80038C5BB /* HadFinishVC.m in Sources */,
 				B5D924C72283228700A88BC5 /* VerificationCodeViewController.m in Sources */,
->>>>>>> master
 				7803E742228056490038C5BB /* SearchVC.m in Sources */,
 				7803E75A22817AC70038C5BB /* MyItemCell.m in Sources */,
 				A6BF84312282FEAA00A66858 /* WalletHeardView.m in Sources */,
