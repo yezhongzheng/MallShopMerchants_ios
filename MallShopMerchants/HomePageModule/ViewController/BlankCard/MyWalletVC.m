@@ -14,6 +14,8 @@
 #import "WalletItems.h"
 #import "AddBlankCardViewController.h"
 #import "VerificationCodeViewController.h"
+#import "CashOutViewController.h"
+
 
 @interface MyWalletVC ()<UITableViewDelegate,UITableViewDataSource,WalletFooterViewDelegate>
 
@@ -34,6 +36,11 @@
     [self setMainNavigationController];
     self.title = @"我的钱包";
     [self getMyWalletData];
+    WEAKSELF
+    self.footView.PushCashOutVC=^{
+        CashOutViewController *vc = [[CashOutViewController alloc]init];
+        [weakSelf.navigationController pushViewController:vc animated:YES];
+    };
 }
 
 -(void)setUI

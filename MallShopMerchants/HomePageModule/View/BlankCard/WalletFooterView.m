@@ -51,6 +51,7 @@
     if([self.delegate respondsToSelector:@selector(WithdrawalClicket)]){
         [self.delegate WithdrawalClicket];
     }
+//    self.PushCashOutVC();
 }
 
 -(UIButton *)addBankBtn{

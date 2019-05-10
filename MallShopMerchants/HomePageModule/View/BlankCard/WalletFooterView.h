@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,weak)id <WalletFooterViewDelegate> delegate;
 
+@property (nonatomic, strong)void(^PushCashOutVC)(void);
 
 @end
 

@@ -54,7 +54,6 @@
 		A6BF841F2282637900A66858 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A6BF841B2282637900A66858 /* MBProgressHUD.bundle */; };
 		A6BF84282282F4C100A66858 /* OrderModelItems.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF84272282F4C100A66858 /* OrderModelItems.m */; };
 		A6BF842B2282F4E400A66858 /* OrederSerivce.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF842A2282F4E400A66858 /* OrederSerivce.m */; };
-		A6BF842E2282FE5E00A66858 /* MyWalletVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF842D2282FE5E00A66858 /* MyWalletVC.m */; };
 		A6BF84312282FEAA00A66858 /* WalletHeardView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF84302282FEAA00A66858 /* WalletHeardView.m */; };
 		A6BF843422830DB200A66858 /* BankCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF843322830DB200A66858 /* BankCardCell.m */; };
 		A6BF84372283103700A66858 /* WalletFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF84362283103700A66858 /* WalletFooterView.m */; };
@@ -69,15 +68,18 @@
 		A6F3CF512284751E003E2C41 /* ReportAmountView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F3CF502284751E003E2C41 /* ReportAmountView.m */; };
 		A6F3CF542284754D003E2C41 /* ReportShopNewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F3CF532284754D003E2C41 /* ReportShopNewsView.m */; };
 		A6F3CF5722847E7C003E2C41 /* ReportItems.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F3CF5622847E7C003E2C41 /* ReportItems.m */; };
+		A6F3CF5F2285047D003E2C41 /* AddBlankCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F3CF592285047D003E2C41 /* AddBlankCardViewController.m */; };
+		A6F3CF602285047D003E2C41 /* MyWalletVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F3CF5A2285047D003E2C41 /* MyWalletVC.m */; };
+		A6F3CF612285047D003E2C41 /* VerificationCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F3CF5B2285047D003E2C41 /* VerificationCodeViewController.m */; };
+		A6F3CF73228504AF003E2C41 /* NoticeSectionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F3CF65228504AF003E2C41 /* NoticeSectionHeadView.m */; };
+		A6F3CF74228504AF003E2C41 /* StoreNoticeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F3CF66228504AF003E2C41 /* StoreNoticeTableViewCell.m */; };
+		A6F3CF75228504AF003E2C41 /* StoreNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F3CF69228504AF003E2C41 /* StoreNoticeViewController.m */; };
+		A6F3CF76228504AF003E2C41 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F3CF6C228504AF003E2C41 /* SettingViewController.m */; };
+		A6F3CF77228504AF003E2C41 /* StoreInfomationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F3CF6E228504AF003E2C41 /* StoreInfomationViewController.m */; };
+		A6F3CF78228504AF003E2C41 /* StoreInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F3CF70228504AF003E2C41 /* StoreInfoTableViewCell.m */; };
 		B55323B822819E1600293052 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B55323B722819E1600293052 /* LoginViewController.m */; };
-		B5D924A922829F5300A88BC5 /* StoreInfomationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D924A822829F5300A88BC5 /* StoreInfomationViewController.m */; };
-		B5D924AD2282ACBC00A88BC5 /* StoreInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D924AC2282ACBC00A88BC5 /* StoreInfoTableViewCell.m */; };
-		B5D924B12282BB4800A88BC5 /* StoreNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D924B02282BB4800A88BC5 /* StoreNoticeViewController.m */; };
-		B5D924B52282BDB000A88BC5 /* StoreNoticeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D924B42282BDB000A88BC5 /* StoreNoticeTableViewCell.m */; };
-		B5D924B82282C84000A88BC5 /* NoticeSectionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D924B72282C84000A88BC5 /* NoticeSectionHeadView.m */; };
-		B5D924BC2283039600A88BC5 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D924BB2283039600A88BC5 /* SettingViewController.m */; };
-		B5D924C022830D6F00A88BC5 /* AddBlankCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D924BF22830D6F00A88BC5 /* AddBlankCardViewController.m */; };
-		B5D924C72283228700A88BC5 /* VerificationCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D924C62283228700A88BC5 /* VerificationCodeViewController.m */; };
+		B5D924CB22844B3E00A88BC5 /* CashOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D924CA22844B3E00A88BC5 /* CashOutViewController.m */; };
+		B5D924CF2284507100A88BC5 /* CashOutView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D924CE2284507100A88BC5 /* CashOutView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,8 +197,6 @@
 		A6BF84272282F4C100A66858 /* OrderModelItems.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderModelItems.m; sourceTree = "<group>"; };
 		A6BF84292282F4E400A66858 /* OrederSerivce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrederSerivce.h; sourceTree = "<group>"; };
 		A6BF842A2282F4E400A66858 /* OrederSerivce.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrederSerivce.m; sourceTree = "<group>"; };
-		A6BF842C2282FE5E00A66858 /* MyWalletVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWalletVC.h; sourceTree = "<group>"; };
-		A6BF842D2282FE5E00A66858 /* MyWalletVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWalletVC.m; sourceTree = "<group>"; };
 		A6BF842F2282FEAA00A66858 /* WalletHeardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletHeardView.h; sourceTree = "<group>"; };
 		A6BF84302282FEAA00A66858 /* WalletHeardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletHeardView.m; sourceTree = "<group>"; };
 		A6BF843222830DB200A66858 /* BankCardCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankCardCell.h; sourceTree = "<group>"; };
@@ -225,24 +225,30 @@
 		A6F3CF532284754D003E2C41 /* ReportShopNewsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReportShopNewsView.m; sourceTree = "<group>"; };
 		A6F3CF5522847E7C003E2C41 /* ReportItems.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReportItems.h; sourceTree = "<group>"; };
 		A6F3CF5622847E7C003E2C41 /* ReportItems.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReportItems.m; sourceTree = "<group>"; };
+		A6F3CF592285047D003E2C41 /* AddBlankCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBlankCardViewController.m; sourceTree = "<group>"; };
+		A6F3CF5A2285047D003E2C41 /* MyWalletVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWalletVC.m; sourceTree = "<group>"; };
+		A6F3CF5B2285047D003E2C41 /* VerificationCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerificationCodeViewController.m; sourceTree = "<group>"; };
+		A6F3CF5C2285047D003E2C41 /* AddBlankCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBlankCardViewController.h; sourceTree = "<group>"; };
+		A6F3CF5D2285047D003E2C41 /* MyWalletVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWalletVC.h; sourceTree = "<group>"; };
+		A6F3CF5E2285047D003E2C41 /* VerificationCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerificationCodeViewController.h; sourceTree = "<group>"; };
+		A6F3CF63228504AF003E2C41 /* StoreNoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreNoticeViewController.h; sourceTree = "<group>"; };
+		A6F3CF65228504AF003E2C41 /* NoticeSectionHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeSectionHeadView.m; sourceTree = "<group>"; };
+		A6F3CF66228504AF003E2C41 /* StoreNoticeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreNoticeTableViewCell.m; sourceTree = "<group>"; };
+		A6F3CF67228504AF003E2C41 /* StoreNoticeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreNoticeTableViewCell.h; sourceTree = "<group>"; };
+		A6F3CF68228504AF003E2C41 /* NoticeSectionHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeSectionHeadView.h; sourceTree = "<group>"; };
+		A6F3CF69228504AF003E2C41 /* StoreNoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreNoticeViewController.m; sourceTree = "<group>"; };
+		A6F3CF6B228504AF003E2C41 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		A6F3CF6C228504AF003E2C41 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		A6F3CF6E228504AF003E2C41 /* StoreInfomationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreInfomationViewController.m; sourceTree = "<group>"; };
+		A6F3CF70228504AF003E2C41 /* StoreInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreInfoTableViewCell.m; sourceTree = "<group>"; };
+		A6F3CF71228504AF003E2C41 /* StoreInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreInfoTableViewCell.h; sourceTree = "<group>"; };
+		A6F3CF72228504AF003E2C41 /* StoreInfomationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreInfomationViewController.h; sourceTree = "<group>"; };
 		B55323B622819E1600293052 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		B55323B722819E1600293052 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		B5D924A722829F5300A88BC5 /* StoreInfomationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreInfomationViewController.h; sourceTree = "<group>"; };
-		B5D924A822829F5300A88BC5 /* StoreInfomationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreInfomationViewController.m; sourceTree = "<group>"; };
-		B5D924AB2282ACBC00A88BC5 /* StoreInfoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreInfoTableViewCell.h; sourceTree = "<group>"; };
-		B5D924AC2282ACBC00A88BC5 /* StoreInfoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreInfoTableViewCell.m; sourceTree = "<group>"; };
-		B5D924AF2282BB4800A88BC5 /* StoreNoticeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreNoticeViewController.h; sourceTree = "<group>"; };
-		B5D924B02282BB4800A88BC5 /* StoreNoticeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreNoticeViewController.m; sourceTree = "<group>"; };
-		B5D924B32282BDB000A88BC5 /* StoreNoticeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreNoticeTableViewCell.h; sourceTree = "<group>"; };
-		B5D924B42282BDB000A88BC5 /* StoreNoticeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreNoticeTableViewCell.m; sourceTree = "<group>"; };
-		B5D924B62282C84000A88BC5 /* NoticeSectionHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoticeSectionHeadView.h; sourceTree = "<group>"; };
-		B5D924B72282C84000A88BC5 /* NoticeSectionHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoticeSectionHeadView.m; sourceTree = "<group>"; };
-		B5D924BA2283039600A88BC5 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
-		B5D924BB2283039600A88BC5 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
-		B5D924BE22830D6F00A88BC5 /* AddBlankCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddBlankCardViewController.h; sourceTree = "<group>"; };
-		B5D924BF22830D6F00A88BC5 /* AddBlankCardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddBlankCardViewController.m; sourceTree = "<group>"; };
-		B5D924C52283228700A88BC5 /* VerificationCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerificationCodeViewController.h; sourceTree = "<group>"; };
-		B5D924C62283228700A88BC5 /* VerificationCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerificationCodeViewController.m; sourceTree = "<group>"; };
+		B5D924C922844B3E00A88BC5 /* CashOutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashOutViewController.h; sourceTree = "<group>"; };
+		B5D924CA22844B3E00A88BC5 /* CashOutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashOutViewController.m; sourceTree = "<group>"; };
+		B5D924CD2284507100A88BC5 /* CashOutView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashOutView.h; sourceTree = "<group>"; };
+		B5D924CE2284507100A88BC5 /* CashOutView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashOutView.m; sourceTree = "<group>"; };
 		D4276A9F9517E17492895CF4 /* Pods-MallShopMerchants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.debug.xcconfig"; path = "Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.debug.xcconfig"; sourceTree = "<group>"; };
 		E99E332267A6EA0B991154EA /* Pods-MallShopMerchants.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MallShopMerchants.release.xcconfig"; path = "Target Support Files/Pods-MallShopMerchants/Pods-MallShopMerchants.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -306,6 +312,7 @@
 		7803E6D1227EC13D0038C5BB /* MallShopMerchants */ = {
 			isa = PBXGroup;
 			children = (
+				B5D924C822844A9100A88BC5 /* CashOutViewController */,
 				B55323B522819DF900293052 /* Login */,
 				7803E735227EE1B90038C5BB /* Tools */,
 				7803E72F227ED5300038C5BB /* ThirdParty */,
@@ -432,8 +439,8 @@
 		7803E71D227ECAB10038C5BB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A6F3CF582285047D003E2C41 /* BlankCard */,
 				A6F3CF4922847232003E2C41 /* Report */,
-				B5D924BD22830D4800A88BC5 /* BlankCard */,
 				7803E724227ECB150038C5BB /* HomePageVC.h */,
 				7803E725227ECB150038C5BB /* HomePageVC.m */,
 			);
@@ -454,9 +461,9 @@
 		7803E71F227ECAB90038C5BB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B5D924A622829F1A00A88BC5 /* StoreInfomation */,
-				B5D924AE2282BAFC00A88BC5 /* StoreNotice */,
-				B5D924B92283037300A88BC5 /* SettingViewController */,
+				A6F3CF6A228504AF003E2C41 /* SettingViewController */,
+				A6F3CF6D228504AF003E2C41 /* StoreInfomation */,
+				A6F3CF62228504AF003E2C41 /* StoreNotice */,
 				7803E727227ECB710038C5BB /* MyVC.h */,
 				7803E728227ECB710038C5BB /* MyVC.m */,
 			);
@@ -716,6 +723,68 @@
 			path = BlankCard;
 			sourceTree = "<group>";
 		};
+		A6F3CF582285047D003E2C41 /* BlankCard */ = {
+			isa = PBXGroup;
+			children = (
+				A6F3CF5C2285047D003E2C41 /* AddBlankCardViewController.h */,
+				A6F3CF592285047D003E2C41 /* AddBlankCardViewController.m */,
+				A6F3CF5D2285047D003E2C41 /* MyWalletVC.h */,
+				A6F3CF5A2285047D003E2C41 /* MyWalletVC.m */,
+				A6F3CF5E2285047D003E2C41 /* VerificationCodeViewController.h */,
+				A6F3CF5B2285047D003E2C41 /* VerificationCodeViewController.m */,
+			);
+			path = BlankCard;
+			sourceTree = "<group>";
+		};
+		A6F3CF62228504AF003E2C41 /* StoreNotice */ = {
+			isa = PBXGroup;
+			children = (
+				A6F3CF63228504AF003E2C41 /* StoreNoticeViewController.h */,
+				A6F3CF64228504AF003E2C41 /* View */,
+				A6F3CF69228504AF003E2C41 /* StoreNoticeViewController.m */,
+			);
+			path = StoreNotice;
+			sourceTree = "<group>";
+		};
+		A6F3CF64228504AF003E2C41 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6F3CF65228504AF003E2C41 /* NoticeSectionHeadView.m */,
+				A6F3CF66228504AF003E2C41 /* StoreNoticeTableViewCell.m */,
+				A6F3CF67228504AF003E2C41 /* StoreNoticeTableViewCell.h */,
+				A6F3CF68228504AF003E2C41 /* NoticeSectionHeadView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6F3CF6A228504AF003E2C41 /* SettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A6F3CF6B228504AF003E2C41 /* SettingViewController.h */,
+				A6F3CF6C228504AF003E2C41 /* SettingViewController.m */,
+			);
+			path = SettingViewController;
+			sourceTree = "<group>";
+		};
+		A6F3CF6D228504AF003E2C41 /* StoreInfomation */ = {
+			isa = PBXGroup;
+			children = (
+				A6F3CF6E228504AF003E2C41 /* StoreInfomationViewController.m */,
+				A6F3CF6F228504AF003E2C41 /* View */,
+				A6F3CF72228504AF003E2C41 /* StoreInfomationViewController.h */,
+			);
+			path = StoreInfomation;
+			sourceTree = "<group>";
+		};
+		A6F3CF6F228504AF003E2C41 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6F3CF70228504AF003E2C41 /* StoreInfoTableViewCell.m */,
+				A6F3CF71228504AF003E2C41 /* StoreInfoTableViewCell.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B55323B522819DF900293052 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -727,66 +796,23 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		B5D924A622829F1A00A88BC5 /* StoreInfomation */ = {
+		B5D924C822844A9100A88BC5 /* CashOutViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B5D924AA2282AC9000A88BC5 /* View */,
-				B5D924A722829F5300A88BC5 /* StoreInfomationViewController.h */,
-				B5D924A822829F5300A88BC5 /* StoreInfomationViewController.m */,
+				B5D924CC2284502D00A88BC5 /* View */,
+				B5D924C922844B3E00A88BC5 /* CashOutViewController.h */,
+				B5D924CA22844B3E00A88BC5 /* CashOutViewController.m */,
 			);
-			path = StoreInfomation;
+			path = CashOutViewController;
 			sourceTree = "<group>";
 		};
-		B5D924AA2282AC9000A88BC5 /* View */ = {
+		B5D924CC2284502D00A88BC5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B5D924AB2282ACBC00A88BC5 /* StoreInfoTableViewCell.h */,
-				B5D924AC2282ACBC00A88BC5 /* StoreInfoTableViewCell.m */,
+				B5D924CD2284507100A88BC5 /* CashOutView.h */,
+				B5D924CE2284507100A88BC5 /* CashOutView.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		B5D924AE2282BAFC00A88BC5 /* StoreNotice */ = {
-			isa = PBXGroup;
-			children = (
-				B5D924B22282BD6000A88BC5 /* View */,
-				B5D924AF2282BB4800A88BC5 /* StoreNoticeViewController.h */,
-				B5D924B02282BB4800A88BC5 /* StoreNoticeViewController.m */,
-			);
-			path = StoreNotice;
-			sourceTree = "<group>";
-		};
-		B5D924B22282BD6000A88BC5 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B5D924B32282BDB000A88BC5 /* StoreNoticeTableViewCell.h */,
-				B5D924B42282BDB000A88BC5 /* StoreNoticeTableViewCell.m */,
-				B5D924B62282C84000A88BC5 /* NoticeSectionHeadView.h */,
-				B5D924B72282C84000A88BC5 /* NoticeSectionHeadView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B5D924B92283037300A88BC5 /* SettingViewController */ = {
-			isa = PBXGroup;
-			children = (
-				B5D924BA2283039600A88BC5 /* SettingViewController.h */,
-				B5D924BB2283039600A88BC5 /* SettingViewController.m */,
-			);
-			path = SettingViewController;
-			sourceTree = "<group>";
-		};
-		B5D924BD22830D4800A88BC5 /* BlankCard */ = {
-			isa = PBXGroup;
-			children = (
-				A6BF842C2282FE5E00A66858 /* MyWalletVC.h */,
-				A6BF842D2282FE5E00A66858 /* MyWalletVC.m */,
-				B5D924BE22830D6F00A88BC5 /* AddBlankCardViewController.h */,
-				B5D924BF22830D6F00A88BC5 /* AddBlankCardViewController.m */,
-				B5D924C52283228700A88BC5 /* VerificationCodeViewController.h */,
-				B5D924C62283228700A88BC5 /* VerificationCodeViewController.m */,
-			);
-			path = BlankCard;
 			sourceTree = "<group>";
 		};
 		EF95F8EA7953584FB4646D5E /* Pods */ = {
@@ -987,22 +1013,23 @@
 				A6BF840D2281DAC800A66858 /* ServiceBaseUrlTool.m in Sources */,
 				A6BF840C2281DAC800A66858 /* LCAccount.m in Sources */,
 				7803E738227EE24D0038C5BB /* ComponentTools.m in Sources */,
-				B5D924BC2283039600A88BC5 /* SettingViewController.m in Sources */,
 				A6BF840B2281DAC800A66858 /* TimeClock.m in Sources */,
 				7803E72C227ECB820038C5BB /* OrderVC.m in Sources */,
 				7803E710227EC5140038C5BB /* BaseModel.m in Sources */,
 				A6BF84082281DAC800A66858 /* NSString+VericationTool.m in Sources */,
 				7803E6D7227EC13D0038C5BB /* ViewController.m in Sources */,
+				A6F3CF78228504AF003E2C41 /* StoreInfoTableViewCell.m in Sources */,
 				A6F3CF5722847E7C003E2C41 /* ReportItems.m in Sources */,
 				A6BF842B2282F4E400A66858 /* OrederSerivce.m in Sources */,
+				A6F3CF5F2285047D003E2C41 /* AddBlankCardViewController.m in Sources */,
 				A6BF841222825EB500A66858 /* LoginService.m in Sources */,
 				7803E6E2227EC13F0038C5BB /* main.m in Sources */,
-				A6BF842E2282FE5E00A66858 /* MyWalletVC.m in Sources */,
 				A6BF83B42281CE0200A66858 /* LoginTexView.m in Sources */,
-				B5D924AD2282ACBC00A88BC5 /* StoreInfoTableViewCell.m in Sources */,
-				B5D924B12282BB4800A88BC5 /* StoreNoticeViewController.m in Sources */,
+				B5D924CF2284507100A88BC5 /* CashOutView.m in Sources */,
+				A6F3CF77228504AF003E2C41 /* StoreInfomationViewController.m in Sources */,
+				A6F3CF612285047D003E2C41 /* VerificationCodeViewController.m in Sources */,
 				7803E751228138430038C5BB /* OrderOptionView.m in Sources */,
-				B5D924B82282C84000A88BC5 /* NoticeSectionHeadView.m in Sources */,
+				A6F3CF75228504AF003E2C41 /* StoreNoticeViewController.m in Sources */,
 				7803E714227EC8040038C5BB /* MallShopMerchantsNC.m in Sources */,
 				7803E733227EDCBE0038C5BB /* UIColor+HexString.m in Sources */,
 				A6BF84372283103700A66858 /* WalletFooterView.m in Sources */,
@@ -1011,9 +1038,9 @@
 				A6BF841D2282637900A66858 /* MBProgressHUD+Add.m in Sources */,
 				A6BF8415228260C400A66858 /* LoginModelItems.m in Sources */,
 				7803E70D227EC5040038C5BB /* BaseView.m in Sources */,
+				B5D924CB22844B3E00A88BC5 /* CashOutViewController.m in Sources */,
 				A6BF84472283235000A66858 /* UserInfoItems.m in Sources */,
 				7803E745228136100038C5BB /* PaymentHasBeenVC.m in Sources */,
-				B5D924C022830D6F00A88BC5 /* AddBlankCardViewController.m in Sources */,
 				7803E726227ECB150038C5BB /* HomePageVC.m in Sources */,
 				7803E7542281613E0038C5BB /* OrderStatusCell.m in Sources */,
 				A6BF84072281DAC800A66858 /* LCCache.m in Sources */,
@@ -1021,24 +1048,25 @@
 				7803E717227EC85B0038C5BB /* MallShopTabBarController.m in Sources */,
 				A6BF840E2281DAC800A66858 /* ProcessingHandler.m in Sources */,
 				7803E6D4227EC13D0038C5BB /* AppDelegate.m in Sources */,
-				B5D924C72283228700A88BC5 /* VerificationCodeViewController.m in Sources */,
 				A6F3CF512284751E003E2C41 /* ReportAmountView.m in Sources */,
 				7803E742228056490038C5BB /* SearchVC.m in Sources */,
+				A6F3CF76228504AF003E2C41 /* SettingViewController.m in Sources */,
 				7803E75A22817AC70038C5BB /* MyItemCell.m in Sources */,
 				A6F3CF542284754D003E2C41 /* ReportShopNewsView.m in Sources */,
 				A6F3CF4822847219003E2C41 /* ReportVC.m in Sources */,
 				A6BF84312282FEAA00A66858 /* WalletHeardView.m in Sources */,
+				A6F3CF73228504AF003E2C41 /* NoticeSectionHeadView.m in Sources */,
 				A6BF83EB2281D8FE00A66858 /* NSDictionary+JKSafeAccess.m in Sources */,
-				B5D924B52282BDB000A88BC5 /* StoreNoticeTableViewCell.m in Sources */,
 				7803E75D22817D570038C5BB /* MyItemModel.m in Sources */,
 				A6BF83EA2281D8FE00A66858 /* NSArray+JKSafeAccess.m in Sources */,
-				B5D924A922829F5300A88BC5 /* StoreInfomationViewController.m in Sources */,
 				A6F3CF4C228472F8003E2C41 /* ReportListVC.m in Sources */,
 				7803E70A227EC4ED0038C5BB /* BaseViewController.m in Sources */,
 				A6BF84282282F4C100A66858 /* OrderModelItems.m in Sources */,
 				A6BF843422830DB200A66858 /* BankCardCell.m in Sources */,
 				A6BF84482283235000A66858 /* WalletItems.m in Sources */,
 				A6BF844A2283235000A66858 /* HomePageSerivce.m in Sources */,
+				A6F3CF602285047D003E2C41 /* MyWalletVC.m in Sources */,
+				A6F3CF74228504AF003E2C41 /* StoreNoticeTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
