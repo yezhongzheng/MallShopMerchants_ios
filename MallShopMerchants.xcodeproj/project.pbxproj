@@ -62,6 +62,13 @@
 		A6BF84482283235000A66858 /* WalletItems.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF84412283235000A66858 /* WalletItems.m */; };
 		A6BF84492283235000A66858 /* BankCartItems.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF84422283235000A66858 /* BankCartItems.m */; };
 		A6BF844A2283235000A66858 /* HomePageSerivce.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF84432283235000A66858 /* HomePageSerivce.m */; };
+		A6BF844D2283B7F100A66858 /* MySetSerivce.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BF844C2283B7F100A66858 /* MySetSerivce.m */; };
+		A6F3CF4522846EDD003E2C41 /* GeneralResultsItems.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F3CF4422846EDD003E2C41 /* GeneralResultsItems.m */; };
+		A6F3CF4822847219003E2C41 /* ReportVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F3CF4722847219003E2C41 /* ReportVC.m */; };
+		A6F3CF4C228472F8003E2C41 /* ReportListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F3CF4B228472F8003E2C41 /* ReportListVC.m */; };
+		A6F3CF512284751E003E2C41 /* ReportAmountView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F3CF502284751E003E2C41 /* ReportAmountView.m */; };
+		A6F3CF542284754D003E2C41 /* ReportShopNewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F3CF532284754D003E2C41 /* ReportShopNewsView.m */; };
+		A6F3CF5722847E7C003E2C41 /* ReportItems.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F3CF5622847E7C003E2C41 /* ReportItems.m */; };
 		B55323B822819E1600293052 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B55323B722819E1600293052 /* LoginViewController.m */; };
 		B5D924A922829F5300A88BC5 /* StoreInfomationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D924A822829F5300A88BC5 /* StoreInfomationViewController.m */; };
 		B5D924AD2282ACBC00A88BC5 /* StoreInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D924AC2282ACBC00A88BC5 /* StoreInfoTableViewCell.m */; };
@@ -204,6 +211,20 @@
 		A6BF84442283235000A66858 /* UserInfoItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoItems.h; sourceTree = "<group>"; };
 		A6BF84452283235000A66858 /* BankCartItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCartItems.h; sourceTree = "<group>"; };
 		A6BF84462283235000A66858 /* WalletItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletItems.h; sourceTree = "<group>"; };
+		A6BF844B2283B7F100A66858 /* MySetSerivce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySetSerivce.h; sourceTree = "<group>"; };
+		A6BF844C2283B7F100A66858 /* MySetSerivce.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySetSerivce.m; sourceTree = "<group>"; };
+		A6F3CF4322846EDD003E2C41 /* GeneralResultsItems.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneralResultsItems.h; sourceTree = "<group>"; };
+		A6F3CF4422846EDD003E2C41 /* GeneralResultsItems.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralResultsItems.m; sourceTree = "<group>"; };
+		A6F3CF4622847219003E2C41 /* ReportVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReportVC.h; sourceTree = "<group>"; };
+		A6F3CF4722847219003E2C41 /* ReportVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReportVC.m; sourceTree = "<group>"; };
+		A6F3CF4A228472F8003E2C41 /* ReportListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReportListVC.h; sourceTree = "<group>"; };
+		A6F3CF4B228472F8003E2C41 /* ReportListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReportListVC.m; sourceTree = "<group>"; };
+		A6F3CF4F2284751E003E2C41 /* ReportAmountView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReportAmountView.h; sourceTree = "<group>"; };
+		A6F3CF502284751E003E2C41 /* ReportAmountView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReportAmountView.m; sourceTree = "<group>"; };
+		A6F3CF522284754D003E2C41 /* ReportShopNewsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReportShopNewsView.h; sourceTree = "<group>"; };
+		A6F3CF532284754D003E2C41 /* ReportShopNewsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReportShopNewsView.m; sourceTree = "<group>"; };
+		A6F3CF5522847E7C003E2C41 /* ReportItems.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReportItems.h; sourceTree = "<group>"; };
+		A6F3CF5622847E7C003E2C41 /* ReportItems.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReportItems.m; sourceTree = "<group>"; };
 		B55323B622819E1600293052 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		B55323B722819E1600293052 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		B5D924A722829F5300A88BC5 /* StoreInfomationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreInfomationViewController.h; sourceTree = "<group>"; };
@@ -285,10 +306,6 @@
 		7803E6D1227EC13D0038C5BB /* MallShopMerchants */ = {
 			isa = PBXGroup;
 			children = (
-				B5D924BD22830D4800A88BC5 /* BlankCard */,
-				B5D924B92283037300A88BC5 /* SettingViewController */,
-				B5D924AE2282BAFC00A88BC5 /* StoreNotice */,
-				B5D924A622829F1A00A88BC5 /* StoreInfomation */,
 				B55323B522819DF900293052 /* Login */,
 				7803E735227EE1B90038C5BB /* Tools */,
 				7803E72F227ED5300038C5BB /* ThirdParty */,
@@ -404,14 +421,10 @@
 		7803E71B227ECAB00038C5BB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A6F3CF4E228474D4003E2C41 /* BlankCard */,
+				A6F3CF4D228474BE003E2C41 /* Report */,
 				7803E73C228027EE0038C5BB /* HomePageShopManageCell.h */,
 				7803E73D228027EE0038C5BB /* HomePageShopManageCell.m */,
-				A6BF842F2282FEAA00A66858 /* WalletHeardView.h */,
-				A6BF84302282FEAA00A66858 /* WalletHeardView.m */,
-				A6BF843222830DB200A66858 /* BankCardCell.h */,
-				A6BF843322830DB200A66858 /* BankCardCell.m */,
-				A6BF84352283103700A66858 /* WalletFooterView.h */,
-				A6BF84362283103700A66858 /* WalletFooterView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -419,10 +432,10 @@
 		7803E71D227ECAB10038C5BB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A6F3CF4922847232003E2C41 /* Report */,
+				B5D924BD22830D4800A88BC5 /* BlankCard */,
 				7803E724227ECB150038C5BB /* HomePageVC.h */,
 				7803E725227ECB150038C5BB /* HomePageVC.m */,
-				A6BF842C2282FE5E00A66858 /* MyWalletVC.h */,
-				A6BF842D2282FE5E00A66858 /* MyWalletVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -432,6 +445,8 @@
 			children = (
 				7803E75B22817D570038C5BB /* MyItemModel.h */,
 				7803E75C22817D570038C5BB /* MyItemModel.m */,
+				A6BF844B2283B7F100A66858 /* MySetSerivce.h */,
+				A6BF844C2283B7F100A66858 /* MySetSerivce.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -439,6 +454,9 @@
 		7803E71F227ECAB90038C5BB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B5D924A622829F1A00A88BC5 /* StoreInfomation */,
+				B5D924AE2282BAFC00A88BC5 /* StoreNotice */,
+				B5D924B92283037300A88BC5 /* SettingViewController */,
 				7803E727227ECB710038C5BB /* MyVC.h */,
 				7803E728227ECB710038C5BB /* MyVC.m */,
 			);
@@ -655,8 +673,47 @@
 				A6BF84402283235000A66858 /* UserInfoItems.m */,
 				A6BF84462283235000A66858 /* WalletItems.h */,
 				A6BF84412283235000A66858 /* WalletItems.m */,
+				A6F3CF4322846EDD003E2C41 /* GeneralResultsItems.h */,
+				A6F3CF4422846EDD003E2C41 /* GeneralResultsItems.m */,
+				A6F3CF5522847E7C003E2C41 /* ReportItems.h */,
+				A6F3CF5622847E7C003E2C41 /* ReportItems.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A6F3CF4922847232003E2C41 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				A6F3CF4622847219003E2C41 /* ReportVC.h */,
+				A6F3CF4722847219003E2C41 /* ReportVC.m */,
+				A6F3CF4A228472F8003E2C41 /* ReportListVC.h */,
+				A6F3CF4B228472F8003E2C41 /* ReportListVC.m */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		A6F3CF4D228474BE003E2C41 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				A6F3CF4F2284751E003E2C41 /* ReportAmountView.h */,
+				A6F3CF502284751E003E2C41 /* ReportAmountView.m */,
+				A6F3CF522284754D003E2C41 /* ReportShopNewsView.h */,
+				A6F3CF532284754D003E2C41 /* ReportShopNewsView.m */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		A6F3CF4E228474D4003E2C41 /* BlankCard */ = {
+			isa = PBXGroup;
+			children = (
+				A6BF842F2282FEAA00A66858 /* WalletHeardView.h */,
+				A6BF84302282FEAA00A66858 /* WalletHeardView.m */,
+				A6BF843222830DB200A66858 /* BankCardCell.h */,
+				A6BF843322830DB200A66858 /* BankCardCell.m */,
+				A6BF84352283103700A66858 /* WalletFooterView.h */,
+				A6BF84362283103700A66858 /* WalletFooterView.m */,
+			);
+			path = BlankCard;
 			sourceTree = "<group>";
 		};
 		B55323B522819DF900293052 /* Login */ = {
@@ -722,6 +779,8 @@
 		B5D924BD22830D4800A88BC5 /* BlankCard */ = {
 			isa = PBXGroup;
 			children = (
+				A6BF842C2282FE5E00A66858 /* MyWalletVC.h */,
+				A6BF842D2282FE5E00A66858 /* MyWalletVC.m */,
 				B5D924BE22830D6F00A88BC5 /* AddBlankCardViewController.h */,
 				B5D924BF22830D6F00A88BC5 /* AddBlankCardViewController.m */,
 				B5D924C52283228700A88BC5 /* VerificationCodeViewController.h */,
@@ -922,6 +981,7 @@
 				A6BF83B52281CE0200A66858 /* LoginIconView.m in Sources */,
 				A6BF84092281DAC800A66858 /* NetworkingManager.m in Sources */,
 				A6BF840A2281DAC800A66858 /* NSObject+JSONTool.m in Sources */,
+				A6BF844D2283B7F100A66858 /* MySetSerivce.m in Sources */,
 				B55323B822819E1600293052 /* LoginViewController.m in Sources */,
 				7803E729227ECB710038C5BB /* MyVC.m in Sources */,
 				A6BF840D2281DAC800A66858 /* ServiceBaseUrlTool.m in Sources */,
@@ -933,6 +993,7 @@
 				7803E710227EC5140038C5BB /* BaseModel.m in Sources */,
 				A6BF84082281DAC800A66858 /* NSString+VericationTool.m in Sources */,
 				7803E6D7227EC13D0038C5BB /* ViewController.m in Sources */,
+				A6F3CF5722847E7C003E2C41 /* ReportItems.m in Sources */,
 				A6BF842B2282F4E400A66858 /* OrederSerivce.m in Sources */,
 				A6BF841222825EB500A66858 /* LoginService.m in Sources */,
 				7803E6E2227EC13F0038C5BB /* main.m in Sources */,
@@ -956,19 +1017,23 @@
 				7803E726227ECB150038C5BB /* HomePageVC.m in Sources */,
 				7803E7542281613E0038C5BB /* OrderStatusCell.m in Sources */,
 				A6BF84072281DAC800A66858 /* LCCache.m in Sources */,
+				A6F3CF4522846EDD003E2C41 /* GeneralResultsItems.m in Sources */,
 				7803E717227EC85B0038C5BB /* MallShopTabBarController.m in Sources */,
 				A6BF840E2281DAC800A66858 /* ProcessingHandler.m in Sources */,
 				7803E6D4227EC13D0038C5BB /* AppDelegate.m in Sources */,
-				7803E74B228136A80038C5BB /* HadFinishVC.m in Sources */,
 				B5D924C72283228700A88BC5 /* VerificationCodeViewController.m in Sources */,
+				A6F3CF512284751E003E2C41 /* ReportAmountView.m in Sources */,
 				7803E742228056490038C5BB /* SearchVC.m in Sources */,
 				7803E75A22817AC70038C5BB /* MyItemCell.m in Sources */,
+				A6F3CF542284754D003E2C41 /* ReportShopNewsView.m in Sources */,
+				A6F3CF4822847219003E2C41 /* ReportVC.m in Sources */,
 				A6BF84312282FEAA00A66858 /* WalletHeardView.m in Sources */,
 				A6BF83EB2281D8FE00A66858 /* NSDictionary+JKSafeAccess.m in Sources */,
 				B5D924B52282BDB000A88BC5 /* StoreNoticeTableViewCell.m in Sources */,
 				7803E75D22817D570038C5BB /* MyItemModel.m in Sources */,
 				A6BF83EA2281D8FE00A66858 /* NSArray+JKSafeAccess.m in Sources */,
 				B5D924A922829F5300A88BC5 /* StoreInfomationViewController.m in Sources */,
+				A6F3CF4C228472F8003E2C41 /* ReportListVC.m in Sources */,
 				7803E70A227EC4ED0038C5BB /* BaseViewController.m in Sources */,
 				A6BF84282282F4C100A66858 /* OrderModelItems.m in Sources */,
 				A6BF843422830DB200A66858 /* BankCardCell.m in Sources */,

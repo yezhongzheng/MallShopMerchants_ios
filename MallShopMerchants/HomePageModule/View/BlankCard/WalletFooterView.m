@@ -36,16 +36,21 @@
     }];
     [self.withdrawalBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(weakSelf.addBankBtn.mas_bottom).with.offset(kSixScreen(12));
-        make.left.right.height.equalTo(weakSelf.addBankBtn);
+        make.left.right.equalTo(weakSelf.addBankBtn);
+        make.height.mas_equalTo(kSixScreen(54));
     }];
 }
 
 -(void)AddBank_Action:(UIButton *)sender{
-    
+    if([self.delegate respondsToSelector:@selector(addBankCardClicket)]){
+        [self.delegate addBankCardClicket];
+    }
 }
 
 -(void)Withdrawal_Action:(UIButton *)sender{
-    
+    if([self.delegate respondsToSelector:@selector(WithdrawalClicket)]){
+        [self.delegate WithdrawalClicket];
+    }
 }
 
 -(UIButton *)addBankBtn{

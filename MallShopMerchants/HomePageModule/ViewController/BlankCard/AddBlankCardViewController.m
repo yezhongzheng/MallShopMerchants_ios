@@ -7,6 +7,9 @@
 //
 
 #import "AddBlankCardViewController.h"
+#import "VerificationCodeViewController.h"
+#import "HomePageSerivce.h"
+#import "GeneralResultsItems.h"
 
 @interface AddBlankCardViewController ()
 
@@ -109,7 +112,28 @@
 }
 
 - (void)buttonClicked {
-    
+    if([NSString isEmptyString:self.nameTextField.text]){
+        [MBProgressHUD showTipMessag:@"持卡人不能为空" toView:self.view];
+        return;
+    }else if ([NSString isEmptyString:self.numberTextField.text]){
+        [MBProgressHUD showTipMessag:@"卡号不能为空" toView:self.view];
+        return;
+    }
+    [HomePageSerivce addBankCardWithParam:@{@"name":self.nameTextField.text,@"number":self.numberTextField.text} successfulBlock:^(NSArray * _Nonnull responseObject, double timeStamp) {
+        GeneralResultsItems *items = responseObject.firstObject;
+        if(items.ret_code.integerValue == 200){
+            GeneralResultsItem *item = items.data;
+//            [MBProgressHUD showTipMessag:item.message toView:self.view];
+            if(item.status){
+                VerificationCodeViewController *vc = [[VerificationCodeViewController alloc]init];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+        }else{
+            [MBProgressHUD showTipMessag:items.err toView:self.view];
+        }
+    } failedBlock:^(NSString * _Nonnull errDescription, NSInteger errCode) {
+        
+    }];
 }
 
 

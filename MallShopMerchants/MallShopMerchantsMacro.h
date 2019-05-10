@@ -34,8 +34,18 @@ return method_name;\
 
 //主要颜色
 #define kWhiteColor [UIColor whiteColor]
-#define MainTextGrayColor [UIColor colorWithHex:0x666666]        // 主要的字体颜色
+#define kBlackColor [UIColor blackColor]
+#define MainTextGrayColor [UIColor colorWithHex:0x666666]        // 主要的灰色字体颜色
+#define MainTitleGrayColor [UIColor colorWithHex:0x999999]        // 主要标题的灰色字体颜色
+#define MainTextBlackColor [UIColor colorWithHex:0x333333]        // 主要的黑色字体颜色
+#define MainBgGrayColor [UIColor colorWithHex:0xf5f5f5]           // 主要的灰色背景颜色
 
+// 如果obj为nil或者null，返回@""、@[]或者@{}，否则返回原样返回obj
+// 主要是用在setObject:forKey:或者打印NSString的时候
+#define VALID_STRING(obj) ([obj isKindOfClass:[NSString class]] ? obj : @"")
+#define VALID_ARRAY(obj) ([obj isKindOfClass:[NSArray class]] ? obj : @[])
+#define VALID_DICTIONARY(obj) ([obj isKindOfClass:[NSDictionary class]] ? obj : @{})
+#define SHITF_STRING(obj) ([NSString stringWithFormat:@"%@",obj])
 
 #define REALM_NAME_URL [[[NSUserDefaults standardUserDefaults] objectForKey:@"SYBaseUrlDictKey"] jk_stringForKey:@"SYBaseUrlRealmNameKey"]
 #define BASE_URL [[[NSUserDefaults standardUserDefaults] objectForKey:@"SYBaseUrlDictKey"] jk_stringForKey:@"SYBaseUrlKey"]

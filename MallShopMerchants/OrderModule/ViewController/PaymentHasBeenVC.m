@@ -26,7 +26,7 @@
 }
 
 -(void)GetListData{
-    NSDictionary *dict = @{@"page_num":@"1",@"page_size":@"10",@"type":@(self.payId)};
+    NSDictionary *dict = @{@"page_num":@"1",@"page_size":@"10",@"type":@(self.payId+1)};
     [OrederSerivce getOrderlistWithParam:dict successfulBlock:^(NSArray * _Nonnull responseObject, double timeStamp) {
         OrderModelItems *items = responseObject.firstObject;
         if(items.ret_code.integerValue == 200){

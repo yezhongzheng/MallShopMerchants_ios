@@ -37,4 +37,15 @@
     [handler sendRequestWithSuccessBlock:sBlock FaliedBlock:fBlock];
 }
 
++ (void)addBankCardWithParam:(NSDictionary *)dic successfulBlock:(SuccessfulBlock)sBlock failedBlock:(FailedBlock)fBlock{
+    ProcessingHandler *handler = [ProcessingHandler sharedInstance];
+    [handler addRequestIdentify:@"b2b.user.add_card" ParamsDic:dic ModelName:@"GeneralResultsItems"];
+    [handler sendRequestWithSuccessBlock:sBlock FaliedBlock:fBlock];
+}
+
++ (void)getSupplierReportWithParam:(NSDictionary *)dic successfulBlock:(SuccessfulBlock)sBlock failedBlock:(FailedBlock)fBlock{
+    ProcessingHandler *handler = [ProcessingHandler sharedInstance];
+    [handler addRequestIdentify:@"b2b.user.get_supplier_report" ParamsDic:dic ModelName:@"ReportItems"];
+    [handler sendRequestWithSuccessBlock:sBlock FaliedBlock:fBlock];
+}
 @end

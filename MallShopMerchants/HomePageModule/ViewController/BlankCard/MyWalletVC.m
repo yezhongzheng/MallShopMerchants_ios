@@ -12,8 +12,10 @@
 #import "WalletFooterView.h"
 #import "HomePageSerivce.h"
 #import "WalletItems.h"
+#import "AddBlankCardViewController.h"
+#import "VerificationCodeViewController.h"
 
-@interface MyWalletVC ()<UITableViewDelegate,UITableViewDataSource>
+@interface MyWalletVC ()<UITableViewDelegate,UITableViewDataSource,WalletFooterViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) WalletHeardView *heardVIew;
@@ -57,6 +59,15 @@
     } failedBlock:^(NSString * _Nonnull errDescription, NSInteger errCode) {
         
     }];
+}
+
+-(void)WithdrawalClicket{
+
+}
+
+-(void)addBankCardClicket{
+    AddBlankCardViewController *vc = [[AddBlankCardViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - UITableViewDelegate
@@ -144,7 +155,8 @@
 
 -(WalletFooterView *)footView{
     if(!_footView){
-        self.footView = [[WalletFooterView alloc]initWithFrame:CGRectMake(0, 0, kSixScreen(105), kSixScreen(165))];
+        self.footView = [[WalletFooterView alloc]initWithFrame:CGRectMake(0, 0, kSixScreen(110), kSixScreen(165))];
+        self.footView.delegate = self;
     }
     return _footView;
 }

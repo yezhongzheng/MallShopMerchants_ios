@@ -27,6 +27,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)getSettlementBanksuccessfulBlock:(SuccessfulBlock)sBlock failedBlock:(FailedBlock)fBlock;
 
+/**
+ *添加银行卡
+ */
++ (void)addBankCardWithParam:(NSDictionary *)dic successfulBlock:(SuccessfulBlock)sBlock failedBlock:(FailedBlock)fBlock;
+
+/**
+ *经营报表
+ */
++ (void)getSupplierReportWithParam:(NSDictionary *)dic successfulBlock:(SuccessfulBlock)sBlock failedBlock:(FailedBlock)fBlock;
 @end
 
 NS_ASSUME_NONNULL_END

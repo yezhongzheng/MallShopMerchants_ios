@@ -12,6 +12,7 @@
 #import "HomePageSerivce.h"
 #import "UserInfoItems.h"
 #import "MyWalletVC.h"
+#import "ReportVC.h"
 
 @interface HomePageVC () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
@@ -241,7 +242,10 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
-    if(indexPath.row == 5){
+    if(indexPath.row == 0){
+        ReportVC *vc = [[ReportVC alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if(indexPath.row == 5){
         MyWalletVC *vc = [[MyWalletVC alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
     }

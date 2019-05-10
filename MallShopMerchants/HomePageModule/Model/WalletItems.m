@@ -14,7 +14,6 @@
     return @{@"data" : [WalletItem class]};
 }
 
-
 @end
 
 
